@@ -1,20 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutricion</title>
+    <title>LockIn - Planes de Dieta y Nutrición</title>
 </head>
 <body>
+
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <header>
-        <img src="imagenes/logo.png" alt="LockIn-logo">
+        <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
+        
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="inicio.html#planes">Planes</a>
+            <a href="nutricion.html">Nutrición</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="mapa.html">Gimnasios Cercanos</a>
+            <a href="registrarse.html">
+                <button type="button">Únete Ahora</button>
+            </a>
+        </nav>
     </header>
-    <nav>
-        <a href="inicio.html">Informacion personal</a>
-        <a href="nutricion.html">Nutricion</a>
-        <a href="planes.html">Planes</a>
-        <a href="calculadora.html">Calculadora de macronutrientes</a>
-        <a href="mapa.html">Buscar gimnasios cerca</a>
-    </nav>
+
+    <hr>
+
+    <!-- ==================== ENCABEZADO DE NUTRICIÓN ==================== -->
+    <section>
+        <p><b>NUTRICIÓN</b></p>
+        <h2>Planes de <b>Dieta</b></h2>
+        <p>
+            Elige el plan nutricional que se adapte a tus objetivos. 
+            Cada dieta incluye plan semanal completo, macronutrientes y lista de alimentos detallada.
+        </p>
+
+        <!-- Indicadores rápidos -->
+        <div>
+            <span>✔ 6 planes disponibles</span> |
+            <span>✔ Plan semanal incluido</span> |
+            <span>✔ Actualizado 2025</span>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ==================== TARJETAS DE DIETAS ==================== -->
+    <section>
+        <h3>Nuestras Dietas Disponibles</h3>
+
+        <div>
+            <!-- Dieta 1: Cetogénica -->
+            <div>
+                <p><small><b>MÁS POPULAR</b></small></p>
+                <img src="imagenes/Dieta - Cetogénica.png" alt="Dieta Cetogénica" width="160">
+                <p>🥑</p>
+                <h3>Dieta Cetogénica <small>(Moderado)</small></h3>
+                <p><b>Quema grasa como combustible principal</b></p>
+                <p>
+                    Alta en grasas, muy baja en carbohidratos. 
+                    Induce cetosis para que el cuerpo use grasa como fuente de energía.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 25% | 
+                        <b>Carbs:</b> 5% | 
+                        <b>Grasa:</b> 70%
+                    </small>
+                </p>
+                <p><small>Objetivo: Pérdida de grasa | Duración: 8-12 semanas</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Dieta 2: Mediterránea -->
+            <div>
+                <p><small><b>RECOMENDADA</b></small></p>
+                <img src="imagenes/Dieta - Mediterránea.png" alt="Dieta Mediterránea" width="160">
+                <p>🫒</p>
+                <h3>Dieta Mediterránea <small>(Fácil)</small></h3>
+                <p><b>El equilibrio perfecto entre salud y sabor</b></p>
+                <p>
+                    Basada en los alimentos tradicionales del Mediterráneo: 
+                    aceite de oliva, vegetales, legumbres y pescado fresco.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 18% | 
+                        <b>Carbs:</b> 50% | 
+                        <b>Grasa:</b> 32%
+                    </small>
+                </p>
+                <p><small>Objetivo: Salud general | Duración: Estilo de vida</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Dieta 3: Paleo -->
+            <div>
+                <p><small><b>FUERZA</b></small></p>
+                <img src="imagenes/Dieta - Paleo.png" alt="Dieta Paleo" width="160">
+                <p>🍖</p>
+                <h3>Dieta Paleo <small>(Moderado)</small></h3>
+                <p><b>Come como nuestros ancestros, rinde como un atleta</b></p>
+                <p>
+                    Imita la alimentación del paleolítico: 
+                    carnes magras, pescado, frutas, vegetales, nueces. Sin procesados ni granos.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 30% | 
+                        <b>Carbs:</b> 35% | 
+                        <b>Grasa:</b> 35%
+                    </small>
+                </p>
+                <p><small>Objetivo: Composición corporal | Duración: 12 semanas</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Dieta 4: Ayuno Intermitente -->
+            <div>
+                <p><small><b>EFICIENCIA</b></small></p>
+                <img src="imagenes/Dieta - Ayuno Intermitente.png" alt="Ayuno Intermitente" width="160">
+                <p>⏱️</p>
+                <h3>Ayuno Intermitente <small>(Moderado)</small></h3>
+                <p><b>Maximiza los resultados con ventanas de alimentación</b></p>
+                <p>
+                    Cicla entre periodos de ayuno y alimentación (16:8, 18:6, 5:2) 
+                    para optimizar la quema de grasa y la autofagia.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 30% | 
+                        <b>Carbs:</b> 40% | 
+                        <b>Grasa:</b> 30%
+                    </small>
+                </p>
+                <p><small>Objetivo: Pérdida de peso y longevidad | Duración: Estilo de vida</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Dieta 5: Vegana Fitness -->
+            <div>
+                <p><small><b>SOSTENIBLE</b></small></p>
+                <img src="imagenes/Dieta - Vegana Fitness.png" alt="Dieta Vegana Fitness" width="160">
+                <p>🌱</p>
+                <h3>Dieta Vegana Fitness <small>(Avanzado)</small></h3>
+                <p><b>Planta el poder, cosecha el rendimiento</b></p>
+                <p>
+                    100% plant-based orientada al rendimiento deportivo. 
+                    Alta en proteínas vegetales para ganar músculo sin productos animales.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 25% | 
+                        <b>Carbs:</b> 55% | 
+                        <b>Grasa:</b> 20%
+                    </small>
+                </p>
+                <p><small>Objetivo: Masa muscular vegana | Duración: Estilo de vida</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Dieta 6: Dieta de Volumen -->
+            <div>
+                <p><small><b>MASA MUSCULAR</b></small></p>
+                <img src="imagenes/Dieta - Volumen.png" alt="Dieta de Volumen" width="160">
+                <p>💪</p>
+                <h3>Dieta de Volumen <small>(Avanzado)</small></h3>
+                <p><b>Construye músculo, define tu físico</b></p>
+                <p>
+                    Superávit calórico controlado con alta proteína 
+                    para maximizar la síntesis muscular y minimizar la ganancia de grasa.
+                </p>
+                <!-- Macronutrientes -->
+                <p>
+                    <small>
+                        <b>Proteína:</b> 30% | 
+                        <b>Carbs:</b> 50% | 
+                        <b>Grasa:</b> 20%
+                    </small>
+                </p>
+                <p><small>Objetivo: Ganancia de músculo | Duración: 16-20 semanas</small></p>
+                <a href="#">Ver dieta &gt;</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div>
+            <!-- Columna 1: Marca y descripción -->
+            <div>
+                <h3>LOCK-IN</h3>
+                <p>
+                    Tu plataforma de entrenamiento online. 
+                    Transforma tu cuerpo y mente desde un solo lugar.
+                </p>
+                <p>
+                    <a href="https://facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                </p>
+            </div>
+
+            <!-- Columna 2: Contacto -->
+            <div>
+                <h4>Contacto</h4>
+                <p>Email: info@lockin.com</p>
+                <p>Teléfono: +54 351 000 0000</p>
+                <p>Ubicación: Córdoba, Argentina</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Copyright y enlaces legales -->
+        <div>
+            <p>&copy; 2026 LockIn - Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Términos y Condiciones</a> | 
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
