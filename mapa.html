@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa</title>
+    <title>LockIn - Gimnasios Cercanos</title>
+    <!-- Estilos de Leaflet (requeridos para que el mapa funcione) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
+
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <header>
         <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
         
@@ -20,5 +24,221 @@
             </a>
         </nav>
     </header>
+
+    <hr>
+
+    <main>
+        <!-- ==================== ENCABEZADO DE SECCIÓN ==================== -->
+        <section>
+            <p><b>—— CÓRDOBA CAPITAL</b></p>
+            <h1>Gimnasios <span>Cercanos</span></h1>
+            <p>
+                Encontrá tu sede más cercana en Córdoba. Todos nuestros gimnasios cuentan con equipamiento de última generación y entrenadores certificados.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== CONTENEDOR PRINCIPAL: MAPA Y LISTA ==================== -->
+        <section>
+            <!-- COLUMNA 1: MAPA Y DETALLE DE SEDE SELECCIONADA -->
+            <div>
+                <div>
+                    <span>📍 Córdoba Capital</span>
+                    <!-- Contenedor donde Leaflet inyecta el mapa interactivo -->
+                    <div id="mapa" style="height: 460px; width: 100%;"></div>
+                </div>
+
+                <br>
+
+                <!-- Tarjeta de Sede Seleccionada -->
+                <div id="panel-sede-seleccionada">
+                    <p><small><b>SEDE SELECCIONADA</b></small></p>
+                    <h3 id="sede-nombre">Ambrosio Olmos 1090</h3>
+                    <p id="sede-zona">Nueva Córdoba · Córdoba Capital</p>
+                    <a id="btn-como-llegar" href="https://www.google.com/maps/dir/?api=1&destination=-31.4334,-64.1925" target="_blank">
+                        <button type="button">🧭 Cómo llegar</button>
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- COLUMNA 2: LISTA DE SEDES DISPONIBLES -->
+            <div>
+                <h3>SEDES DESTACADAS EN CÓRDOBA</h3>
+
+                <!-- Sede 1: QIVOX Ambrosio Olmos -->
+                <div class="tarjeta-sede" id="sede-item-1" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>QIVOX — SMART GYM [Ambrosio Olmos] <span>⭐ 4.9</span></h4>
+                    <p>📍 Ambrosio Olmos 1090</p>
+                    <p><small>Nueva Córdoba · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:00–23:00 · Sáb 10:00–15:00</p>
+                    <p>
+                        <span>[Musculación]</span> 
+                        <span>[Cardio]</span> 
+                        <span>[Funcional]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 2: Best Club Nueva Córdoba -->
+                <div class="tarjeta-sede" id="sede-item-2" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>Best Club — Nueva Córdoba / Centro <span>⭐ 4.8</span></h4>
+                    <p>📍 Obispo Trejo 640</p>
+                    <p><small>Nueva Córdoba · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:00–23:00 · Sáb 8:00–20:00</p>
+                    <p>
+                        <span>[Musculación]</span> 
+                        <span>[Spinning]</span> 
+                        <span>[Clases grupales]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 3: Best Club Jardín -->
+                <div class="tarjeta-sede" id="sede-item-3" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>Best Club — Barrio Jardín <span>⭐ 4.8</span></h4>
+                    <p>📍 Dr. Luis Podestá Costa 3236</p>
+                    <p><small>Barrio Jardín · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:30–22:30 · Sáb 9:00–18:00</p>
+                    <p>
+                        <span>[Musculación]</span> 
+                        <span>[CrossFit]</span> 
+                        <span>[Funcional]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 4: BRISKBOX Cerro -->
+                <div class="tarjeta-sede" id="sede-item-4" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>BRISKBOX — Cerro de las Rosas <span>⭐ 4.9</span></h4>
+                    <p>📍 Av. Rafael Núñez 4344</p>
+                    <p><small>Cerro de las Rosas · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:30–22:00 · Sáb 9:00–13:00</p>
+                    <p>
+                        <span>[CrossFit]</span> 
+                        <span>[HIIT]</span> 
+                        <span>[Levantamiento]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 5: QIVOX Colón -->
+                <div class="tarjeta-sede" id="sede-item-5" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>QIVOX — Smart Gym [Colón] <span>⭐ 4.8</span></h4>
+                    <p>📍 Av. Colón 5034</p>
+                    <p><small>Alto Alberdi · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:00–23:00 · Sáb 9:00–15:00</p>
+                    <p>
+                        <span>[Smart Gym]</span> 
+                        <span>[Musculación]</span> 
+                        <span>[Cardio]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 6: QIVOX Oncativo -->
+                <div class="tarjeta-sede" id="sede-item-6" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>QIVOX — Smart Gym [Oncativo] <span>⭐ 4.7</span></h4>
+                    <p>📍 Oncativo 815</p>
+                    <p><small>Barrio General Paz · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:00–23:00 · Sáb 9:00–15:00</p>
+                    <p>
+                        <span>[Musculación]</span> 
+                        <span>[Cardio]</span> 
+                        <span>[Zona Guiada]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 7: BRISKBOX Valle Escondido -->
+                <div class="tarjeta-sede" id="sede-item-7" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>BRISKBOX — Valle Escondido <span>⭐ 4.9</span></h4>
+                    <p>📍 Av. República de China 1920</p>
+                    <p><small>Valle Escondido · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:30–22:00 · Sáb 9:00–13:00</p>
+                    <p>
+                        <span>[CrossFit]</span> 
+                        <span>[Funcional]</span> 
+                        <span>[Cardio]</span>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Sede 8: BRISKBOX Camino a San Carlos -->
+                <div class="tarjeta-sede" id="sede-item-8" style="cursor: pointer; margin-bottom: 15px;">
+                    <h4>BRISKBOX — Camino a San Carlos <span>⭐ 4.8</span></h4>
+                    <p>📍 Av. Bernardo O'Higgins 5857</p>
+                    <p><small>Camino a San Carlos · Córdoba Capital</small></p>
+                    <p>🕒 Lun-Vie 6:30–21:30 · Sáb 9:00–13:00</p>
+                    <p>
+                        <span>[CrossFit]</span> 
+                        <span>[Resistencia]</span> 
+                        <span>[Fuerza]</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br><hr>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div>
+            <!-- Columna 1: Marca y descripción -->
+            <div>
+                <h3>LOCK-IN</h3>
+                <p>
+                    Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.
+                </p>
+                <p>
+                    <a href="https://facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                </p>
+            </div>
+
+            <!-- Columna 2: Enlaces Rápidos -->
+            <div>
+                <h4>Enlaces Rápidos</h4>
+                <p><a href="inicio.html">Inicio</a></p>
+                <p><a href="inicio.html#planes">Planes</a></p>
+                <p><a href="nutricion.html">Nutrición</a></p>
+                <p><a href="calculadora.html">Calculadora</a></p>
+                <p><a href="mapa.html">Gimnasios Cercanos</a></p>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h4>Contacto</h4>
+                <p>✉ info@lock-in.fit</p>
+                <p>📞 +54 351 000-0000</p>
+                <p>📍 Córdoba, Argentina</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Copyright y enlaces legales -->
+        <div>
+            <p>&copy; 2026 Lock-In Fitness. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Términos y Condiciones</a> | 
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- 1. Librería Leaflet para renderizar el mapa interactivo -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- 2. Lógica de la página mapa -->
+    <script src="mapaScript.js"></script>
 </body>
 </html>
