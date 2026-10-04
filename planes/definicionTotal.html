@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockIn - Planes de Entrenamiento - Definición Total</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="planes.css">
+</head>
+
+<body>
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
+    <header class="barra_superior">
+        <div class="contenedor header_contenido">
+            <a href="../inicio.html" class="logo">
+                <img src="../imagenes/logo.png" alt="LockIn Logo">
+            </a>
+            <nav class="menu">
+                <a href="../inicio.html" class="inicio">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes" class="planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="../nutricion.html" class="nutricion">
+                    <i class="bi bi-apple"></i>
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="../registrarse.html" class="boton_unete">
+                Únete Ahora
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!--=================== PORTADA ========================-->
+        <section class="plan-hero">
+
+            <div class="hero-imagen">
+                <img class="hero-bg" src="../imagenes/Plan - Definición Total.png" alt="Definición Total">
+
+                <div class="contenedor-interno">
+                    <a href="../inicio.html#planes" class="hero-volver">
+                        <i class="bi bi-arrow-left"></i> Volver a planes
+                    </a>
+                    <span class="hero-badge">MÁS POPULAR</span>
+                </div>
+
+                <div class="contenedor-interno hero-titulo">
+                    <p class="hero-etiqueta">PÉRDIDA DE GRASA · DEFINICIÓN</p>
+                    <div class="hero-fila">
+                        <span class="hero-emoji">⚡</span>
+                        <div>
+                            <h1>Definición Total</h1>
+                            <p class="hero-sub">Esculpí tu cuerpo, bajá el porcentaje graso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila de datos + botón -->
+            <div class="contenedor-interno hero-datos">
+                <div class="hero-datos-info">
+                    <span class="nivel nivel-moderado">Intermedio</span>
+                    <span class="categoria-badge categoria-estetica">Estética</span>
+                    <span class="dato"><i class="bi bi-clock"></i> 4 sesiones/semana · 12 semanas</span>
+                    <span class="dato"><i class="bi bi-tools"></i> Pesas libres + máquinas</span>
+                </div>
+                <button type="button" class="btn-rojo" onclick="alert('¡Empezaste el plan Definición Total! ¡A esculpir el físico!')">Empezar Plan <i class="bi bi-chevron-right"></i></button>
+            </div>
+
+        </section>
+
+        <!-- ==================== SOBRE ESTE PLAN ==================== -->
+        <section class="plan-acerca">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Sobre este plan</h2>
+                <p class="plan-acerca-texto">
+                    Definición Total combina el entrenamiento de fuerza con el déficit calórico para lograr 
+                    el físico que buscás. El programa sigue una división de 4 días (Upper/Lower split) que 
+                    maximiza la frecuencia de estímulo muscular mientras deja tiempo suficiente para la 
+                    recuperación. Cada bloque de 4 semanas aumenta la intensidad progresivamente: las primeras 
+                    4 semanas construyen la base, las siguientes 4 elevan el volumen y las últimas 4 son de 
+                    intensidad máxima con técnicas avanzadas como superseries y drop sets.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== DISTRIBUCIÓN DEL VOLUMEN Y PÚBLICO ==================== -->
+        <section class="plan-info">
+            <div class="contenedor-interno plan-info-grid">
+
+                <!-- Cuadro 1: Distribución del volumen -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">Distribución del volumen</h3>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Fuerza / Resistencia</span>
+                            <b>65%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-fuerza" style="width: 65%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Cardio / Metabólico</span>
+                            <b>25%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-cardio" style="width: 25%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Movilidad / Técnica</span>
+                            <b>10%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-movilidad" style="width: 10%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="volumen-dias">
+                        <span class="volumen-item"><i class="bi bi-lightning-charge-fill"></i> <b>4 días de entreno</b></span>
+                        <span class="volumen-item"><i class="bi bi-arrow-repeat"></i> <b>3 días de descanso</b></span>
+                    </div>
+                </article>
+
+                <!-- Cuadro 2: ¿Para quién es? -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">¿Para quién es?</h3>
+                    <p class="publico-texto">
+                        Personas con al menos 6 meses de experiencia en gimnasio que buscan bajar su 
+                        porcentaje graso y lograr una apariencia más definida. No requiere equipo especializado.
+                    </p>
+
+                    <p class="publico-objetivo"><i class="bi bi-star"></i> <b>Objetivo</b></p>
+                    <span class="publico-pildora"><i class="bi bi-bullseye"></i> Pérdida de grasa · Definición</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== BENEFICIOS COMPROBADOS ==================== -->
+        <section class="plan-beneficios">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Beneficios comprobados</h2>
+
+                <div class="beneficios-grid">
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Reducción de grasa corporal sin perder músculo
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Mejora de la definición y densidad muscular
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Aumento del metabolismo basal
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Mayor resistencia muscular
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Progresión clara semana a semana
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Compatible con déficit calórico moderado
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROGRAMA SEMANAL ==================== -->
+        <section class="plan">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Programa semanal</h2>
+                <p class="programa-subtitulo">4 sesiones de entrenamiento · Expandí cada día para ver los ejercicios</p>
+
+                <div class="plan-lista">
+
+                    <!-- Lunes -->
+                    <details class="dia" open>
+                        <summary>
+                            <span class="dia-abrev">Lun</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Lunes — Tren Superior A — Empuje</span>
+                                <span class="dia-sub">Pecho, hombros y tríceps con sobrecarga progresiva</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Pecho Principal</span>
+                                <p>Press de banca plano con barra: 4x8-10 al RPE 8 con pausa en el pecho</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Superserie Pecho</span>
+                                <p>Press inclinado con mancuernas (3x10) + Aperturas con mancuernas en banco plano (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Hombros</span>
+                                <p>Press militar con mancuernas sentado (3x10) + Elevaciones laterales estrictas (4x15)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Tríceps</span>
+                                <p>Fondos en paralelas lastrados o libres (3x12) + Extensiones en polea con cuerda (3x15)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Hombro Posterior</span>
+                                <p>Face pulls en polea alta con cuerda (3x15) + Elevaciones frontales con mancuerna (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cardio LISS Final</span>
+                                <p>15 minutos de caminata inclinada en cinta (6-8% de pendiente) a ritmo moderado para potenciar el déficit calórico</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Martes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Mar</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Martes — Tren Inferior A — Cuádriceps dominante</span>
+                                <span class="dia-sub">Sentadillas, prensa y trabajo accesorio</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Pierna Principal</span>
+                                <p>Sentadilla trasera con barra: 4x8 progresivas buscando profundidad controlada</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Volumen Cuádriceps</span>
+                                <p>Prensa de piernas inclinada: 3x12 (última serie con técnica drop set al fallo)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cadena Posterior</span>
+                                <p>Curl femoral tumbado en máquina: 4x12 controlando 3 segundos la bajada</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Gemelos y Core</span>
+                                <p>Elevación de talones de pie en máquina (4x15) + Rueda abdominal desde rodillas (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Aductor / Abductor</span>
+                                <p>Máquina aductora (3x15) + Máquina abductora (3x15) para moldear el contorno interno y externo del muslo</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cardio Final</span>
+                                <p>20 minutos de bicicleta estática a ritmo moderado-bajo (Zona 2) para aceleración del metabolismo post-entreno</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Miércoles -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Mié</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Miércoles — Descanso activo</span>
+                                <span class="dia-sub">Cardio suave LISS o caminata 45 min</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Jueves -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Jue</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Jueves — Tren Superior B — Tracción</span>
+                                <span class="dia-sub">Espalda, bíceps y deltoides posterior</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Espalda Grosor</span>
+                                <p>Remo con barra prono: 4x8 pesado con torso a 45 grados y bloqueo escapular</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Espalda Amplitud</span>
+                                <p>Jalón al pecho agarre neutro (3x10) + Remo unilateral con mancuerna en banco (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Deltoides Posterior</span>
+                                <p>Face pulls en polea alta con cuerda hacia la frente: 4x15 con 1s de contracción</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Bíceps</span>
+                                <p>Curl con barra Z de pie (3x10) en superserie con Curl martillo con mancuernas (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Espalda Baja Accesoria</span>
+                                <p>Hiperextensiones en banco 45° (3x12) + Superman isométrico (3x20s) para fortalecer la cadena posterior baja sin sobrecargar la columna</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cardio LISS Final</span>
+                                <p>15 minutos de caminata inclinada en cinta o elíptica a intensidad baja para terminar en zona de quema de grasa</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Viernes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Vie</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Viernes — Tren Inferior B — Isquiotibial dominante</span>
+                                <span class="dia-sub">Peso muerto rumano, zancadas y gemelos</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cadena Posterior</span>
+                                <p>Peso muerto rumano con barra: 4x8 manteniendo espalda neutra y tensión en isquios</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Unilateral Pierna</span>
+                                <p>Zancadas caminando con mancuernas: 3x12 pasos por pierna con paso amplio</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Glúteo y Cuádriceps</span>
+                                <p>Hip thrust con barra pesada (3x10) + Extensiones de cuádriceps en máquina (3x15)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Finisher HIIT</span>
+                                <p>15 minutos de intervalos en bicicleta estática (30 segundos sprint / 30 segundos suave)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Gemelos y Tibial</span>
+                                <p>Elevación de talones sentado en máquina (3x20) + Dorsiflexión de tobillo con banda para equilibrar el trabajo de pantorrilla y prevenir lesiones</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cardio Quema-Grasa Final</span>
+                                <p>20 minutos de caminata inclinada en cinta (8% pendiente) a ritmo moderado para maximizar el gasto calórico post-sesión</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Sábado -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Sáb</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Sábado — Descanso activo</span>
+                                <span class="dia-sub">Movilidad y estiramientos suaves</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Domingo -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Dom</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Domingo — Descanso completo</span>
+                                <span class="dia-sub">Recuperación total y recarga de glucógeno</span>
+                            </div>
+                        </summary>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div class="contenedor footer_contenido">
+            <div class="footer_marca">
+
+                <img src="../imagenes/logo.png" alt="LockIn">
+
+                <p>
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
+                </p>
+
+                <div class="footer_redes">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_enlaces">
+
+                <h4>Enlaces Rápidos</h4>
+
+                <a href="../inicio.html">
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes">
+                    Planes
+                </a>
+                <a href="../nutricion.html">
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    Gimnasios
+                </a>
+            </div>
+
+            <div class="footer_contacto">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
+
+            </div>
+        </div>
+
+        <div class="footer_inferior">
+            <div class="contenedor footer_inferior_contenido">
+
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

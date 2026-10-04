@@ -1,0 +1,788 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.contenedor {
+    width: min(1215px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.barra_superior {
+    height: 96px;
+    background-color: #000000;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.header_contenido {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 16px;
+
+    color: #bdbdbd;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.menu a i {
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    background-color: #141414;
+}
+
+.menu .planes {
+    color: #ff2935;
+    background-color: #200709;
+}
+
+.boton_unete {
+    flex-shrink: 0;
+
+    padding: 16px 27px;
+
+    background-color: #ef0712;
+    color: #ffffff;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.boton_unete:hover {
+    background-color: #ff202b;
+}
+
+.contenedor-interno {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+ 
+/* ---------- Zona de imagen ---------- */
+.hero-imagen {
+    position: relative;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0 36px;
+    overflow: hidden;
+}
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+/* oscurece la foto y la funde con el fondo negro */
+.hero-imagen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, .25) 0%,
+        rgba(0, 0, 0, .55) 55%,
+        #000 100%);
+}
+.hero-imagen > .contenedor-interno {
+    position: relative;
+    z-index: 2;           /* por encima del degradé */
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+/* ---------- Fila superior: volver + badge ---------- */
+.hero-top {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(30, 30, 34, .7);
+    backdrop-filter: blur(6px);
+    color: #e8e6ee;
+    font-size: .85rem;
+    text-decoration: none;
+    transition: background .2s;
+}
+.hero-volver:hover { background: rgba(60, 60, 66, .85); }
+ 
+.hero-badge {
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: #e50914;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+ 
+/* ---------- Título ---------- */
+.hero-etiqueta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+    color: #e50914;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.hero-etiqueta::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: #e50914;
+}
+ 
+.hero-fila {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.hero-emoji {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+.hero-fila h1 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+.hero-sub {
+    margin: 6px 0 0;
+    color: #e8e6ee;
+    font-size: 1.05rem;
+}
+ 
+/* ---------- Fila de datos ---------- */
+.hero-datos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.hero-datos-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #a9a3b8;
+    font-size: .85rem;
+}
+.dato .bi { color: #e50914; }
+ 
+/* Etiqueta de nivel */
+.nivel {
+    padding: 3px 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.nivel-facil    { color: #2ecc71; background: rgba(46, 204, 113, .12); border-color: rgba(46, 204, 113, .4); }
+.nivel-moderado { color: #f1c40f; background: rgba(241, 196, 15, .12); border-color: rgba(241, 196, 15, .4); }
+.nivel-avanzado { color: #ff5c6a; background: rgba(255, 92, 106, .12); border-color: rgba(255, 92, 106, .4); }
+ 
+/* Etiqueta de categoría (Estética, Fuerza, etc.) */
+.categoria-badge {
+    padding: 3px 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.categoria-estetica {
+    color: #e6b422;
+    background: rgba(230, 180, 34, .12);
+    border-color: rgba(230, 180, 34, .4);
+}
+
+.btn-rojo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 8px;
+    background: #e50914;
+    color: #fff;
+    font-size: .85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter .2s, transform .2s;
+}
+
+.btn-rojo:hover {
+    filter: brightness(1.15);
+    transform: translateY(-1px);
+}
+ 
+/* ---------- Título de sección con barra roja ---------- */
+.plan-titulo {
+    margin: 0 0 18px;
+    padding-left: 12px;
+    border-left: 4px solid #e50914;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+ 
+/* ---------- Sobre este plan ---------- */
+.plan-acerca {
+    padding: 40px 0 48px;
+}
+.plan-acerca-texto {
+    max-width: 600px;
+    margin: 0;
+    color: #e8e6ee;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+ 
+/* ---------- Grilla de 2 tarjetas ---------- */
+.plan-info {
+    padding-bottom: 48px;
+}
+.plan-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+ 
+/* ---------- Tarjeta base ---------- */
+.plan-tarjeta {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 22px;
+    background: #151518;
+    border: 1px solid #26262a;
+    border-radius: 16px;
+    transition: border-color .25s;
+}
+
+.plan-tarjeta-titulo {
+    margin: 0 0 22px;
+    padding-left: 12px;
+    border-left: 4px solid #e50914;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+ 
+/* ---------- Distribución del volumen (barras) ---------- */
+.contenedor-volumen {
+    margin-bottom: 16px;
+}
+.volumen-fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    color: #c9c6d3;
+    font-size: .8rem;
+}
+.volumen-fila b {
+    color: #fff;
+}
+.volumen-barra {
+    height: 6px;
+    background: #26262a;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.volumen-relleno {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+}
+.volumen-fuerza    { background: #ff2d3a; }
+.volumen-cardio    { background: #2f7bff; }
+.volumen-movilidad { background: #1fd15f; }
+ 
+/* Días de entreno / descanso */
+.volumen-dias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #2a2a2e;
+}
+.volumen-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #a9a3b8;
+    font-size: .8rem;
+}
+.volumen-item b {
+    color: #fff;
+    font-weight: 600;
+}
+.volumen-item .bi {
+    color: #e50914;
+}
+ 
+/* ---------- ¿Para quién es? ---------- */
+.publico-texto {
+    margin: 0 0 20px;
+    color: #d8d6e0;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+.publico-objetivo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    padding-top: 18px;
+    border-top: 1px solid #2a2a2e;
+    color: #fff;
+    font-size: .8rem;
+}
+.publico-objetivo .bi {
+    color: #f5d90a;
+}
+.publico-pildora {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    background: rgba(229, 9, 20, .15);
+    border: 1px solid rgba(229, 9, 20, .35);
+    border-radius: 999px;
+    color: #ff5c6a;
+    font-size: .8rem;
+    font-weight: 600;
+}
+ 
+/* ---------- Ícono dentro de un círculo ---------- */
+.icono-circulo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: .7rem;
+}
+.icono-rojo {
+    color: #ff5c6a;
+    background: rgba(229, 9, 20, .18);
+    border-color: rgba(229, 9, 20, .45);
+}
+ 
+/* ---------- Beneficios ---------- */
+.plan-beneficios {
+    padding-bottom: 56px;
+}
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.beneficio {
+    display: flex;
+    align-items: flex-start;        /* el ícono queda alineado con la primera línea */
+    gap: 12px;
+    padding: 16px 18px;
+    background: #121214;
+    border: 1px solid #222226;
+    border-radius: 12px;
+    color: #e8e6ee;
+    font-size: .85rem;
+    line-height: 1.5;
+    transition: border-color .25s;
+}
+.beneficio:hover {
+    border-color: #e50914;
+}
+ 
+/* ---------- Programa semanal ---------- */
+.plan {
+    padding-bottom: 56px;
+}
+.programa-subtitulo {
+    margin: -6px 0 22px;
+    color: #8e8a9c;
+    font-size: .85rem;
+}
+.plan-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+/* Tarjeta del día */
+.dia {
+    background: #151518;
+    border: 1px solid #26262a;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .25s;
+}
+.dia:hover {
+    border-color: #e50914;
+}
+ 
+/* Encabezado clickeable */
+.dia summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    cursor: pointer;
+    list-style: none;
+}
+.dia summary::-webkit-details-marker {
+    display: none;
+}
+ 
+/* Cuadrado con la abreviatura */
+.dia-abrev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: rgba(229, 9, 20, .18);
+    border: 1px solid rgba(229, 9, 20, .35);
+    border-radius: 10px;
+    color: #ff5c6a;
+    font-size: .8rem;
+    font-weight: 700;
+}
+ 
+/* Título + subtítulo del día */
+.dia-info-header {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+.dia-nombre {
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 700;
+}
+.dia-sub {
+    color: #8e8a9c;
+    font-size: .8rem;
+}
+ 
+/* Flecha: apunta al costado cerrada, hacia abajo abierta */
+.dia-flecha {
+    margin-left: auto;
+    color: #8e8a9c;
+    font-size: 1rem;
+    transition: transform .25s;
+}
+.dia[open] .dia-flecha {
+    transform: rotate(90deg);
+}
+ 
+/* Ejercicios */
+.dia-ejercicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 20px;
+    border-top: 1px solid #26262a;
+}
+.ejercicio {
+    padding: 14px 16px;
+    background: #101012;
+    border-radius: 10px;
+}
+.ejercicio-tipo {
+    display: block;
+    margin-bottom: 6px;
+    color: #ff5c6a;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.ejercicio p {
+    margin: 0;
+    color: #e8e6ee;
+    font-size: .88rem;
+    line-height: 1.5;
+}
+ 
+/* ---------- Días de descanso sin desplegar ----------*/
+
+.dia-descanso .dia-resumen {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+}
+.dia-descanso:hover {
+    border-color: #26262a;
+}
+.dia-descanso .dia-abrev {
+    background: #26262a;
+    border-color: #34343a;
+    color: #9a96a6;
+}
+.dia-descanso .dia-nombre {
+    color: #9a96a6;
+}
+.dia-etiqueta {
+    margin-left: auto;
+    padding: 4px 12px;
+    border: 1px solid #34343a;
+    border-radius: 999px;
+    color: #8e8a9c;
+    font-size: .72rem;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #020202;
+
+    border-top: 1px solid #22252b;
+}
+
+.footer_contenido {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 100px;
+
+    padding-top: 78px;
+    padding-bottom: 65px;
+}
+
+.footer_marca img {
+    width: 165px;
+}
+
+.footer_marca > p {
+    max-width: 350px;
+
+    margin: 28px 0 0;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+.footer_redes {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.footer_redes a {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background-color: #19191d;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.footer_redes a:hover {
+    color: #ff2633;
+    background-color: #242429;
+}
+
+.footer_enlaces,
+.footer_contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_enlaces h4,
+.footer_contacto h4 {
+    margin: 5px 0 25px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.footer_enlaces a {
+    width: fit-content;
+
+    margin-bottom: 18px;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+.footer_enlaces a:hover {
+    color: #ff2734;
+}
+
+.footer_contacto p {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin: 0 0 23px;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+}
+
+.footer_contacto i {
+    width: 25px;
+
+    color: #ff2633;
+
+    font-size: 22px;
+}
+
+.footer_inferior {
+    border-top: 1px solid #24272c;
+}
+
+.footer_inferior_contenido {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_inferior p {
+    color: #707986;
+
+    font-size: 12px;
+}
+
+.footer_inferior_contenido > div {
+    display: flex;
+    gap: 25px;
+}
+
+.footer_inferior a {
+    color: #707986;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.footer_inferior a:hover {
+    color: #ff2633;
+}

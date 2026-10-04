@@ -4,295 +4,510 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LockIn - Planes de Dieta y Nutrición - Dieta Mediterránea</title>
-</head>
-<body>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="dietas.css">
+</head>
+
+<body>
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
-    <header>
-        <img src="../imagenes/logo.png" alt="LockIn Logo" width="120">
-        
-        <nav>
-            <a href="../inicio.html">Inicio</a>
-            <a href="../inicio.html#planes">Planes</a>
-            <a href="../nutricion.html">Nutrición</a>
-            <a href="../calculadora.html">Calculadora</a>
-            <a href="../mapa.html">Gimnasios Cercanos</a>
-            <a href="../registrarse.html">
-                <button type="button">Únete Ahora</button>
+    <header class="barra_superior">
+        <div class="contenedor header_contenido">
+            <a href="../inicio.html" class="logo">
+                <img src="../imagenes/logo.png" alt="LockIn Logo">
             </a>
-        </nav>
+            <nav class="menu">
+                <a href="../inicio.html" class="inicio">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="../nutricion.html" class="nutricion">
+                    <i class="bi bi-apple"></i>
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="../registrarse.html" class="boton_unete">
+                Únete Ahora
+            </a>
+        </div>
     </header>
 
-    <hr>
-
     <main>
-        <!-- Enlace para volver -->
-        <p>
-            <a href="../nutricion.html">&lt; Volver a dietas</a>
-        </p>
-
-        <!-- ==================== PORTADA DE LA DIETA ==================== -->
+        <!--=================== PORTADA ========================-->
         <section class="dieta-hero">
-            <p><small><b>RECOMENDADA</b></small></p>
 
-            <img src="../imagenes/Dieta - Mediterránea.png" alt="Dieta Mediterránea" width="300">
+            <div class="hero-imagen">
+                <img class="hero-bg" src="../imagenes/Dieta - Mediterránea.png" alt="Dieta Mediterránea">
 
-            <p><small><b>SALUD GENERAL</b></small></p>
-            <h1>🫒 Dieta Mediterránea</h1>
-            <p><b>El equilibrio perfecto entre salud y sabor</b></p>
+                <div class="contenedor-interno">
+                    <a href="../nutricion.html" class="hero-volver">
+                        <i class="bi bi-arrow-left"></i> Volver a dietas
+                    </a>
+                    <span class="hero-badge">RECOMENDADA</span>
+                </div>
 
-            <!-- Datos rápidos / badges -->
-            <div>
-                <span>🟢 Fácil</span> |
-                <span>⏱ Estilo de vida</span> |
-                <span>🔥 1600-2000 kcal</span>
+                <div class="contenedor-interno hero-titulo">
+                    <p class="hero-etiqueta">Salud general</p>
+                    <div class="hero-fila">
+                        <span class="hero-emoji">🫒</span>
+                        <div>
+                            <h1>Dieta Mediterránea</h1>
+                            <p class="hero-sub">El equilibrio perfecto entre salud y sabor</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <br>
-            <button type="button">Seguir Dieta &gt;</button>
-        </section>
+            <!-- Fila de datos + botón -->
+            <div class="contenedor-interno hero-datos">
+                <div class="hero-datos-info">
+                    <span class="nivel nivel-facil">Fácil</span>
+                    <span class="dato"><i class="bi bi-clock"></i> Estilo de vida</span>
+                    <span class="dato"><i class="bi bi-fire"></i> 1600-2000 kcal/día</span>
+                </div>
+                <button type="button" class="btn-rojo" onclick="alert('Ahora estas siguiendo la dieta mediterranea, mucha suerte!')">Seguir Dieta <i class="bi bi-chevron-right"></i></button>
+            </div>
 
-        <hr>
+        </section>
 
         <!-- ==================== SOBRE ESTA DIETA ==================== -->
-        <section class="acerca-de">
-            <h2>Sobre esta dieta</h2>
-            <p>
-                La dieta mediterránea es uno de los patrones alimentarios más estudiados y respaldados 
-                por la ciencia. Se basa en los hábitos alimenticios tradicionales de los países que bordean 
-                el Mar Mediterráneo. Es rica en frutas, verduras, cereales integrales, legumbres, nueces 
-                y semillas, con el aceite de oliva como principal fuente de grasa añadida. El pescado y 
-                los mariscos se consumen regularmente, mientras que las carnes rojas y los dulces se reservan 
-                para ocasiones especiales.
-            </p>
+        <section class="dieta-acerca">
+            <div class="contenedor-interno">
+                <h2 class="dieta-titulo">Sobre esta dieta</h2>
+                <p class="dieta-acerca-texto">
+                    La dieta mediterránea es uno de los patrones alimentarios más estudiados y respaldados 
+                    por la ciencia. Se basa en los hábitos alimenticios tradicionales de los países que bordean 
+                    el Mar Mediterráneo. Es rica en frutas, verduras, cereales integrales, legumbres, nueces 
+                    y semillas, con el aceite de oliva como principal fuente de grasa añadida. El pescado y 
+                    los mariscos se consumen regularmente, mientras que las carnes rojas y los dulces se reservan 
+                    para ocasiones especiales.
+                </p>
+            </div>
         </section>
 
-        <br>
-
         <!-- ==================== MACROS Y PÚBLICO OBJETIVO ==================== -->
-        <section class="macros">
-            <div>
+        <section class="dieta-info">
+            <div class="contenedor-interno dieta-info-grid">
 
                 <!-- Cuadro 1: Distribución de macros -->
-                <article class="tarjeta-macros">
-                    <h3>Distribución de macros</h3>
+                <article class="dieta-tarjeta">
+                    <h3 class="dieta-tarjeta-titulo">Distribución de macros</h3>
 
-                    <div class="item-macro">
-                        <p>
+                    <div class="macro-item">
+                        <div class="macro-fila">
                             <span>Proteína</span>
-                            <span><b>18%</b></span>
-                        </p>
-                        <progress value="18" max="100"></progress>
+                            <b>18%</b>
+                        </div>
+                        <div class="macro-barra">
+                            <span class="macro-relleno macro-prot" style="width: 18%;"></span>
+                        </div>
                     </div>
 
-                    <div class="item-macro">
-                        <p>
+                    <div class="macro-item">
+                        <div class="macro-fila">
                             <span>Carbohidratos</span>
-                            <span><b>50%</b></span>
-                        </p>
-                        <progress value="50" max="100"></progress>
+                            <b>50%</b>
+                        </div>
+                        <div class="macro-barra">
+                            <span class="macro-relleno macro-carb" style="width: 50%;"></span>
+                        </div>
                     </div>
 
-                    <div class="item-macro">
-                        <p>
+                    <div class="macro-item">
+                        <div class="macro-fila">
                             <span>Grasas</span>
-                            <span><b>32%</b></span>
-                        </p>
-                        <progress value="32" max="100"></progress>
+                            <b>32%</b>
+                        </div>
+                        <div class="macro-barra">
+                            <span class="macro-relleno macro-grasa" style="width: 32%;"></span>
+                        </div>
                     </div>
 
-                    <hr>
-
-                    <p>
-                        🔥 Calorías estimadas: <b>1600-2000 kcal/día</b>
+                    <p class="macro-calorias">
+                        <i class="bi bi-fire"></i> Calorías estimadas: <b>1600-2000 kcal/día</b>
                     </p>
                 </article>
 
-                <br>
-
                 <!-- Cuadro 2: ¿Para quién es? -->
-                <article class="tarjeta-publico">
-                    <h3>¿Para quién es?</h3>
-                    <p>
+                <article class="dieta-tarjeta">
+                    <h3 class="dieta-tarjeta-titulo">¿Para quién es?</h3>
+                    <p class="publico-texto">
                         Ideal para quienes buscan un estilo de vida saludable y sostenible sin restricciones 
                         extremas. Perfecta para personas con riesgo cardiovascular o que desean mantener su 
                         peso de forma duradera.
                     </p>
 
-                    <p>🎯 <b>Objetivo principal</b></p>
-                    <p>
-                        <button type="button">🔴 Salud general</button>
-                    </p>
+                    <p class="publico-objetivo"><i class="bi bi-star"></i> <b>Objetivo principal</b></p>
+                    <span class="publico-pildora"><i class="bi bi-bullseye"></i> Salud general</span>
                 </article>
 
             </div>
         </section>
-
-        <hr>
 
         <!-- ==================== BENEFICIOS COMPROBADOS ==================== -->
-        <section class="beneficios">
-            <h2>Beneficios comprobados</h2>
+        <section class="dieta-beneficios">
+            <div class="contenedor-interno">
+                <h2 class="dieta-titulo">Beneficios comprobados</h2>
 
-            <div class="lista-beneficios">
-                <p>✔ Reducción del riesgo cardiovascular</p>
-                <p>✔ Antienvejecimiento y longevidad</p>
-                <p>✔ Control de peso sostenible</p>
-                <p>✔ Mejora de la salud cerebral</p>
-                <p>✔ Reducción de la inflamación crónica</p>
-                <p>✔ Excelente adherencia a largo plazo</p>
+                <div class="beneficios-grid">
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Reducción del riesgo cardiovascular
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Antienvejecimiento y longevidad
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Control de peso sostenible
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Mejora de la salud cerebral
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Reducción de la inflamación crónica
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Excelente adherencia a largo plazo
+                    </div>
+                </div>
             </div>
         </section>
-
-        <hr>
 
         <!-- ==================== ALIMENTOS PERMITIDOS Y A EVITAR ==================== -->
-        <section class="alimentos">
-            <h2>Alimentos</h2>
+        <section class="dieta-alimentos">
+            <div class="contenedor-interno">
+                <h2 class="dieta-titulo">Alimentos</h2>
 
-            <div class="contenedor-alimentos">
+                <div class="alimentos-grid">
 
-                <!-- Alimentos permitidos -->
-                <article class="alimentos-permitidos">
-                    <h3>✔ Alimentos permitidos</h3>
-                    <ul>
-                        <li>Aceite de oliva virgen extra</li>
-                        <li>Verduras y frutas frescas</li>
-                        <li>Legumbres (garbanzos, lentejas)</li>
-                        <li>Pescado azul y mariscos</li>
-                        <li>Cereales integrales</li>
-                        <li>Frutos secos</li>
-                        <li>Quesos y yogur natural</li>
-                        <li>Vino tinto (moderado)</li>
-                    </ul>
-                </article>
+                    <!-- Alimentos permitidos -->
+                    <article class="alimentos-tarjeta alimentos-permitidos">
+                        <h3>
+                            <span class="icono-circulo icono-verde"><i class="bi bi-check-lg"></i></span>
+                            Alimentos permitidos
+                        </h3>
+                        <ul>
+                            <li>Aceite de oliva virgen extra</li>
+                            <li>Verduras y frutas frescas</li>
+                            <li>Legumbres (garbanzos, lentejas)</li>
+                            <li>Pescado azul y mariscos</li>
+                            <li>Cereales integrales</li>
+                            <li>Frutos secos</li>
+                            <li>Quesos y yogur natural</li>
+                            <li>Vino tinto (moderado)</li>
+                        </ul>
+                    </article>
 
-                <br>
+                    <!-- Alimentos a evitar -->
+                    <article class="alimentos-tarjeta alimentos-evitar">
+                        <h3>
+                            <span class="icono-circulo icono-rojo"><i class="bi bi-x-lg"></i></span>
+                            Alimentos a evitar
+                        </h3>
+                        <ul>
+                            <li>Carnes procesadas</li>
+                            <li>Azúcares añadidos</li>
+                            <li>Grasas trans y aceites refinados</li>
+                            <li>Alimentos ultraprocesados</li>
+                            <li>Bebidas azucaradas</li>
+                            <li>Fast food</li>
+                            <li>Exceso de sal</li>
+                            <li>Mantequilla en exceso</li>
+                        </ul>
+                    </article>
 
-                <!-- Alimentos a evitar -->
-                <article class="alimentos-evitar">
-                    <h3>✖ Alimentos a evitar</h3>
-                    <ul>
-                        <li>Carnes procesadas</li>
-                        <li>Azúcares añadidos</li>
-                        <li>Grasas trans y aceites refinados</li>
-                        <li>Alimentos ultraprocesados</li>
-                        <li>Bebidas azucaradas</li>
-                        <li>Fast food</li>
-                        <li>Exceso de sal</li>
-                        <li>Mantequilla en exceso</li>
-                    </ul>
-                </article>
-
+                </div>
             </div>
         </section>
-
-        <hr>
 
         <!-- ==================== PLAN SEMANAL ==================== -->
-        <section class="plan-semanal">
-            <h2>Plan semanal</h2>
+        <section class="dieta-plan">
+            <div class="contenedor-interno">
+                <h2 class="dieta-titulo">Plan semanal</h2>
 
-            <div>
-                <details>
-                    <summary><b>Lun</b> | Lunes</summary>
-                    <p>Tostada integral con aceite de oliva y tomate, ensalada griega con salmón, pescado al horno con papas.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Mar</b> | Martes</summary>
-                    <p>Yogur griego con nueces y miel, potaje de lentejas con verduras, pechuga de pollo a la plancha con ensalada.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Mié</b> | Miércoles</summary>
-                    <p>Tostada con palta y huevo, pasta integral con mariscos y tomate natural, sardinas a la plancha con espinacas.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Jue</b> | Jueves</summary>
-                    <p>Frutas frescas con semillas, ensalada de garbanzos con atún y huevo duro, dorada al horno con verduras asadas.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Vie</b> | Viernes</summary>
-                    <p>Avena cocida con frutos secos, arroz integral con verduras y calamares, brochetas de pollo con ensalada mediterránea.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Sáb</b> | Sábado</summary>
-                    <p>Tostada con jamón serrano y tomate, paella marinera tradicional, ensalada completa con queso feta y aceitunas.</p>
-                </details>
-                <br>
-                <details>
-                    <summary><b>Dom</b> | Domingo</summary>
-                    <p>Pan integral con aceite y fruta fresca, pescado a la sal con verduras salteadas, crema de calabaza y tortilla francesa.</p>
-                </details>
+                <div class="plan-lista">
+
+                    <!-- Lunes -->
+                    <details class="dia" open>
+                        <summary>
+                            <span class="dia-abrev">Lun</span>
+                            <span class="dia-nombre">Lunes</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Tostada integral con aceite de oliva y tomate</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Ensalada griega con salmón</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Pescado al horno con papas</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Martes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Mar</span>
+                            <span class="dia-nombre">Martes</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Yogur griego con nueces y miel</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Potaje de lentejas con verduras</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Pechuga de pollo a la plancha con ensalada</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Miércoles -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Mié</span>
+                            <span class="dia-nombre">Miércoles</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Tostada con palta y huevo</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Pasta integral con mariscos y tomate natural</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Sardinas a la plancha con espinacas</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Jueves -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Jue</span>
+                            <span class="dia-nombre">Jueves</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Frutas frescas con semillas</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Ensalada de garbanzos con atún y huevo duro</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Dorada al horno con verduras asadas</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Viernes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Vie</span>
+                            <span class="dia-nombre">Viernes</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Avena cocida con frutos secos</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Arroz integral con verduras y calamares</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Brochetas de pollo con ensalada mediterránea</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Sábado -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Sáb</span>
+                            <span class="dia-nombre">Sábado</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Tostada con jamón serrano y tomate</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Paella marinera tradicional</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Ensalada completa con queso feta y aceitunas</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Domingo -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Dom</span>
+                            <span class="dia-nombre">Domingo</span>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-comidas">
+                            <div class="comida">
+                                <span class="comida-tipo">Desayuno</span>
+                                <p>Pan integral con aceite y fruta fresca</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Almuerzo</span>
+                                <p>Pescado a la sal con verduras salteadas</p>
+                            </div>
+                            <div class="comida">
+                                <span class="comida-tipo">Cena</span>
+                                <p>Crema de calabaza y tortilla francesa</p>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
             </div>
-        </section>
-
-        <hr>
-
-        <!-- ==================== LLAMADO A LA ACCIÓN (CTA) ==================== -->
-        <section class="banner-cta">
-            <p>🫒</p>
-            <h2>¿Listo para empezar la <b>Dieta Mediterránea</b>?</h2>
-            <p>
-                Únete a miles de personas que ya transformaron su cuerpo con este plan. 
-                Nuestros entrenadores te acompañan en cada paso.
-            </p>
-            <button type="button">Seguir Dieta &gt;</button>
         </section>
     </main>
 
-    <hr>
-
     <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
     <footer>
-        <div>
-            <!-- Columna 1: Marca y descripción -->
-            <div>
-                <h3>LOCK-IN</h3>
+        <div class="contenedor footer_contenido">
+            <div class="footer_marca">
+
+                <img src="../imagenes/logo.png" alt="LockIn">
+
                 <p>
-                    Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
                 </p>
-                <p>
-                    <a href="https://facebook.com" target="_blank">Facebook</a> |
-                    <a href="https://instagram.com" target="_blank">Instagram</a> |
-                    <a href="https://twitter.com" target="_blank">Twitter</a> |
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
-                </p>
+
+                <div class="footer_redes">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Columna 2: Enlaces Rápidos -->
-            <div>
+            <div class="footer_enlaces">
+
                 <h4>Enlaces Rápidos</h4>
-                <p><a href="../inicio.html">Inicio</a></p>
-                <p><a href="../inicio.html#planes">Planes</a></p>
-                <p><a href="../nutricion.html">Nutrición</a></p>
-                <p><a href="../calculadora.html">Calculadora</a></p>
-                <p><a href="../mapa.html">Gimnasios Cercanos</a></p>
+
+                <a href="../inicio.html">
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes">
+                    Planes
+                </a>
+                <a href="../nutricion.html">
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    Gimnasios
+                </a>
             </div>
 
-            <!-- Columna 3: Contacto -->
-            <div>
-                <h4>Contacto</h4>
-                <p>✉ info@lock-in.fit</p>
-                <p>📞 +54 351 000-0000</p>
-                <p>📍 Córdoba, Argentina</p>
+            <div class="footer_contacto">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
+
             </div>
         </div>
 
-        <hr>
+        <div class="footer_inferior">
+            <div class="contenedor footer_inferior_contenido">
 
-        <!-- Copyright y enlaces legales -->
-        <div>
-            <p>&copy; 2026 Lock-In Fitness. Todos los derechos reservados.</p>
-            <p>
-                <a href="#">Términos y Condiciones</a> | 
-                <a href="#">Política de Privacidad</a> | 
-                <a href="#">Cookies</a>
-            </p>
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
         </div>
     </footer>
 
