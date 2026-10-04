@@ -136,6 +136,8 @@ button {
 .hero_contenido {
     padding-top: 0;
     padding-bottom: 55px;
+    
+
 }
 
 .frase_antes_del_titulo {
@@ -163,6 +165,16 @@ button {
 
     background-color: #ef2631;
     border-radius: 50%;
+    animation: aparecer 1s ease-out infinite;
+}
+
+@keyframes aparecer{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
 }
 
 .titulo_principal {

@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+output {
+    font-family: inherit;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: #000000;
+    border-bottom: 1px solid #202020;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+header nav a:nth-child(4) {
+    padding: 10px 13px;
+    color: #ff2734;
+    background-color: #210608;
+    border-radius: 8px;
+}
+
+header nav a:last-child button {
+    padding: 13px 22px;
+    background-color: #ef0712;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header nav a:last-child button:hover {
+    background-color: #ff202b;
+}
+
+body > hr,
+body > br {
+    display: none;
+}
+
+main {
+    min-height: 900px;
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(30, 30, 35, 0.3),
+            transparent 40%
+        ),
+        #050505;
+}
+
+.calculadora-header {
+    padding: 65px 20px 55px;
+    text-align: center;
+    border-bottom: 1px solid #161616;
+}
+
+.calculadora-header > p:first-child {
+    margin: 0 0 16px;
+    color: #ef1b28;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.calculadora-header > p:first-child::before,
+.calculadora-header > p:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    margin: 0 8px 3px;
+    background-color: #8d1a20;
+}
+
+.calculadora-header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.calculadora-header h1 span {
+    color: #f51b29;
+}
+
+.calculadora-header > p:last-child {
+    max-width: 700px;
+    margin: 16px auto 0;
+    color: #91919a;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.indicador-pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 42px 0 30px;
+    color: #34343a;
+    font-size: 13px;
+}
+
+.indicador-pasos span {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19191c;
+    color: #74747b;
+    border: 1px solid #303036;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.indicador-pasos span:nth-of-type(1)::before {
+    content: "1";
+    font-size: 9px;
+}
+
+.indicador-pasos span:nth-of-type(2)::before {
+    content: "2";
+    font-size: 9px;
+}
+
+.indicador-pasos span:nth-of-type(3)::before {
+    content: "3";
+    font-size: 9px;
+}
+
+.indicador-pasos span:nth-of-type(3) {
+    background-color: #ef0712;
+    color: #ffffff;
+    border-color: #ef0712;
+}
+
+.paso-calculadora {
+    width: min(720px, calc(100% - 40px));
+    margin: 0 auto 70px;
+}
+
+.tarjetas-resumen-resultado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.tarjeta-metrica {
+    min-height: 100px;
+    padding: 18px 14px;
+    background-color: #17171a;
+    border: 1px solid #29292e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tarjeta-metrica p {
+    margin: 0;
+    color: #777780;
+    font-size: 10px;
+}
+
+.tarjeta-metrica h2 {
+    margin: 8px 0 3px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.tarjeta-metrica:nth-child(3) h2 {
+    color: #2bdd83;
+}
+
+.tarjeta-metrica:nth-child(4) h2 {
+    color: #2bdd83;
+    font-size: 16px;
+}
+
+.distribucion-macros-resultado {
+    padding: 26px;
+    background-color: #17171a;
+    border: 1px solid #29292e;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.distribucion-macros-resultado h3 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.macro-resultado-item {
+    margin-bottom: 18px;
+}
+
+.macro-resultado-item:last-child {
+    margin-bottom: 0;
+}
+
+.macro-resultado-item p {
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.macro-resultado-item p small {
+    color: #7f7f87;
+    font-size: 10px;
+}
+
+.macro-resultado-item:nth-of-type(1) b,
+.macro-resultado-item:nth-of-type(1) output {
+    color: #ff4350;
+}
+
+.macro-resultado-item:nth-of-type(2) b,
+.macro-resultado-item:nth-of-type(2) output {
+    color: #f3bf22;
+}
+
+.macro-resultado-item:nth-of-type(3) b,
+.macro-resultado-item:nth-of-type(3) output {
+    color: #3f8cff;
+}
+
+progress {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #242429;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #242429;
+}
+
+#progreso-proteina::-webkit-progress-value {
+    background-color: #ff4350;
+}
+
+#progreso-carbos::-webkit-progress-value {
+    background-color: #f3bf22;
+}
+
+#progreso-grasas::-webkit-progress-value {
+    background-color: #3f8cff;
+}
+
+#progreso-proteina::-moz-progress-bar {
+    background-color: #ff4350;
+}
+
+#progreso-carbos::-moz-progress-bar {
+    background-color: #f3bf22;
+}
+
+#progreso-grasas::-moz-progress-bar {
+    background-color: #3f8cff;
+}
+
+.dietas-recomendadas-resultado {
+    padding: 26px;
+    background-color: #17171a;
+    border: 1px solid #29292e;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.dietas-recomendadas-resultado h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.dietas-recomendadas-resultado > p {
+    margin: 0 0 18px;
+    color: #83838c;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+#contenedor-dietas-recomendadas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-dieta-recomendada {
+    padding: 14px 16px;
+    background-color: #111113;
+    border: 1px solid #29292e;
+    border-radius: 8px;
+}
+
+.item-dieta-recomendada p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.item-dieta-recomendada b {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.item-dieta-recomendada small {
+    color: #777780;
+    font-size: 9px;
+}
+
+.item-dieta-recomendada span {
+    margin-left: auto;
+    color: #9c9ca4;
+    font-size: 9px;
+}
+
+.item-dieta-recomendada a {
+    color: #ef2734;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.item-dieta-recomendada a:hover {
+    color: #ff5964;
+}
+
+.desglose-calculo {
+    padding: 26px;
+    background-color: #0c0c0e;
+    border: 1px solid #29292e;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.desglose-calculo > h3 {
+    margin: 0 0 12px;
+    color: #c6c6cc;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.desglose-calculo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.desglose-calculo td {
+    padding: 7px 0;
+    color: #a1a1a8;
+    font-size: 10px;
+}
+
+.desglose-calculo td:last-child {
+    color: #ffffff;
+}
+
+.desglose-calculo td output {
+    color: inherit;
+}
+
+.desglose-calculo hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid #27272c;
+}
+
+.desglose-calculo tr:last-child td h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.desglose-calculo tr:last-child td:last-child h3 {
+    color: #2bdd83;
+}
+
+.paso-calculadora > p {
+    margin: 0;
+}
+
+.boton-recalcular {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #8a8a92;
+    border: 1px solid #2f2f34;
+    border-radius: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-recalcular:hover {
+    color: #ffffff;
+    border-color: #55555c;
+}
+
+footer {
+    padding: 55px 70px 25px;
+    background-color: #020202;
+    border-top: 1px solid #202020;
+}
+
+footer > div:first-child {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr 1fr;
+    gap: 80px;
+}
+
+footer > div:first-child > div:first-child h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+footer h4 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+footer p {
+    color: #96969f;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #96969f;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #ef1724;
+}
+
+footer hr {
+    margin: 40px 0 20px;
+    border: none;
+    border-top: 1px solid #202020;
+}
+
+footer > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > div:last-child p {
+    font-size: 8px;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 25px;
+    }
+
+    header nav {
+        gap: 10px;
+    }
+
+    .tarjetas-resumen-resultado {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer > div:first-child {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculadora-header h1 {
+        font-size: 36px;
+    }
+
+    .tarjetas-resumen-resultado {
+        grid-template-columns: 1fr;
+    }
+
+    .item-dieta-recomendada p {
+        flex-wrap: wrap;
+    }
+
+    .item-dieta-recomendada span {
+        margin-left: 0;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

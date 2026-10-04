@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LockIn - Calculadora de Calorías - Paso 2: Objetivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculadora2.css">
 </head>
 <body>
-
-    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <header>
         <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
-        
+
         <nav>
             <a href="inicio.html">Inicio</a>
             <a href="inicio.html#planes">Planes</a>
             <a href="nutricion.html">Nutrición</a>
-            <a href="calculadora.html">Calculadora</a>
+            <a href="calculadora1.html">Calculadora</a>
             <a href="mapa.html">Gimnasios Cercanos</a>
             <a href="registrarse.html">
                 <button type="button">Únete Ahora</button>
@@ -26,23 +28,20 @@
     <hr>
 
     <main>
-        <!-- ==================== ENCABEZADO DE LA CALCULADORA ==================== -->
         <section class="calculadora-header">
             <p><small><b>NUTRICIÓN</b></small></p>
             <h1>Calculadora de Calorías</h1>
             <p>Calcula tu Tasa Metabólica Basal (TMB) y tus calorías diarias con la fórmula de Mifflin-St Jeor.</p>
         </section>
 
-        <!-- Indicador de pasos: Paso 2 Activo -->
         <div class="indicador-pasos">
-            <span>⚪ 1</span> &mdash; 
-            <span>🔴 <b>2</b></span> &mdash; 
+            <span>⚪ 1</span> &mdash;
+            <span>🔴 <b>2</b></span> &mdash;
             <span>⚪ 3</span>
         </div>
 
         <br>
 
-        <!-- ==================== DATOS CALCULADOS PREVIOS ==================== -->
         <section class="resumen-previo">
             <article class="caja-dato">
                 <p><small>Tu TMB calculada</small></p>
@@ -57,14 +56,12 @@
 
         <br>
 
-        <!-- ==================== FORMULARIO: PASO 2 (OBJETIVO) ==================== -->
         <section class="paso-calculadora">
             <form action="calculadora3.html" method="get" id="form-paso-2">
                 <fieldset>
                     <legend><h3>¿Cuál es tu objetivo?</h3></legend>
                     <p><small>Elige si quieres ganar músculo o perder grasa</small></p>
 
-                    <!-- Opciones de objetivo (Botones seleccionables) -->
                     <div class="contenedor-objetivos">
                         <div>
                             <label class="btn-opcion-objetivo">
@@ -91,16 +88,14 @@
 
                     <br>
 
-                    <!-- Botón para avanzar a la tercera pestaña (calculadora3.html) -->
                     <div>
                         <button type="submit" id="btn-ver-resultados">Ver resultados de macronutrientes &gt;</button>
                     </div>
 
                     <br>
 
-                    <!-- Enlace para reiniciar o recalcular -->
                     <p>
-                        <a href="calculadora.html">🔄 Recalcular desde el principio</a>
+                        <a href="calculadora1.html">🔄 Recalcular desde el principio</a>
                     </p>
                 </fieldset>
             </form>
@@ -109,10 +104,8 @@
 
     <br><hr>
 
-    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
     <footer>
         <div>
-            <!-- Columna 1: Marca y descripción -->
             <div>
                 <h3>LOCK-IN</h3>
                 <p>
@@ -126,17 +119,15 @@
                 </p>
             </div>
 
-            <!-- Columna 2: Enlaces Rápidos -->
             <div>
                 <h4>Enlaces Rápidos</h4>
                 <p><a href="inicio.html">Inicio</a></p>
                 <p><a href="inicio.html#planes">Planes</a></p>
                 <p><a href="nutricion.html">Nutrición</a></p>
-                <p><a href="calculadora.html">Calculadora</a></p>
+                <p><a href="calculadora1.html">Calculadora</a></p>
                 <p><a href="mapa.html">Gimnasios Cercanos</a></p>
             </div>
 
-            <!-- Columna 3: Contacto -->
             <div>
                 <h4>Contacto</h4>
                 <p>✉ info@lock-in.fit</p>
@@ -147,16 +138,15 @@
 
         <hr>
 
-        <!-- Copyright y enlaces legales -->
         <div>
             <p>&copy; 2026 Lock-In Fitness. Todos los derechos reservados.</p>
             <p>
-                <a href="#">Términos y Condiciones</a> | 
-                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Términos y Condiciones</a> |
+                <a href="#">Política de Privacidad</a> |
                 <a href="#">Cookies</a>
             </p>
         </div>
     </footer>
-
+    <script src="calculadora2.js"></script>
 </body>
 </html>

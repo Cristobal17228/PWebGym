@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockIn - Calculadora de Calorías</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="calculadora1.css">
+</head>
+<body>
+    <header>
+        <a href="inicio.html" class="logo">
+            <img src="imagenes/logo.png" alt="LockIn Logo">
+        </a>
+        <nav>
+            <a href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a>
+            <a href="inicio.html#planes"><i class="bi bi-activity"></i> Planes</a>
+            <a href="nutricion.html"><i class="bi bi-apple"></i> Nutrición</a>
+            <a href="calculadora1.html" class="pagina-activa"><i class="bi bi-calculator"></i> Calculadora</a>
+            <a href="mapa.html"><i class="bi bi-geo-alt"></i> Gimnasios Cercanos</a>
+            <a href="registrarse.html" class="boton-unete">Únete Ahora</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculadora-header">
+            <p class="etiqueta-nutricion">NUTRICIÓN</p>
+            <h1>Calculadora <span>de Calorías</span></h1>
+            <p class="descripcion-header">
+                Calcula tu Tasa Metabólica Basal (TMB) y tus calorías diarias con la fórmula de Mifflin-St Jeor.
+            </p>
+        </section>
+
+        <div class="indicador-pasos">
+            <div class="paso activo">1</div>
+            <div class="linea-paso"></div>
+            <div class="paso">2</div>
+            <div class="linea-paso"></div>
+            <div class="paso">3</div>
+        </div>
+
+        <section class="paso-calculadora">
+            <form action="calculadora2.html" method="get" id="form-paso-1">
+                <div class="tarjeta-calculadora">
+                    <div class="encabezado-datos">
+                        <div class="icono-datos">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div>
+                            <h3>Tus datos</h3>
+                            <p>Ingresa tus datos físicos para calcular tu TMB</p>
+                        </div>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <p class="titulo-campo">SEXO BIOLÓGICO</p>
+                        <div class="opciones-sexo">
+                            <label class="btn-opcion-sexo">
+                                <input type="radio" name="sexo" value="hombre" checked>
+                                <span><i class="bi bi-gender-male"></i> Hombre</span>
+                            </label>
+                            <label class="btn-opcion-sexo">
+                                <input type="radio" name="sexo" value="mujer">
+                                <span><i class="bi bi-gender-female"></i> Mujer</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="medidas-corporales">
+                        <div class="campo-medida">
+                            <label for="peso">PESO</label>
+                            <div class="input-medida">
+                                <input type="number" id="peso" name="peso" placeholder="70" min="30" max="300" required>
+                                <span>kg</span>
+                            </div>
+                        </div>
+
+                        <div class="campo-medida">
+                            <label for="altura">ALTURA</label>
+                            <div class="input-medida">
+                                <input type="number" id="altura" name="altura" placeholder="175" min="100" max="250" required>
+                                <span>cm</span>
+                            </div>
+                        </div>
+
+                        <div class="campo-medida">
+                            <label for="edad">EDAD</label>
+                            <div class="input-medida">
+                                <input type="number" id="edad" name="edad" placeholder="25" min="10" max="120" required>
+                                <span>años</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grupo-actividad">
+                        <p class="titulo-campo"><i class="bi bi-lightning-charge"></i> NIVEL DE ACTIVIDAD</p>
+
+                        <label class="btn-opcion-actividad">
+                            <input type="radio" name="actividad" value="1.2">
+                            <span class="actividad-texto">
+                                <b>Sedentario</b>
+                                <small>Poco o nada de ejercicio</small>
+                            </span>
+                            <span class="factor">×1.2</span>
+                        </label>
+
+                        <label class="btn-opcion-actividad">
+                            <input type="radio" name="actividad" value="1.375">
+                            <span class="actividad-texto">
+                                <b>Ligeramente activo</b>
+                                <small>Ejercicio 1-3 días/semana</small>
+                            </span>
+                            <span class="factor">×1.375</span>
+                        </label>
+
+                        <label class="btn-opcion-actividad">
+                            <input type="radio" name="actividad" value="1.55" checked>
+                            <span class="actividad-texto">
+                                <b>Moderadamente activo</b>
+                                <small>Ejercicio 3-5 días/semana</small>
+                            </span>
+                            <span class="factor">×1.55</span>
+                        </label>
+
+                        <label class="btn-opcion-actividad">
+                            <input type="radio" name="actividad" value="1.725">
+                            <span class="actividad-texto">
+                                <b>Muy activo</b>
+                                <small>Ejercicio intenso 6-7 días/semana</small>
+                            </span>
+                            <span class="factor">×1.725</span>
+                        </label>
+
+                        <label class="btn-opcion-actividad">
+                            <input type="radio" name="actividad" value="1.9">
+                            <span class="actividad-texto">
+                                <b>Extremadamente activo</b>
+                                <small>Atleta o trabajo físico intenso</small>
+                            </span>
+                            <span class="factor">×1.9</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" id="btn-calcular">
+                        <i class="bi bi-calculator"></i>
+                        Calcular mis calorías
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <div class="formula">
+                        Fórmula Mifflin-St Jeor: TMB = (10 × kg) + (6.25 × cm) - (5 × edad) + s
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <img src="imagenes/logo.png" alt="LockIn">
+                <p>Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.</p>
+                <div class="footer-redes">
+                    <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-enlaces">
+                <h4>Enlaces Rápidos</h4>
+                <a href="inicio.html">Inicio</a>
+                <a href="inicio.html#planes">Planes</a>
+                <a href="nutricion.html">Nutrición</a>
+                <a href="calculadora1.html">Calculadora</a>
+                <a href="mapa.html">Gimnasios</a>
+            </div>
+
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p><i class="bi bi-envelope"></i> info@lock-in.fit</p>
+                <p><i class="bi bi-telephone"></i> +54 351 000-0000</p>
+                <p><i class="bi bi-geo-alt"></i> Córdoba, Argentina</p>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <p>© 2026 Lock-In Fitness. Todos los derechos reservados.</p>
+            <div>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script src="calculadora1.js"></script>
+</body>
+</html>
