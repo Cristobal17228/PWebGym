@@ -7,22 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="calculadora2.css">
 </head>
 <body>
-    <header>
-        <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
-
-        <nav>
-            <a href="inicio.html">Inicio</a>
-            <a href="inicio.html#planes">Planes</a>
-            <a href="nutricion.html">Nutrición</a>
-            <a href="calculadora1.html">Calculadora</a>
-            <a href="mapa.html">Gimnasios Cercanos</a>
-            <a href="registrarse.html">
-                <button type="button">Únete Ahora</button>
+    <header class="barra-superior">
+        <div class="contenedor header-contenido">
+            <a href="inicio.html" class="logo">
+                <img src="imagenes/logo.png" alt="LockIn Logo">
             </a>
-        </nav>
+            <nav class="menu">
+                <a href="inicio.html">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="inicio.html#planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="nutricion.html">
+                    <i class="bi bi-basket"></i>
+                    Nutrición
+                </a>
+                <a href="calculadora1.html" class="seleccionado">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="registrarse.html" class="boton-unete">
+                Únete Ahora
+            </a>
+        </div>
     </header>
 
     <hr>
@@ -105,46 +124,66 @@
     <br><hr>
 
     <footer>
-        <div>
-            <div>
-                <h3>LOCK-IN</h3>
+        <div class="contenedor footer-contenido">
+            <div class="footer-marca">
+                <img src="imagenes/logo.png" alt="LockIn">
                 <p>
-                    Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
                 </p>
-                <p>
-                    <a href="https://facebook.com" target="_blank">Facebook</a> |
-                    <a href="https://instagram.com" target="_blank">Instagram</a> |
-                    <a href="https://twitter.com" target="_blank">Twitter</a> |
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
-                </p>
+                <div class="footer-redes">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="footer-enlaces">
                 <h4>Enlaces Rápidos</h4>
-                <p><a href="inicio.html">Inicio</a></p>
-                <p><a href="inicio.html#planes">Planes</a></p>
-                <p><a href="nutricion.html">Nutrición</a></p>
-                <p><a href="calculadora1.html">Calculadora</a></p>
-                <p><a href="mapa.html">Gimnasios Cercanos</a></p>
+                <a href="inicio.html">Inicio</a>
+                <a href="#planes">Planes</a>
+                <a href="nutricion.html">Nutrición</a>
+                <a href="calculadora1.html">Calculadora</a>
+                <a href="mapa.html">Gimnasios</a>
             </div>
 
-            <div>
+            <div class="footer-contacto">
                 <h4>Contacto</h4>
-                <p>✉ info@lock-in.fit</p>
-                <p>📞 +54 351 000-0000</p>
-                <p>📍 Córdoba, Argentina</p>
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
             </div>
         </div>
 
-        <hr>
-
-        <div>
-            <p>&copy; 2026 Lock-In Fitness. Todos los derechos reservados.</p>
-            <p>
-                <a href="#">Términos y Condiciones</a> |
-                <a href="#">Política de Privacidad</a> |
-                <a href="#">Cookies</a>
-            </p>
+        <div class="footer-inferior">
+            <div class="contenedor footer-inferior-contenido">
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="calculadora2.js"></script>
