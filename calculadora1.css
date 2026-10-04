@@ -1,0 +1,646 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: #000000;
+    border-bottom: 1px solid #202020;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+header nav .pagina-activa {
+    padding: 10px 13px;
+    color: #ff2734;
+    background-color: #210608;
+    border-radius: 8px;
+}
+
+header nav .boton-unete {
+    padding: 13px 22px;
+    background-color: #ef0712;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+header nav .boton-unete:hover {
+    background-color: #ff202b;
+}
+
+main {
+    min-height: 700px;
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(30, 30, 35, 0.3),
+            transparent 40%
+        ),
+        #050505;
+}
+
+.calculadora-header {
+    padding: 65px 20px 55px;
+    text-align: center;
+    border-bottom: 1px solid #161616;
+}
+
+.etiqueta-nutricion {
+    margin: 0 0 16px;
+    color: #ef1b28;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.etiqueta-nutricion::before,
+.etiqueta-nutricion::after {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    margin: 0 8px 3px;
+    background-color: #8d1a20;
+}
+
+.calculadora-header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.calculadora-header h1 span {
+    color: #f51b29;
+}
+
+.descripcion-header {
+    max-width: 700px;
+    margin: 16px auto 0;
+    color: #91919a;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.indicador-pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 42px 0 38px;
+}
+
+.paso {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19191c;
+    color: #77777f;
+    border: 1px solid #303036;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.paso.activo {
+    background-color: #ef0712;
+    color: #ffffff;
+    border-color: #ef0712;
+}
+
+.linea-paso {
+    width: 65px;
+    height: 1px;
+    background-color: #303034;
+}
+
+.paso-calculadora {
+    width: min(525px, calc(100% - 40px));
+    margin: 0 auto 70px;
+}
+
+.tarjeta-calculadora {
+    padding: 24px;
+    background-color: #17171a;
+    border: 1px solid #29292e;
+    border-radius: 14px;
+}
+
+.encabezado-datos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.icono-datos {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #351014;
+    color: #ff2835;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.encabezado-datos h3 {
+    margin: 0 0 4px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.encabezado-datos p {
+    margin: 0;
+    color: #777780;
+    font-size: 9px;
+}
+
+.titulo-campo {
+    margin: 0 0 10px;
+    color: #bcbcc3;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.opciones-sexo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.btn-opcion-sexo {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #111113;
+    color: #d4d4da;
+    border: 1px solid #313136;
+    border-radius: 8px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-opcion-sexo input {
+    position: absolute;
+    left: 14px;
+    accent-color: #ef1724;
+}
+
+.btn-opcion-sexo span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-opcion-sexo:has(input:checked) {
+    color: #ff3440;
+    background-color: #1b0c0e;
+    border-color: #ef1724;
+}
+
+.medidas-corporales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.campo-medida label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bcbcc3;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.input-medida {
+    position: relative;
+}
+
+.input-medida input {
+    width: 100%;
+    height: 44px;
+    padding: 0 40px 0 12px;
+    background-color: #111113;
+    color: #ffffff;
+    border: 1px solid #303035;
+    border-radius: 8px;
+    font-size: 11px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-medida input::placeholder {
+    color: #a1a1a8;
+}
+
+.input-medida input:focus {
+    border-color: #ef1724;
+}
+
+.input-medida span {
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+    color: #777780;
+    font-size: 8px;
+    pointer-events: none;
+}
+
+.grupo-actividad {
+    margin-top: 5px;
+}
+
+.grupo-actividad .titulo-campo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-opcion-actividad {
+    width: 100%;
+    min-height: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background-color: #111113;
+    border: 1px solid #29292e;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-opcion-actividad:hover {
+    border-color: #7a1d23;
+}
+
+.btn-opcion-actividad input {
+    position: absolute;
+    opacity: 0;
+}
+
+.actividad-texto {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.actividad-texto b {
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.actividad-texto small {
+    color: #777780;
+    font-size: 7px;
+}
+
+.factor {
+    margin-left: auto;
+    color: #707077;
+    font-size: 8px;
+}
+
+.btn-opcion-actividad:has(input:checked) {
+    background-color: #21090c;
+    border-color: #ef1724;
+}
+
+.btn-opcion-actividad:has(input:checked) .actividad-texto b {
+    color: #ff3440;
+}
+
+.btn-opcion-actividad:has(input:checked) .factor {
+    color: #ff3440;
+}
+
+#btn-calcular {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 22px;
+    background-color: #ef0712;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btn-calcular:hover {
+    background-color: #ff202b;
+}
+
+.formula {
+    margin-top: 17px;
+    padding: 11px 12px;
+    background-color: #101012;
+    color: #66666e;
+    border-radius: 7px;
+    font-size: 7px;
+}
+
+footer {
+    padding: 55px 70px 25px;
+    background-color: #020202;
+    border-top: 1px solid #202020;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr 1fr;
+    gap: 80px;
+}
+
+.footer-marca img {
+    width: 130px;
+}
+
+.footer-marca p {
+    max-width: 250px;
+    margin-top: 20px;
+    color: #96969f;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-redes a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17171a;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #ef1724;
+}
+
+.footer-enlaces,
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-enlaces h4,
+.footer-contacto h4 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footer-enlaces a {
+    margin-bottom: 13px;
+    color: #96969f;
+    font-size: 10px;
+}
+
+.footer-enlaces a:hover {
+    color: #ef1724;
+}
+
+.footer-contacto p {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 14px;
+    color: #96969f;
+    font-size: 10px;
+}
+
+.footer-contacto i {
+    color: #ef1724;
+}
+
+.footer-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 45px;
+    padding-top: 22px;
+    border-top: 1px solid #202020;
+}
+
+.footer-inferior p {
+    margin: 0;
+    color: #68686f;
+    font-size: 8px;
+}
+
+.footer-inferior > div {
+    display: flex;
+    gap: 22px;
+}
+
+.footer-inferior a {
+    color: #68686f;
+    font-size: 8px;
+}
+
+.footer-inferior a:hover {
+    color: #ef1724;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 25px;
+    }
+
+    header nav a:not(.boton-unete) {
+        display: none;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculadora-header h1 {
+        font-size: 35px;
+    }
+
+    .medidas-corporales {
+        grid-template-columns: 1fr;
+    }
+
+    .opciones-sexo {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-inferior > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.calculadora-header h1 {
+    font-size: 52px;
+}
+
+.descripcion-header {
+    font-size: 14px;
+}
+
+.paso-calculadora {
+    width: min(600px, calc(100% - 40px));
+}
+
+.tarjeta-calculadora {
+    padding: 30px;
+}
+
+.encabezado-datos h3 {
+    font-size: 16px;
+}
+
+.encabezado-datos p {
+    font-size: 11px;
+}
+
+.titulo-campo {
+    font-size: 11px;
+}
+
+.btn-opcion-sexo {
+    min-height: 50px;
+    font-size: 13px;
+}
+
+.campo-medida label {
+    font-size: 11px;
+}
+
+.input-medida input {
+    height: 50px;
+    font-size: 13px;
+}
+
+.input-medida span {
+    font-size: 10px;
+}
+
+.btn-opcion-actividad {
+    min-height: 44px;
+    padding: 10px 14px;
+}
+
+.actividad-texto b {
+    font-size: 11px;
+}
+
+.actividad-texto small {
+    font-size: 9px;
+}
+
+.factor {
+    font-size: 10px;
+}
+
+#btn-calcular {
+    height: 50px;
+    font-size: 13px;
+}
+
+.formula {
+    font-size: 9px;
+}

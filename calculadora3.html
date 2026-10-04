@@ -3,203 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LockIn - Calculadora de Calorías - Paso 3: Resultados</title>
+    <title>LockIn - Calculadora de Calorías - Resultados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="calculadora3.css">
 </head>
 <body>
-
-    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <header>
-        <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
-        
+        <a href="inicio.html" class="logo">
+            <img src="imagenes/logo.png" alt="LockIn Logo">
+        </a>
         <nav>
-            <a href="inicio.html">Inicio</a>
-            <a href="inicio.html#planes">Planes</a>
-            <a href="nutricion.html">Nutrición</a>
-            <a href="calculadora.html">Calculadora</a>
-            <a href="mapa.html">Gimnasios Cercanos</a>
-            <a href="registrarse.html">
-                <button type="button">Únete Ahora</button>
-            </a>
+            <a href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a>
+            <a href="inicio.html#planes"><i class="bi bi-activity"></i> Planes</a>
+            <a href="nutricion.html"><i class="bi bi-apple"></i> Nutrición</a>
+            <a href="calculadora1.html" class="pagina-activa"><i class="bi bi-calculator"></i> Calculadora</a>
+            <a href="mapa.html"><i class="bi bi-geo-alt"></i> Gimnasios Cercanos</a>
+            <a href="registrarse.html" class="boton-unete">Únete Ahora</a>
         </nav>
     </header>
 
-    <hr>
-
     <main>
-        <!-- ==================== ENCABEZADO DE LA CALCULADORA ==================== -->
         <section class="calculadora-header">
-            <p><small><b>NUTRICIÓN</b></small></p>
-            <h1>Calculadora de Calorías</h1>
-            <p>Calcula tu Tasa Metabólica Basal (TMB) y tus calorías diarias con la fórmula de Mifflin-St Jeor.</p>
+            <p class="etiqueta-nutricion">NUTRICIÓN</p>
+            <h1>Resultados <span>de calorías</span></h1>
+            <p class="descripcion-header">
+                Tu plan personalizado con la distribución de macronutrientes ideal para tu objetivo.
+            </p>
         </section>
 
-        <!-- Indicador de pasos: Paso 3 Activo -->
         <div class="indicador-pasos">
-            <span>⚪ 1</span> &mdash; 
-            <span>⚪ 2</span> &mdash; 
-            <span>🔴 <b>3</b></span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
         </div>
 
-        <br>
-
-        <!-- ==================== PASO 3: RESULTADOS (ESPACIOS EN BLANCO PARA JS) ==================== -->
-        <section class="paso-calculadora" id="paso-3">
-
-            <!-- 1. Cuadros de resumen superior (Espacios en blanco) -->
+        <section class="paso-calculadora">
             <div class="tarjetas-resumen-resultado">
-                <!-- TMB -->
                 <article class="tarjeta-metrica">
-                    <p><small>TMB</small></p>
-                    <h2><output id="resultado-tmb"></output></h2>
-                    <p><small>kcal</small></p>
+                    <p>TMB</p>
+                    <h2><output id="resultado-tmb">0</output> kcal</h2>
                 </article>
 
-                <!-- Mantenimiento -->
                 <article class="tarjeta-metrica">
-                    <p><small>Mantenimiento</small></p>
-                    <h2><output id="resultado-mantenimiento"></output></h2>
-                    <p><small>kcal</small></p>
+                    <p>Mantenimiento</p>
+                    <h2><output id="resultado-mantenimiento">0</output> kcal</h2>
                 </article>
 
-                <!-- Objetivo Calórico -->
                 <article class="tarjeta-metrica">
-                    <p><small><output id="resultado-tipo-ajuste"></output></small></p>
-                    <h2><output id="resultado-calorias-totales"></output></h2>
-                    <p><small>kcal</small></p>
+                    <p>Tipo de ajuste</p>
+                    <h2><output id="resultado-tipo-ajuste">Deficit</output></h2>
                 </article>
 
-                <!-- Nombre del objetivo -->
                 <article class="tarjeta-metrica">
-                    <p><small>Objetivo</small></p>
-                    <h2><output id="resultado-nombre-objetivo"></output></h2>
-                    <p><small>plan</small></p>
+                    <p>Total diario</p>
+                    <h2><output id="resultado-calorias-totales">0</output> kcal</h2>
                 </article>
             </div>
 
-            <br>
+            <div class="distribucion-macros-resultado">
+                <h3>Distribución de macronutrientes para <output id="resultado-nombre-objetivo">definición</output></h3>
 
-            <!-- 2. Distribución de Macronutrientes (Espacios en blanco para gramos, kcal y porcentajes) -->
-            <article class="distribucion-macros-resultado">
-                <h3>Distribución de macronutrientes</h3>
-
-                <!-- Proteína -->
                 <div class="macro-resultado-item">
                     <p>
-                        <b>Proteína:</b> 
-                        <output id="resultado-proteina-g"></output> g &mdash;
-                        <small><output id="resultado-proteina-kcal"></output> kcal (<output id="resultado-proteina-pct"></output>%)</small>
+                        <b>Proteínas</b>
+                        <small><output id="resultado-proteina-g">0</output> g · <output id="resultado-proteina-kcal">0</output> kcal</small>
                     </p>
-                    <progress id="progreso-proteina" value="0" max="100"></progress>
+                    <progress id="progreso-proteina" max="100" value="30"></progress>
                 </div>
 
-                <!-- Carbohidratos -->
                 <div class="macro-resultado-item">
                     <p>
-                        <b>Carbohidratos:</b> 
-                        <output id="resultado-carbos-g"></output> g &mdash;
-                        <small><output id="resultado-carbos-kcal"></output> kcal (<output id="resultado-carbos-pct"></output>%)</small>
+                        <b>Carbohidratos</b>
+                        <small><output id="resultado-carbos-g">0</output> g · <output id="resultado-carbos-kcal">0</output> kcal</small>
                     </p>
-                    <progress id="progreso-carbos" value="0" max="100"></progress>
+                    <progress id="progreso-carbos" max="100" value="45"></progress>
                 </div>
 
-                <!-- Grasas -->
                 <div class="macro-resultado-item">
                     <p>
-                        <b>Grasas:</b> 
-                        <output id="resultado-grasas-g"></output> g &mdash;
-                        <small><output id="resultado-grasas-kcal"></output> kcal (<output id="resultado-grasas-pct"></output>%)</small>
+                        <b>Grasas</b>
+                        <small><output id="resultado-grasas-g">0</output> g · <output id="resultado-grasas-kcal">0</output> kcal</small>
                     </p>
-                    <progress id="progreso-grasas" value="0" max="100"></progress>
+                    <progress id="progreso-grasas" max="100" value="25"></progress>
                 </div>
-            </article>
+            </div>
 
-            <br>
+            <div class="dietas-recomendadas-resultado">
+                <h3>Dietas recomendadas</h3>
+                <p>Te sugerimos estas opciones según tu objetivo y estilo de alimentación.</p>
 
-            <!-- 3. Dietas Recomendadas para ti (Espacio para que JS inserte recomendaciones) -->
-            <article class="dietas-recomendadas-resultado">
-                <h3>Dietas recomendadas para ti</h3>
-                <p>
-                    Basado en tu objetivo de <output id="resultado-texto-objetivo"></output>, 
-                    estas dietas se adaptan mejor a tus necesidades:
-                </p>
-
-                <!-- Contenedor con elementos en blanco para inyectar las dietas resultantes -->
                 <div id="contenedor-dietas-recomendadas">
                     <div class="item-dieta-recomendada">
                         <p>
-                            <b>1. <output id="dieta-1-nombre"></output></b> &mdash;
-                            <small><output id="dieta-1-descripcion"></output></small> |
-                            <span><output id="dieta-1-categoria"></output></span>
-                            <a id="dieta-1-enlace" href="#">Ver dieta &gt;</a>
+                            <b id="dieta-1-nombre">Dieta recomendada</b>
+                            <span id="dieta-1-categoria">Objetivo</span>
                         </p>
+                        <small id="dieta-1-descripcion">Descripción de la dieta</small>
+                        <br>
+                        <a id="dieta-1-enlace" href="nutricion.html">Ver dieta</a>
                     </div>
 
                     <div class="item-dieta-recomendada">
                         <p>
-                            <b>2. <output id="dieta-2-nombre"></output></b> &mdash;
-                            <small><output id="dieta-2-descripcion"></output></small> |
-                            <span><output id="dieta-2-categoria"></output></span>
-                            <a id="dieta-2-enlace" href="#">Ver dieta &gt;</a>
+                            <b id="dieta-2-nombre">Dieta alternativa</b>
+                            <span id="dieta-2-categoria">Alternativa</span>
                         </p>
+                        <small id="dieta-2-descripcion">Descripción alternativa</small>
+                        <br>
+                        <a id="dieta-2-enlace" href="nutricion.html">Ver dieta</a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <br>
-
-            <!-- 4. Desglose del Cálculo (Espacios en blanco para cada variable de la fórmula) -->
-            <article class="desglose-calculo">
-                <h3>DESGLOSE DEL CÁLCULO</h3>
-
-                <table width="100%" border="0" cellpadding="6" cellspacing="0">
+            <div class="desglose-calculo">
+                <h3>Desglose del cálculo</h3>
+                <table>
                     <tr>
-                        <td>TMB (<output id="desglose-sexo"></output>)</td>
-                        <td align="right"><b><output id="desglose-tmb"></output> kcal</b></td>
+                        <td>Sexo biológico</td>
+                        <td><output id="desglose-sexo">-</output></td>
                     </tr>
                     <tr>
-                        <td>Factor actividad (<output id="desglose-actividad-texto"></output>)</td>
-                        <td align="right"><b>x <output id="desglose-factor-actividad"></output></b></td>
+                        <td>TMB</td>
+                        <td><output id="desglose-tmb">0</output> kcal</td>
                     </tr>
                     <tr>
-                        <td>TDEE (mantenimiento)</td>
-                        <td align="right"><b><output id="desglose-tdee"></output> kcal</b></td>
+                        <td>Factor de actividad</td>
+                        <td><output id="desglose-factor-actividad">0</output></td>
                     </tr>
                     <tr>
-                        <td><output id="desglose-tipo-ajuste"></output></td>
-                        <td align="right"><b><output id="desglose-valor-ajuste"></output> kcal</b></td>
+                        <td>Mantenimiento</td>
+                        <td><output id="desglose-tdee">0</output> kcal</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><hr></td>
+                        <td>Tipo de ajuste</td>
+                        <td><output id="desglose-tipo-ajuste">-</output></td>
                     </tr>
                     <tr>
-                        <td><h3>Total diario</h3></td>
-                        <td align="right"><h3><output id="desglose-total-diario"></output> kcal</h3></td>
+                        <td>Ajuste</td>
+                        <td><output id="desglose-valor-ajuste">0</output></td>
+                    </tr>
+                    <tr>
+                        <td>Actividad</td>
+                        <td><output id="desglose-actividad-texto">-</output></td>
+                    </tr>
+                    <tr>
+                        <td>Meta diaria</td>
+                        <td><output id="desglose-total-diario">0</output> kcal</td>
                     </tr>
                 </table>
-            </article>
+            </div>
 
-            <br>
-
-            <!-- Botón para reiniciar / recalcular -->
             <p>
-                <a href="calculadora.html">
-                    <button type="button">🔄 Recalcular</button>
-                </a>
+                <button type="button" class="boton-recalcular" onclick="window.location.href='calculadora2.html'">
+                    Recalcular objetivo
+                </button>
             </p>
         </section>
     </main>
 
-    <br><hr>
-
-    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
     <footer>
         <div>
-            <!-- Columna 1: Marca y descripción -->
             <div>
                 <h3>LOCK-IN</h3>
-                <p>
-                    Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.
-                </p>
+                <p>Tu gimnasio virtual de confianza. Transforma tu cuerpo y mente desde cualquier lugar.</p>
                 <p>
                     <a href="https://facebook.com" target="_blank">Facebook</a> |
                     <a href="https://instagram.com" target="_blank">Instagram</a> |
@@ -208,37 +177,35 @@
                 </p>
             </div>
 
-            <!-- Columna 2: Enlaces Rápidos -->
             <div>
                 <h4>Enlaces Rápidos</h4>
-                <p><a href="inicio.html">Inicio</a></p>
-                <p><a href="inicio.html#planes">Planes</a></p>
-                <p><a href="nutricion.html">Nutrición</a></p>
-                <p><a href="calculadora.html">Calculadora</a></p>
-                <p><a href="mapa.html">Gimnasios Cercanos</a></p>
+                <a href="inicio.html">Inicio</a><br>
+                <a href="inicio.html#planes">Planes</a><br>
+                <a href="nutricion.html">Nutrición</a><br>
+                <a href="calculadora1.html">Calculadora</a><br>
+                <a href="mapa.html">Gimnasios</a>
             </div>
 
-            <!-- Columna 3: Contacto -->
             <div>
                 <h4>Contacto</h4>
-                <p>✉ info@lock-in.fit</p>
-                <p>📞 +54 351 000-0000</p>
-                <p>📍 Córdoba, Argentina</p>
+                <p><i class="bi bi-envelope"></i> info@lock-in.fit</p>
+                <p><i class="bi bi-telephone"></i> +54 351 000-0000</p>
+                <p><i class="bi bi-geo-alt"></i> Córdoba, Argentina</p>
             </div>
         </div>
 
         <hr>
 
-        <!-- Copyright y enlaces legales -->
         <div>
-            <p>&copy; 2026 Lock-In Fitness. Todos los derechos reservados.</p>
-            <p>
-                <a href="#">Términos y Condiciones</a> | 
-                <a href="#">Política de Privacidad</a> | 
+            <p>© 2026 Lock-In Fitness. Todos los derechos reservados.</p>
+            <div>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Privacidad</a>
                 <a href="#">Cookies</a>
-            </p>
+            </div>
         </div>
     </footer>
 
+    <script src="calculadora3.js"></script>
 </body>
 </html>
