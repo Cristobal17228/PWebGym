@@ -50,4 +50,4 @@ formulario.addEventListener("submit", function(evento) {
     localStorage.setItem("objetivo", objetivo);
 
     window.location.href = "calculadora3.html";
-}); 
+});

@@ -53,8 +53,8 @@ document.getElementById("resultado-proteina-g").textContent =
 document.getElementById("resultado-proteina-kcal").textContent =
     Math.round(caloriasProteina);
 
-document.getElementById("resultado-proteina-pct").textContent =
-    30;
+/*document.getElementById("resultado-proteina-pct").textContent =
+    30;*/
 
 document.getElementById("resultado-carbos-g").textContent =
     Math.round(carbosGramos);
@@ -62,8 +62,8 @@ document.getElementById("resultado-carbos-g").textContent =
 document.getElementById("resultado-carbos-kcal").textContent =
     Math.round(caloriasCarbos);
 
-document.getElementById("resultado-carbos-pct").textContent =
-    45;
+/*document.getElementById("resultado-carbos-pct").textContent =
+    45;*/
 
 document.getElementById("resultado-grasas-g").textContent =
     Math.round(grasasGramos);
@@ -71,15 +71,15 @@ document.getElementById("resultado-grasas-g").textContent =
 document.getElementById("resultado-grasas-kcal").textContent =
     Math.round(caloriasGrasas);
 
-document.getElementById("resultado-grasas-pct").textContent =
-    25;
+/*document.getElementById("resultado-grasas-pct").textContent =
+    25;*/
 
 document.getElementById("progreso-proteina").value = 30;
 document.getElementById("progreso-carbos").value = 45;
 document.getElementById("progreso-grasas").value = 25;
 
-document.getElementById("resultado-texto-objetivo").textContent =
-    nombreObjetivo.toLowerCase();
+/*document.getElementById("resultado-texto-objetivo").textContent =
+    nombreObjetivo.toLowerCase();*/
 
 document.getElementById("desglose-sexo").textContent =
     sexo;
@@ -121,62 +121,45 @@ if (actividad === 1.2) {
 document.getElementById("desglose-actividad-texto").textContent =
     actividadTexto;
 
-if (objetivo === "superavit") {
-    document.getElementById("dieta-1-nombre").textContent =
-        "Dieta de Volumen";
 
-    document.getElementById("dieta-1-descripcion").textContent =
-        "Alta en calorías, proteína y carbohidratos";
-
-    document.getElementById("dieta-1-categoria").textContent =
-        "Ganancia de músculo";
-
-    document.getElementById("dieta-2-nombre").textContent =
-        "Dieta Balanceada";
-
-    document.getElementById("dieta-2-descripcion").textContent =
-        "Distribución equilibrada de macronutrientes";
-
-    document.getElementById("dieta-2-categoria").textContent =
-        "Rendimiento";
-} else {
-    document.getElementById("dieta-1-nombre").textContent =
-        "Dieta de Definición";
-
-    document.getElementById("dieta-1-descripcion").textContent =
-        "Alta en proteína y moderada en calorías";
-
-    document.getElementById("dieta-1-categoria").textContent =
-        "Pérdida de grasa";
-
-    document.getElementById("dieta-2-nombre").textContent =
-        "Dieta Proteica";
-
-    document.getElementById("dieta-2-descripcion").textContent =
-        "Prioriza proteína y alimentos saciantes";
-
-    document.getElementById("dieta-2-categoria").textContent =
-        "Definición";
-}
-
-if (objetivo === "superavit") {
-    document.getElementById("dieta-1-nombre").textContent = "Dieta de Volumen";
-    document.getElementById("dieta-1-descripcion").textContent = "Alta en calorías, proteína y carbohidratos";
-    document.getElementById("dieta-1-categoria").textContent = "Ganancia de músculo";
-    document.getElementById("dieta-1-enlace").href = "dieta-volumen.html";
-
-    document.getElementById("dieta-2-nombre").textContent = "Dieta Balanceada";
-    document.getElementById("dieta-2-descripcion").textContent = "Distribución equilibrada de macronutrientes";
-    document.getElementById("dieta-2-categoria").textContent = "Rendimiento";
-    document.getElementById("dieta-2-enlace").href = "dieta-balanceada.html";
-} else {
-    document.getElementById("dieta-1-nombre").textContent = "Dieta de Definición";
-    document.getElementById("dieta-1-descripcion").textContent = "Alta en proteína y moderada en calorías";
-    document.getElementById("dieta-1-categoria").textContent = "Pérdida de grasa";
-    document.getElementById("dieta-1-enlace").href = "dieta-definicion.html";
-
-    document.getElementById("dieta-2-nombre").textContent = "Dieta Proteica";
-    document.getElementById("dieta-2-descripcion").textContent = "Prioriza proteína y alimentos saciantes";
-    document.getElementById("dieta-2-categoria").textContent = "Definición";
-    document.getElementById("dieta-2-enlace").href = "dieta-proteica.html";
-}
+const dietasRecomendadas = {
+    superavit: [
+        {
+            nombre: "Dieta de Volumen",
+            descripcion: "Superávit calórico controlado con alta proteína",
+            categoria: "Ganancia de músculo",
+            enlace: "dietas/volumen.html"
+        },
+        {
+            nombre: "Dieta Mediterránea",
+            descripcion: "Equilibrio entre salud y sabor, con carbohidratos y grasas saludables",
+            categoria: "Salud general",
+            enlace: "dietas/mediterranea.html"
+        }
+    ],
+    deficit: [
+        {
+            nombre: "Ayuno Intermitente",
+            descripcion: "Ventanas de alimentación para optimizar la quema de grasa",
+            categoria: "Pérdida de peso",
+            enlace: "dietas/ayunoIntermitente.html"
+        },
+        {
+            nombre: "Dieta Paleo",
+            descripcion: "Carnes magras, pescado, frutas y vegetales, sin procesados",
+            categoria: "Composición corporal",
+            enlace: "dietas/paleo.html"
+        }
+    ]
+};
+ 
+const listaDietas = dietasRecomendadas[objetivo === "superavit" ? "superavit" : "deficit"];
+ 
+listaDietas.forEach(function (dieta, indice) {
+    const n = indice + 1;
+ 
+    document.getElementById("dieta-" + n + "-nombre").textContent = dieta.nombre;
+    document.getElementById("dieta-" + n + "-descripcion").textContent = dieta.descripcion;
+    document.getElementById("dieta-" + n + "-categoria").textContent = dieta.categoria;
+    document.getElementById("dieta-" + n + "-enlace").href = dieta.enlace;
+});
