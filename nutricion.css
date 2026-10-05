@@ -92,7 +92,7 @@ button {
 }
 
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,13 +115,13 @@ button {
 }
 
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 .hero {
     padding: 90px 94px 80px;
     background:
-        radial-gradient(ellipse at 20% 0%, rgba(120, 20, 30, 0.35), transparent 60%),
+        radial-gradient(ellipse at 20% 0%, rgba(255, 45, 58, .15), transparent 60%),
         linear-gradient(180deg, #1a1215 0%, #000 100%);
     border-bottom: 1px solid #2a2a2a;
 }
@@ -304,7 +304,7 @@ button {
 }
 .tarjeta-desc {
     margin: 0 0 18px;
-    color: #d8d6e0;
+    color: #d8d6e0; /*#d8d6e0*/
     font-size: .82rem;
     line-height: 1.5;
 }
@@ -317,7 +317,7 @@ button {
 .macros-labels {
     display: flex;
     justify-content: space-between;
-    color: #8e8a9c;
+    color: #a9a3b8;
     font-size: .7rem;
     margin-bottom: 6px;
 }
@@ -348,7 +348,7 @@ button {
     display: flex;
     align-items: center;
     gap: 5px;
-    color: #8e8a9c;
+    color: #a9a3b8;
 }
 
 .meta .bi { color: #ec0d1c; }
@@ -364,7 +364,7 @@ button {
 .tarjeta-link:hover { text-decoration: underline; }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
     border-top: 1px solid #34343a;
 }
@@ -387,7 +387,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -410,7 +410,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #000000;
 
     border-radius: 12px;
 
@@ -423,7 +423,7 @@ footer {
 
 .footer_redes a:hover {
     color: #ff2633;
-    background-color: #242429;
+    background-color: #000000;
 }
 
 .footer_enlaces,
@@ -447,7 +447,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -455,7 +455,7 @@ footer {
 }
 
 .footer_enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer_contacto p {
@@ -465,7 +465,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -473,13 +473,13 @@ footer {
 .footer_contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer_inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer_inferior_contenido {
@@ -492,7 +492,7 @@ footer {
 }
 
 .footer_inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -503,7 +503,7 @@ footer {
 }
 
 .footer_inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -511,5 +511,5 @@ footer {
 }
 
 .footer_inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }

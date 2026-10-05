@@ -92,7 +92,7 @@ button {
 }
 
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,7 +115,7 @@ button {
 }
 
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 main {
@@ -126,18 +126,18 @@ main {
             rgba(30, 30, 35, 0.3),
             transparent 40%
         ),
-        #050505;
+        #000000;
 }
 
 .calculadora-header {
     padding: 65px 20px 55px;
     text-align: center;
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid #1f1f1f;
 }
 
 .etiqueta-nutricion {
     margin: 0 0 16px;
-    color: #ef1b28;
+    color: #ec0d1c;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -150,7 +150,7 @@ main {
     width: 28px;
     height: 1px;
     margin: 0 8px 3px;
-    background-color: #8d1a20;
+    background-color: #73050A;
 }
 
 .calculadora-header h1 {
@@ -162,13 +162,13 @@ main {
 }
 
 .calculadora-header h1 span {
-    color: #f51b29;
+    color: #ec0d1c;
 }
 
 .descripcion-header {
     max-width: 700px;
     margin: 16px auto 0;
-    color: #91919a;
+    color: #a9a3b8;
     font-size: 12px;
     line-height: 1.7;
 }
@@ -186,24 +186,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #19191c;
-    color: #77777f;
-    border: 1px solid #303036;
+    background-color: #17171b;
+    color: #a9a3b8;
+    border: 1px solid #34343a;
     border-radius: 50%;
     font-size: 9px;
     font-weight: 700;
 }
 
 .paso.activo {
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
-    border-color: #ef0712;
+    border-color: #ec0d1c;
 }
 
 .linea-paso {
     width: 65px;
     height: 1px;
-    background-color: #303034;
+    background-color: #34343a;
 }
 
 .paso-calculadora {
@@ -213,8 +213,8 @@ main {
 
 .tarjeta-calculadora {
     padding: 24px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 14px;
 }
 
@@ -232,8 +232,8 @@ main {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    background-color: #351014;
-    color: #ff2835;
+    background-color: #331F24;
+    color: #ec0d1c;
     border-radius: 50%;
     font-size: 14px;
 }
@@ -247,13 +247,13 @@ main {
 
 .encabezado-datos p {
     margin: 0;
-    color: #777780;
+    color: #a9a3b8;
     font-size: 9px;
 }
 
 .titulo-campo {
     margin: 0 0 10px;
-    color: #bcbcc3;
+    color: #d8d6e0;
     font-size: 9px;
     font-weight: 700;
 }
@@ -271,9 +271,9 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: #111113;
-    color: #d4d4da;
-    border: 1px solid #313136;
+    background-color: #17171b;
+    color: #d8d6e0;
+    border: 1px solid #34343a;
     border-radius: 8px;
     font-size: 11px;
     cursor: pointer;
@@ -283,7 +283,7 @@ main {
 .btn-opcion-sexo input {
     position: absolute;
     left: 14px;
-    accent-color: #ef1724;
+    accent-color: #ec0d1c;
 }
 
 .btn-opcion-sexo span {
@@ -293,9 +293,9 @@ main {
 }
 
 .btn-opcion-sexo:has(input:checked) {
-    color: #ff3440;
-    background-color: #1b0c0e;
-    border-color: #ef1724;
+    color: #ec0d1c;
+    background-color: #331F24;
+    border-color: #ec0d1c;
 }
 
 .medidas-corporales {
@@ -308,7 +308,7 @@ main {
 .campo-medida label {
     display: block;
     margin-bottom: 8px;
-    color: #bcbcc3;
+    color: #d8d6e0;
     font-size: 9px;
     font-weight: 700;
 }
@@ -321,9 +321,9 @@ main {
     width: 100%;
     height: 44px;
     padding: 0 40px 0 12px;
-    background-color: #111113;
+    background-color: #17171b;
     color: #ffffff;
-    border: 1px solid #303035;
+    border: 1px solid #34343a;
     border-radius: 8px;
     font-size: 11px;
     outline: none;
@@ -331,11 +331,11 @@ main {
 }
 
 .input-medida input::placeholder {
-    color: #a1a1a8;
+    color: #a9a3b8;
 }
 
 .input-medida input:focus {
-    border-color: #ef1724;
+    border-color: #ec0d1c;
 }
 
 .input-medida span {
@@ -343,7 +343,7 @@ main {
     top: 50%;
     right: 11px;
     transform: translateY(-50%);
-    color: #777780;
+    color: #a9a3b8;
     font-size: 8px;
     pointer-events: none;
 }
@@ -367,15 +367,15 @@ main {
     position: relative;
     margin-bottom: 8px;
     padding: 8px 12px;
-    background-color: #111113;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 7px;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .btn-opcion-actividad:hover {
-    border-color: #7a1d23;
+    border-color: #73050A;
 }
 
 .btn-opcion-actividad input {
@@ -396,27 +396,27 @@ main {
 }
 
 .actividad-texto small {
-    color: #777780;
+    color: #a9a3b8;
     font-size: 7px;
 }
 
 .factor {
     margin-left: auto;
-    color: #707077;
+    color: #a9a3b8;
     font-size: 8px;
 }
 
 .btn-opcion-actividad:has(input:checked) {
-    background-color: #21090c;
-    border-color: #ef1724;
+    background-color: #331F24;
+    border-color: #ec0d1c;
 }
 
 .btn-opcion-actividad:has(input:checked) .actividad-texto b {
-    color: #ff3440;
+    color: #ec0d1c;
 }
 
 .btn-opcion-actividad:has(input:checked) .factor {
-    color: #ff3440;
+    color: #ec0d1c;
 }
 
 #btn-calcular {
@@ -427,7 +427,7 @@ main {
     justify-content: center;
     gap: 9px;
     margin-top: 22px;
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -438,22 +438,22 @@ main {
 }
 
 #btn-calcular:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 .formula {
     margin-top: 17px;
     padding: 11px 12px;
-    background-color: #101012;
-    color: #66666e;
+    background-color: #17171b;
+    color: #a9a3b8;
     border-radius: 7px;
     font-size: 7px;
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer-contenido {
@@ -474,7 +474,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -497,7 +497,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -509,7 +509,7 @@ footer {
 }
 
 .footer-redes a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
     background-color: #242429;
 }
 
@@ -534,7 +534,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -542,7 +542,7 @@ footer {
 }
 
 .footer-enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer-contacto p {
@@ -552,7 +552,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -560,13 +560,13 @@ footer {
 .footer-contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer-inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer-inferior-contenido {
@@ -579,7 +579,7 @@ footer {
 }
 
 .footer-inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -590,7 +590,7 @@ footer {
 }
 
 .footer-inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -598,7 +598,7 @@ footer {
 }
 
 .footer-inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 
 @media (max-width: 900px) {

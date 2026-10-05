@@ -92,7 +92,7 @@ button {
 }
 
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,7 +115,7 @@ button {
 }
 
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 .hero {
@@ -149,7 +149,7 @@ button {
 
     padding: 11px 19px;
 
-    color: #ff646d;
+    color: #ec0d1c;
     background-color: rgba(49, 6, 8, 0.7);
 
     border: 1px solid #9f171e;
@@ -163,7 +163,7 @@ button {
     width: 10px;
     height: 10px;
 
-    background-color: #ef2631;
+    background-color: #ec0d1c;
     border-radius: 50%;
     animation: aparecer 1s ease-out infinite;
 }
@@ -196,7 +196,7 @@ button {
 }
 
 .titulo-principal-rojo {
-    color: #f51b29;
+    color: #ec0d1c;
 }
 
 .descripcion-hero {
@@ -204,7 +204,7 @@ button {
 
     margin: 38px 0 0;
 
-    color: #eeeeee;
+    color: #d8d6e0;
 
     font-size: 21px;
     font-weight: 400;
@@ -243,9 +243,9 @@ button {
     padding: 0 35px;
 
     color: #ffffff;
-    background-color: #f00612;
+    background-color: #ec0d1c;
 
-    box-shadow: 0 14px 30px rgba(239, 6, 18, 0.22);
+    box-shadow: 0 14px 30px rgba(255, 45, 58, .15);
 }
 
 .boton-entrenamiento i {
@@ -253,7 +253,7 @@ button {
 }
 
 .boton-entrenamiento:hover {
-    background-color: #ff1825;
+    background-color: #73050A;
 }
 
 .boton-demo {
@@ -287,13 +287,13 @@ button {
 
     padding-top: 28px;
 
-    border-top: 1px solid #333333;
+    border-top: 1px solid #1f1f1f;
 }
 
 .estadistica h3 {
     margin: 0;
 
-    color: #ff2836;
+    color: #ec0d1c;
 
     font-size: 45px;
     font-weight: 900;
@@ -302,7 +302,7 @@ button {
 .estadistica p {
     margin: 4px 0 0;
 
-    color: #b6c0d0;
+    color: #a9a3b8;
 
     font-size: 16px;
     font-weight: 400;
@@ -317,7 +317,7 @@ button {
             rgba(18, 18, 18, 0.45),
             transparent 55%
         ),
-        #020202;
+        #000000;
 }
 
 .encabezado-centrado {
@@ -331,10 +331,10 @@ button {
 
     padding: 13px 21px;
 
-    color: #ff2c37;
+    color: #ec0d1c;
     background-color: #160305;
 
-    border: 1px solid #751219;
+    border: 1px solid #73050A;
     border-radius: 30px;
 
     font-size: 14px;
@@ -365,7 +365,7 @@ button {
 .testimonios-descripcion {
     margin: 22px auto 0;
 
-    color: #9fb0c6;
+    color: #a9a3b8;
 
     font-size: 20px;
     font-weight: 400;
@@ -391,14 +391,14 @@ button {
             rgba(3, 3, 4, 0.98)
         );
 
-    border: 1px solid #25272d;
+    border: 1px solid #34343a;
     border-radius: 18px;
 
     transition: 0.25s;
 }
 
 .beneficio:hover {
-    border-color: #6c161b;
+    border-color: #73050A;
     transform: translateY(-5px);
 }
 
@@ -420,11 +420,11 @@ button {
 }
 
 .icono-naranja {
-    background: linear-gradient(135deg, #ff313c, #ff7000);
+    background: linear-gradient(135deg, #ec0d1c, #ff7000);
 }
 
 .icono-rojo {
-    background: linear-gradient(135deg, #ff1232, #f0000c);
+    background: linear-gradient(135deg, #ec0d1c, #73050A);
 }
 
 .beneficio h3 {
@@ -441,7 +441,7 @@ button {
 .beneficio p {
     margin: 0;
 
-    color: #9babc0;
+    color: #a9a3b8;
 
     font-size: 16px;
     font-weight: 400;
@@ -458,9 +458,9 @@ button {
             rgba(60, 0, 0, 0.13),
             transparent 45%
         ),
-        #050303;
+        #000000;
 
-    border-top: 1px solid #202020;
+    border-top: 1px solid #1f1f1f;
 }
 
 .planes-etiqueta {
@@ -470,7 +470,7 @@ button {
 
     margin: 0 0 30px;
 
-    color: #ff2734;
+    color: #ec0d1c;
 
     font-size: 14px;
     font-weight: 800;
@@ -484,7 +484,7 @@ button {
     width: 40px;
     height: 2px;
 
-    background-color: #ff2734;
+    background-color: #ec0d1c;
 }
 
 .planes-titulo {
@@ -501,7 +501,7 @@ button {
 }
 
 .planes-titulo span {
-    color: #ff2533;
+    color: #ec0d1c;
 }
 
 .planes-descripcion {
@@ -509,7 +509,7 @@ button {
 
     margin: 25px 0 0;
 
-    color: #a6abc0;
+    color: #a9a3b8;
 
     font-size: 18px;
 
@@ -523,7 +523,7 @@ button {
 
     margin-top: 28px;
 
-    color: #c5c5c5;
+    color: #d8d6e0;
 
     font-size: 14px;
 }
@@ -535,7 +535,7 @@ button {
 }
 
 .planes-resumen i {
-    color: #ff1d2b;
+    color: #ec0d1c;
     font-size: 18px;
 }
 
@@ -553,7 +553,7 @@ button {
 
     overflow: hidden;
 
-    background-color: #1a1a1d;
+    background-color: #17171b;
 
     border: 1px solid #34343a;
     border-radius: 19px;
@@ -561,7 +561,7 @@ button {
 
 .plan-tarjeta:hover {
     transform: translateY(-4px);
-    border-color: rgba(229, 9, 20, .50);
+    border-color: #73050A;
     box-shadow: 0 10px 30px rgba(255, 45, 58, .15);
 }
 
@@ -604,7 +604,7 @@ button {
     padding: 7px 16px;
 
     color: #ffffff;
-    background-color: #ef0715;
+    background-color: #ec0d1c;
 
     border-radius: 25px;
 
@@ -647,7 +647,7 @@ button {
 }
 
 .plan-icono-rojo {
-    color: #ff4350;
+    color: #ec0d1c;
 }
 
 .plan-contenido {
@@ -687,8 +687,8 @@ button {
 
 .categoria-fuerza,
 .nivel-avanzado {
-    color: #ff6269;
-    background-color: rgba(138, 35, 41, 0.18);
+    color: #ff3b4b;
+    background-color: #331F24;
     border: 1px solid #683035;
 }
 
@@ -700,8 +700,8 @@ button {
 
 .nivel-principiante,
 .categoria-movilidad {
-    color: #00dc80;
-    background-color: rgba(0, 130, 75, 0.17);
+    color: #2ecc71;
+    background-color: #1A2D25;
     border: 1px solid #076140;
 }
 
@@ -727,13 +727,13 @@ button {
 }
 
 .plan-destacado h3 {
-    color: #ff5963;
+    color: #ec0d1c;
 }
 
 .plan-subtitulo {
     margin: 7px 0 0;
 
-    color: #ff5862;
+    color: #ec0d1c;
 
     font-size: 15px;
     font-weight: 700;
@@ -744,7 +744,7 @@ button {
 .plan-descripcion {
     margin: 18px 0 0;
 
-    color: #96969e;
+    color: #a9a3b8;
 
     font-size: 15px;
 
@@ -762,13 +762,13 @@ button {
 
     margin: 8px 0;
 
-    color: #76767e;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
 
 .plan-datos i {
-    color: #ff1926;
+    color: #ec0d1c;
 }
 
 .plan-enlace {
@@ -780,9 +780,9 @@ button {
     margin-top: auto;
     padding-top: 20px;
 
-    color: #ff2734;
+    color: #ec0d1c;
 
-    border-top: 1px solid #303034;
+    border-top: 1px solid #34343a;
 
     font-size: 15px;
     font-weight: 800;
@@ -803,7 +803,7 @@ button {
             rgba(15, 15, 18, 0.7),
             transparent 50%
         ),
-        #020202;
+        #000000;
 }
 
 .testimonios-contenedor {
@@ -827,11 +827,11 @@ button {
     background:
         linear-gradient(
             145deg,
-            #111114,
+            #17171b,
             #050505
         );
 
-    border: 1px solid #29292f;
+    border: 1px solid #34343a;
     border-radius: 18px;
 }
 
@@ -849,7 +849,7 @@ button {
     align-items: center;
 
     color: #ffffff;
-    background-color: #f00616;
+    background-color: #ec0d1c;
 
     border-radius: 50%;
 
@@ -859,7 +859,7 @@ button {
 }
 
 .estrellas {
-    color: #ff3440;
+    color: #ec0d1c;
 
     font-size: 23px;
 
@@ -886,7 +886,7 @@ button {
     margin-top: auto;
     padding-top: 22px;
 
-    border-top: 1px solid #292929;
+    border-top: 1px solid #34343a;
 }
 
 .avatar {
@@ -903,7 +903,7 @@ button {
 
     background: linear-gradient(
         135deg,
-        #ef0615,
+        #ec0d1c,
         #29292d
     );
 
@@ -925,7 +925,7 @@ button {
 .testimonio-autor p {
     margin: 6px 0 0;
 
-    color: #9caabe;
+    color: #a9a3b8;
 
     font-size: 14px;
 }
@@ -944,7 +944,7 @@ button {
 .testimonio-estadistica h3 {
     margin: 0;
 
-    color: #ff2836;
+    color: #ec0d1c;
 
     font-size: 39px;
     font-weight: 900;
@@ -953,15 +953,15 @@ button {
 .testimonio-estadistica p {
     margin: 8px 0 0;
 
-    color: #a7b2c4;
+    color: #a9a3b8;
 
     font-size: 14px;
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer-contenido {
@@ -982,7 +982,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -1005,7 +1005,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -1017,7 +1017,7 @@ footer {
 }
 
 .footer-redes a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
     background-color: #242429;
 }
 
@@ -1042,7 +1042,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -1050,7 +1050,7 @@ footer {
 }
 
 .footer-enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer-contacto p {
@@ -1060,7 +1060,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -1068,13 +1068,13 @@ footer {
 .footer-contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer-inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer-inferior-contenido {
@@ -1087,7 +1087,7 @@ footer {
 }
 
 .footer-inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -1098,7 +1098,7 @@ footer {
 }
 
 .footer-inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -1106,7 +1106,7 @@ footer {
 }
 
 .footer-inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 
 
