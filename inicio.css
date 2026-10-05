@@ -848,6 +848,9 @@ footer {
 .footer-inferior a:hover {
     color: #ec0d1c;
 }
+.boton-menu {
+    display: none;
+}
 @media (max-width: 1100px) {
     .menu {
         gap: 2px;
@@ -874,10 +877,34 @@ footer {
         height: auto;
     }
     .header-contenido {
+        position: relative;
+        justify-content: flex-start;
         padding: 18px 0;
+        gap: 15px;
     }
-    .menu {
-        display: none;
+    .boton-menu {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: #171717;
+        color: #ffffff;
+        border: 1px solid #303030;
+        border-radius: 10px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .boton-menu:hover {
+        background-color: #242424;
+    }
+    .boton-menu i {
+        pointer-events: none;
+    }
+    .logo {
+        margin-right: auto;
     }
     .logo img {
         width: 145px;
@@ -885,6 +912,37 @@ footer {
     .boton-unete {
         padding: 13px 18px;
         font-size: 13px;
+    }
+    .menu {
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        padding: 12px;
+        background-color: #0a0a0a;
+        border: 1px solid #242424;
+        border-radius: 0 0 14px 14px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.55);
+        z-index: 1000;
+    }
+    .menu.abierto {
+        display: flex;
+    }
+    .menu a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .menu a i {
+        width: 20px;
+        font-size: 18px;
     }
     .hero-contenido {
         padding-top: 25px;
