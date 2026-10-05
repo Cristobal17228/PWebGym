@@ -121,7 +121,6 @@ if (!contenedorSedes) {
 const map = L.map('mapa').setView([-31.4170, -64.1950], 13);
  
 // 3. Cargar la capa de mapa libre de OpenStreetMap (No requiere API Key ni registros)
-//    El tema oscuro se logra con CSS (filtro sobre .leaflet-tile-pane)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
