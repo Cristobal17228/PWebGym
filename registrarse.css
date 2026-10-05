@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button,
+input {
+    font-family: inherit;
+}
+.ruta {
+    margin: 18px 25px 14px;
+    color: #88888d;
+    font-size: 13px;
+}
+.pagina-registro {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 55px);
+    margin: 0;
+    overflow: hidden;
+    background-color: #050505;
+}
+.barra-superior {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+    border-bottom: 1px solid #151515;
+}
+.logo img {
+    width: 115px;
+}
+.barra-superior nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.barra-superior nav a {
+    color: #b5b5b8;
+    font-size: 11px;
+    font-weight: 600;
+}
+.barra-superior nav a:hover {
+    color: #ffffff;
+}
+.barra-superior .boton-unete {
+    padding: 12px 20px;
+    background-color: #ef0715;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.fondo-contenido {
+    position: absolute;
+    inset: 70px 0 0;
+    padding: 90px 65px;
+    background: radial-gradient(circle at 15% 30%, rgba(239, 7, 21, 0.08), transparent 25%), #050505;
+}
+.texto-fondo {
+    max-width: 500px;
+    opacity: 0.35;
+}
+.texto-fondo h1 {
+    margin: 0 0 15px;
+    font-size: 42px;
+}
+.texto-fondo p {
+    color: #8c8c93;
+    font-size: 13px;
+}
+.ubicacion {
+    position: absolute;
+    left: 40px;
+    bottom: 95px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 13px;
+    border: 1px solid #2b2b2f;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+}
+.ubicacion i {
+    color: #ef0715;
+}
+.capa-oscura {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(3px);
+}
+.modal-registro {
+    position: relative;
+    z-index: 5;
+    width: 430px;
+    min-height: 390px;
+    margin: 70px auto;
+    padding: 24px;
+    background-color: #09090b;
+    border: 1px solid #29292e;
+    border-radius: 13px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+.modal-encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.titulo-modal {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.icono-lockin {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ed0715;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 900;
+}
+.titulo-modal h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 800;
+}
+.cerrar {
+    color: #686870;
+    font-size: 11px;
+}
+.cerrar:hover {
+    color: #ffffff;
+}
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.paso {
+    text-align: center;
+}
+.linea {
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: #29292e;
+    border-radius: 5px;
+}
+.paso span {
+    color: #525259;
+    font-size: 9px;
+    font-weight: 600;
+}
+.paso.activo .linea {
+    background-color: #f20a18;
+}
+.paso.activo span {
+    color: #ff3440;
+}
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.icono-seccion {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #351014;
+    color: #ff3b46;
+    border: 1px solid #6d171e;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.titulo-seccion h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 800;
+}
+.campo {
+    margin-bottom: 15px;
+}
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    color: #9b9ba2;
+    font-size: 10px;
+    font-weight: 800;
+}
+.campo input {
+    width: 100%;
+    height: 43px;
+    padding: 0 13px;
+    background-color: #19191d;
+    color: #ffffff;
+    border: 1px solid #414149;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12px;
+    transition: 0.2s;
+}
+.campo input:focus {
+    border-color: #ef1724;
+    box-shadow: 0 0 0 2px rgba(239, 23, 36, 0.1);
+}
+.campo input::placeholder {
+    color: #74747b;
+}
+.input-con-icono {
+    position: relative;
+}
+.input-con-icono i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #797980;
+    font-size: 12px;
+}
+.input-con-icono input {
+    padding-left: 33px;
+}
+.fila-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.boton-siguiente,
+.boton-crear {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+    background-color: #ef0715;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(239, 7, 21, 0.3);
+    transition: 0.2s;
+}
+.boton-siguiente:hover,
+.boton-crear:hover {
+    background-color: #ff1c29;
+    transform: translateY(-1px);
+}
+.botones-navegacion {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 8px;
+}
+.botones-navegacion .boton-siguiente,
+.botones-navegacion .boton-crear {
+    margin-top: 0;
+}
+.boton-anterior {
+    height: 46px;
+    background-color: #161619;
+    color: #a2a2a8;
+    border: 1px solid #333338;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.boton-anterior:hover {
+    color: #ffffff;
+    border-color: #55555d;
+}
+.terminos {
+    margin: 15px 0 0;
+    text-align: center;
+    color: #55555c;
+    font-size: 9px;
+}
+.terminos a {
+    color: #77777f;
+    text-decoration: underline;
+}
+.seccion-formulario {
+    display: none;
+}
+.seccion-formulario.activa {
+    display: block;
+}
+@media (max-width: 800px) {
+    .barra-superior nav {
+        display: none;
+    }
+    .barra-superior {
+        padding: 0 25px;
+    }
+}
+@media (max-width: 450px) {
+    .ruta {
+        margin-left: 15px;
+    }
+    .pagina-registro {
+        width: 100%;
+        margin: 0;
+    }
+    .modal-registro {
+        width: calc(100% - 30px);
+        margin-top: 55px;
+        padding: 20px;
+    }
+    .fila-campos {
+        grid-template-columns: 1fr;
+    }
+}
