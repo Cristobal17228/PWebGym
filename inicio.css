@@ -71,13 +71,14 @@ button {
     background-color: #141414;
 }
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 .boton-unete {
     flex-shrink: 0;
     padding: 16px 27px;
-    background-color: #ef0712;
+
+    background-color: #ec0d1c;
     color: #ffffff;
     border-radius: 14px;
     font-size: 15px;
@@ -86,7 +87,7 @@ button {
     transition: 0.2s;
 }
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 .hero {
     background-image:
@@ -111,7 +112,8 @@ button {
     gap: 10px;
     margin-top: 180px;
     padding: 11px 19px;
-    color: #ff646d;
+
+    color: #ec0d1c;
     background-color: rgba(49, 6, 8, 0.7);
     border: 1px solid #9f171e;
     border-radius: 30px;
@@ -121,7 +123,8 @@ button {
 .punto {
     width: 10px;
     height: 10px;
-    background-color: #ef2631;
+
+    background-color: #ec0d1c;
     border-radius: 50%;
     animation: aparecer 1s ease-out infinite;
 }
@@ -146,12 +149,14 @@ button {
     color: #ffffff;
 }
 .titulo-principal-rojo {
-    color: #f51b29;
+    color: #ec0d1c;
 }
 .descripcion-hero {
     max-width: 950px;
     margin: 38px 0 0;
-    color: #eeeeee;
+
+    color: #d8d6e0;
+
     font-size: 21px;
     font-weight: 400;
     line-height: 1.9;
@@ -179,14 +184,15 @@ button {
     min-width: 428px;
     padding: 0 35px;
     color: #ffffff;
-    background-color: #f00612;
-    box-shadow: 0 14px 30px rgba(239, 6, 18, 0.22);
+    background-color: #ec0d1c;
+
+    box-shadow: 0 14px 30px rgba(255, 45, 58, .15);
 }
 .boton-entrenamiento i {
     font-size: 23px;
 }
 .boton-entrenamiento:hover {
-    background-color: #ff1825;
+    background-color: #73050A;
 }
 .boton-demo,
 .boton_demo {
@@ -213,17 +219,22 @@ button {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 59px;
     padding-top: 28px;
-    border-top: 1px solid #333333;
+
+    border-top: 1px solid #1f1f1f;
 }
 .estadistica h3 {
     margin: 0;
-    color: #ff2836;
+
+    color: #ec0d1c;
+
     font-size: 45px;
     font-weight: 900;
 }
 .estadistica p {
     margin: 4px 0 0;
-    color: #b6c0d0;
+
+    color: #a9a3b8;
+
     font-size: 16px;
     font-weight: 400;
 }
@@ -235,7 +246,7 @@ button {
             rgba(18, 18, 18, 0.45),
             transparent 55%
         ),
-        #020202;
+        #000000;
 }
 .encabezado-centrado {
     text-align: center;
@@ -244,9 +255,11 @@ button {
     width: fit-content;
     margin: 0 auto 25px;
     padding: 13px 21px;
-    color: #ff2c37;
+
+    color: #ec0d1c;
     background-color: #160305;
-    border: 1px solid #751219;
+
+    border: 1px solid #73050A;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 800;
@@ -268,7 +281,9 @@ button {
 .beneficios-descripcion,
 .testimonios-descripcion {
     margin: 22px auto 0;
-    color: #9fb0c6;
+
+    color: #a9a3b8;
+
     font-size: 20px;
     font-weight: 400;
 }
@@ -287,12 +302,13 @@ button {
             rgba(18, 18, 20, 0.94),
             rgba(3, 3, 4, 0.98)
         );
-    border: 1px solid #25272d;
+
+    border: 1px solid #34343a;
     border-radius: 18px;
     transition: 0.25s;
 }
 .beneficio:hover {
-    border-color: #6c161b;
+    border-color: #73050A;
     transform: translateY(-5px);
 }
 .beneficio-icono {
@@ -307,10 +323,10 @@ button {
     font-size: 31px;
 }
 .icono-naranja {
-    background: linear-gradient(135deg, #ff313c, #ff7000);
+    background: linear-gradient(135deg, #ec0d1c, #ff7000);
 }
 .icono-rojo {
-    background: linear-gradient(135deg, #ff1232, #f0000c);
+    background: linear-gradient(135deg, #ec0d1c, #73050A);
 }
 .beneficio h3 {
     margin: 0 0 17px;
@@ -321,7 +337,9 @@ button {
 }
 .beneficio p {
     margin: 0;
-    color: #9babc0;
+
+    color: #a9a3b8;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 2;
@@ -334,15 +352,18 @@ button {
             rgba(60, 0, 0, 0.13),
             transparent 45%
         ),
-        #050303;
-    border-top: 1px solid #202020;
+        #000000;
+
+    border-top: 1px solid #1f1f1f;
 }
 .planes-etiqueta {
     display: flex;
     align-items: center;
     gap: 12px;
     margin: 0 0 30px;
-    color: #ff2734;
+
+    color: #ec0d1c;
+
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -351,7 +372,8 @@ button {
     content: "";
     width: 40px;
     height: 2px;
-    background-color: #ff2734;
+
+    background-color: #ec0d1c;
 }
 .planes-titulo {
     margin: 0;
@@ -362,12 +384,14 @@ button {
     letter-spacing: -2px;
 }
 .planes-titulo span {
-    color: #ff2533;
+    color: #ec0d1c;
 }
 .planes-descripcion {
     max-width: 890px;
     margin: 25px 0 0;
-    color: #a6abc0;
+
+    color: #a9a3b8;
+
     font-size: 18px;
     line-height: 1.9;
 }
@@ -376,7 +400,9 @@ button {
     align-items: center;
     gap: 35px;
     margin-top: 28px;
-    color: #c5c5c5;
+
+    color: #d8d6e0;
+
     font-size: 14px;
 }
 .planes-resumen span {
@@ -385,7 +411,7 @@ button {
     gap: 10px;
 }
 .planes-resumen i {
-    color: #ff1d2b;
+    color: #ec0d1c;
     font-size: 18px;
 }
 .planes-tarjetas {
@@ -398,13 +424,15 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: #1a1a1d;
+
+    background-color: #17171b;
+
     border: 1px solid #34343a;
     border-radius: 19px;
 }
 .plan-tarjeta:hover {
     transform: translateY(-4px);
-    border-color: rgba(229, 9, 20, .50);
+    border-color: #73050A;
     box-shadow: 0 10px 30px rgba(255, 45, 58, .15);
 }
 .plan-media {
@@ -434,7 +462,8 @@ button {
     left: 20px;
     padding: 7px 16px;
     color: #ffffff;
-    background-color: #ef0715;
+    background-color: #ec0d1c;
+
     border-radius: 25px;
     font-size: 12px;
     font-weight: 900;
@@ -458,13 +487,13 @@ button {
     color: #3da0ff;
 }
 .plan-icono-naranja {
-    color: #ff9500;
+    color: #f1c40f;
 }
 .plan-icono-verde {
-    color: #00dc7b;
+    color: #2ecc71;
 }
 .plan-icono-rojo {
-    color: #ff4350;
+    color: #ff3b4b;
 }
 .plan-contenido {
     flex: 1;
@@ -493,30 +522,30 @@ button {
 }
 .categoria-fuerza,
 .nivel-avanzado {
-    color: #ff6269;
-    background-color: rgba(138, 35, 41, 0.18);
-    border: 1px solid #683035;
+    color: #ff3b4b;
+    background-color: #331F24;
+    border: 1px solid #ff3b4b;
 }
 .categoria-cardio {
     color: #54a4ff;
     background-color: rgba(21, 93, 171, 0.17);
-    border: 1px solid #224e7b;
+    border: 1px solid #54a4ff;
 }
 .nivel-principiante,
 .categoria-movilidad {
-    color: #00dc80;
-    background-color: rgba(0, 130, 75, 0.17);
-    border: 1px solid #076140;
+    color: #2ecc71;
+    background-color: #1A2D25;
+    border: 1px solid #2ecc71;
 }
 .categoria-hiit {
-    color: #ff8700;
-    background-color: rgba(179, 79, 0, 0.17);
-    border: 1px solid #753b00;
+    color: #f1c40f;
+    background-color: #312C1A;
+    border: 1px solid #f1c40f;
 }
 .categoria-crossfit {
     color: #c377ff;
     background-color: rgba(109, 30, 153, 0.18);
-    border: 1px solid #58306d;
+    border: 1px solid #c377ff;
 }
 .plan-tarjeta h3 {
     margin: 0;
@@ -525,18 +554,22 @@ button {
     font-weight: 900;
 }
 .plan-destacado h3 {
-    color: #ff5963;
+    color: #ec0d1c;
 }
 .plan-subtitulo {
     margin: 7px 0 0;
-    color: #ff5862;
+
+    color: #ec0d1c;
+
     font-size: 15px;
     font-weight: 700;
     line-height: 1.55;
 }
 .plan-descripcion {
     margin: 18px 0 0;
-    color: #96969e;
+
+    color: #a9a3b8;
+
     font-size: 15px;
     line-height: 1.9;
 }
@@ -548,11 +581,13 @@ button {
     align-items: center;
     gap: 10px;
     margin: 8px 0;
-    color: #76767e;
+
+    color: #a9a3b8;
+
     font-size: 12px;
 }
 .plan-datos i {
-    color: #ff1926;
+    color: #ec0d1c;
 }
 .plan-enlace {
     display: flex;
@@ -561,8 +596,11 @@ button {
     gap: 8px;
     margin-top: auto;
     padding-top: 20px;
-    color: #ff2734;
-    border-top: 1px solid #303034;
+
+    color: #ec0d1c;
+
+    border-top: 1px solid #34343a;
+
     font-size: 15px;
     font-weight: 800;
     text-decoration: none;
@@ -578,7 +616,7 @@ button {
             rgba(15, 15, 18, 0.7),
             transparent 50%
         ),
-        #020202;
+        #000000;
 }
 .testimonios-contenedor {
     display: grid;
@@ -595,10 +633,11 @@ button {
     background:
         linear-gradient(
             145deg,
-            #111114,
+            #17171b,
             #050505
         );
-    border: 1px solid #29292f;
+
+    border: 1px solid #34343a;
     border-radius: 18px;
 }
 .comillas {
@@ -611,14 +650,16 @@ button {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background-color: #f00616;
+    background-color: #ec0d1c;
+
     border-radius: 50%;
     font-size: 38px;
     font-weight: 900;
     line-height: 1;
 }
 .estrellas {
-    color: #ff3440;
+    color: #ec0d1c;
+
     font-size: 23px;
     letter-spacing: 4px;
 }
@@ -636,7 +677,8 @@ button {
     gap: 18px;
     margin-top: auto;
     padding-top: 22px;
-    border-top: 1px solid #292929;
+
+    border-top: 1px solid #34343a;
 }
 .avatar {
     width: 58px;
@@ -648,7 +690,7 @@ button {
     color: #ffffff;
     background: linear-gradient(
         135deg,
-        #ef0615,
+        #ec0d1c,
         #29292d
     );
     border-radius: 50%;
@@ -663,7 +705,9 @@ button {
 }
 .testimonio-autor p {
     margin: 6px 0 0;
-    color: #9caabe;
+
+    color: #a9a3b8;
+
     font-size: 14px;
 }
 .testimonios-estadisticas {
@@ -675,18 +719,23 @@ button {
 }
 .testimonio-estadistica h3 {
     margin: 0;
-    color: #ff2836;
+
+    color: #ec0d1c;
+
     font-size: 39px;
     font-weight: 900;
 }
 .testimonio-estadistica p {
     margin: 8px 0 0;
-    color: #a7b2c4;
+
+    color: #a9a3b8;
+
     font-size: 14px;
 }
 footer {
-    background-color: #020202;
-    border-top: 1px solid #22252b;
+    background-color: #000000;
+
+    border-top: 1px solid #34343a;
 }
 .footer-contenido {
     display: grid;
@@ -701,7 +750,9 @@ footer {
 .footer-marca > p {
     max-width: 350px;
     margin: 28px 0 0;
-    color: #9fadc1;
+
+    color: #a9a3b8;
+
     font-size: 16px;
     line-height: 1.85;
 }
@@ -717,14 +768,15 @@ footer {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
+
     border-radius: 12px;
     font-size: 20px;
     text-decoration: none;
     transition: 0.2s;
 }
 .footer-redes a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
     background-color: #242429;
 }
 .footer-enlaces,
@@ -742,28 +794,34 @@ footer {
 .footer-enlaces a {
     width: fit-content;
     margin-bottom: 18px;
-    color: #9fadc1;
+
+    color: #a9a3b8;
+
     font-size: 16px;
     text-decoration: none;
 }
 .footer-enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 .footer-contacto p {
     display: flex;
     align-items: center;
     gap: 16px;
     margin: 0 0 23px;
-    color: #9fadc1;
+
+    color: #a9a3b8;
+
     font-size: 16px;
 }
 .footer-contacto i {
     width: 25px;
-    color: #ff2633;
+
+    color: #ec0d1c;
+
     font-size: 22px;
 }
 .footer-inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 .footer-inferior-contenido {
     min-height: 75px;
@@ -773,7 +831,8 @@ footer {
     gap: 30px;
 }
 .footer-inferior p {
-    color: #707986;
+    color: #a9a3b8;
+
     font-size: 12px;
 }
 .footer-inferior-contenido > div {
@@ -781,12 +840,13 @@ footer {
     gap: 25px;
 }
 .footer-inferior a {
-    color: #707986;
+    color: #a9a3b8;
+
     font-size: 12px;
     text-decoration: none;
 }
 .footer-inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 @media (max-width: 1100px) {
     .menu {

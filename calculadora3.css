@@ -92,7 +92,7 @@ button {
 }
 
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,7 +115,7 @@ button {
 }
 
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 body > hr,
@@ -131,18 +131,18 @@ main {
             rgba(30, 30, 35, 0.3),
             transparent 40%
         ),
-        #050505;
+        #000000;
 }
 
 .calculadora-header {
     padding: 65px 20px 55px;
     text-align: center;
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid #1f1f1f;
 }
 
 .calculadora-header > p:first-child {
     margin: 0 0 16px;
-    color: #ef1b28;
+    color: #ec0d1c;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -155,7 +155,7 @@ main {
     width: 28px;
     height: 1px;
     margin: 0 8px 3px;
-    background-color: #8d1a20;
+    background-color: #73050A;
 }
 
 .calculadora-header h1 {
@@ -167,13 +167,13 @@ main {
 }
 
 .calculadora-header h1 span {
-    color: #f51b29;
+    color: #ec0d1c;
 }
 
 .calculadora-header > p:last-child {
     max-width: 700px;
     margin: 16px auto 0;
-    color: #91919a;
+    color: #a9a3b8;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -194,9 +194,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #19191c;
-    color: #74747b;
-    border: 1px solid #303036;
+    background-color: #17171b;
+    color: #a9a3b8;
+    border: 1px solid #34343a;
     border-radius: 50%;
     font-size: 0;
 }
@@ -217,9 +217,9 @@ main {
 }
 
 .indicador-pasos span:nth-of-type(3) {
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
-    border-color: #ef0712;
+    border-color: #ec0d1c;
 }
 
 .paso-calculadora {
@@ -237,15 +237,15 @@ main {
 .tarjeta-metrica {
     min-height: 100px;
     padding: 18px 14px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 10px;
     text-align: center;
 }
 
 .tarjeta-metrica p {
     margin: 0;
-    color: #777780;
+    color: #a9a3b8;
     font-size: 10px;
 }
 
@@ -257,18 +257,18 @@ main {
 }
 
 .tarjeta-metrica:nth-child(3) h2 {
-    color: #2bdd83;
+    color: #2ecc71;
 }
 
 .tarjeta-metrica:nth-child(4) h2 {
-    color: #2bdd83;
+    color: #2ecc71;
     font-size: 16px;
 }
 
 .distribucion-macros-resultado {
     padding: 26px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 12px;
     margin-bottom: 16px;
 }
@@ -299,18 +299,18 @@ main {
 }
 
 .macro-resultado-item p small {
-    color: #7f7f87;
+    color: #a9a3b8;
     font-size: 10px;
 }
 
 .macro-resultado-item:nth-of-type(1) b,
 .macro-resultado-item:nth-of-type(1) output {
-    color: #ff4350;
+    color: #ff3b4b;
 }
 
 .macro-resultado-item:nth-of-type(2) b,
 .macro-resultado-item:nth-of-type(2) output {
-    color: #f3bf22;
+    color: #f1c40f;
 }
 
 .macro-resultado-item:nth-of-type(3) b,
@@ -325,19 +325,19 @@ progress {
     border: none;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #242429;
+    background-color: #34343a;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #242429;
+    background-color: #34343a;
 }
 
 #progreso-proteina::-webkit-progress-value {
-    background-color: #ff4350;
+    background-color: #ff3b4b;
 }
 
 #progreso-carbos::-webkit-progress-value {
-    background-color: #f3bf22;
+    background-color: #f1c40f;
 }
 
 #progreso-grasas::-webkit-progress-value {
@@ -345,11 +345,11 @@ progress::-webkit-progress-bar {
 }
 
 #progreso-proteina::-moz-progress-bar {
-    background-color: #ff4350;
+    background-color: #ff3b4b;
 }
 
 #progreso-carbos::-moz-progress-bar {
-    background-color: #f3bf22;
+    background-color: #f1c40f;
 }
 
 #progreso-grasas::-moz-progress-bar {
@@ -358,8 +358,8 @@ progress::-webkit-progress-bar {
 
 .dietas-recomendadas-resultado {
     padding: 26px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 12px;
     margin-bottom: 16px;
 }
@@ -373,7 +373,7 @@ progress::-webkit-progress-bar {
 
 .dietas-recomendadas-resultado > p {
     margin: 0 0 18px;
-    color: #83838c;
+    color: #a9a3b8;
     font-size: 10px;
     line-height: 1.6;
 }
@@ -386,8 +386,8 @@ progress::-webkit-progress-bar {
 
 .item-dieta-recomendada {
     padding: 14px 16px;
-    background-color: #111113;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 8px;
 }
 
@@ -406,37 +406,37 @@ progress::-webkit-progress-bar {
 }
 
 .item-dieta-recomendada small {
-    color: #777780;
+    color: #a9a3b8;
     font-size: 9px;
 }
 
 .item-dieta-recomendada span {
     margin-left: auto;
-    color: #9c9ca4;
+    color: #d8d6e0;
     font-size: 9px;
 }
 
 .item-dieta-recomendada a {
-    color: #ef2734;
+    color: #ec0d1c;
     font-size: 10px;
     font-weight: 700;
 }
 
 .item-dieta-recomendada a:hover {
-    color: #ff5964;
+    color: #73050A;
 }
 
 .desglose-calculo {
     padding: 26px;
-    background-color: #0c0c0e;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 12px;
     margin-bottom: 16px;
 }
 
 .desglose-calculo > h3 {
     margin: 0 0 12px;
-    color: #c6c6cc;
+    color: #d8d6e0;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.7px;
@@ -449,7 +449,7 @@ progress::-webkit-progress-bar {
 
 .desglose-calculo td {
     padding: 7px 0;
-    color: #a1a1a8;
+    color: #a9a3b8;
     font-size: 10px;
 }
 
@@ -464,7 +464,7 @@ progress::-webkit-progress-bar {
 .desglose-calculo hr {
     margin: 8px 0;
     border: none;
-    border-top: 1px solid #27272c;
+    border-top: 1px solid #34343a;
 }
 
 .desglose-calculo tr:last-child td h3 {
@@ -474,7 +474,7 @@ progress::-webkit-progress-bar {
 }
 
 .desglose-calculo tr:last-child td:last-child h3 {
-    color: #2bdd83;
+    color: #2ecc71;
 }
 
 .paso-calculadora > p {
@@ -488,8 +488,8 @@ progress::-webkit-progress-bar {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: #8a8a92;
-    border: 1px solid #2f2f34;
+    color: #a9a3b8;
+    border: 1px solid #34343a;
     border-radius: 8px;
     font-size: 10px;
     cursor: pointer;
@@ -498,13 +498,13 @@ progress::-webkit-progress-bar {
 
 .boton-recalcular:hover {
     color: #ffffff;
-    border-color: #55555c;
+    border-color: #73050A;
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer-contenido {
@@ -525,7 +525,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -548,7 +548,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -560,7 +560,7 @@ footer {
 }
 
 .footer-redes a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
     background-color: #242429;
 }
 
@@ -585,7 +585,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -593,7 +593,7 @@ footer {
 }
 
 .footer-enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer-contacto p {
@@ -603,7 +603,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -611,13 +611,13 @@ footer {
 .footer-contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer-inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer-inferior-contenido {
@@ -630,7 +630,7 @@ footer {
 }
 
 .footer-inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -641,7 +641,7 @@ footer {
 }
 
 .footer-inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -649,7 +649,7 @@ footer {
 }
 
 .footer-inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 
 @media (max-width: 900px) {

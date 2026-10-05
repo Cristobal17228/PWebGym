@@ -92,7 +92,7 @@ button {
 }
 
 .menu .seleccionado {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,7 +115,7 @@ button {
 }
 
 .boton-unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 body > hr,
@@ -131,18 +131,18 @@ main {
             rgba(30, 30, 35, 0.3),
             transparent 40%
         ),
-        #050505;
+        #000000;
 }
 
 .calculadora-header {
     padding: 65px 20px 55px;
     text-align: center;
-    border-bottom: 1px solid #161616;
+    border-bottom: 1px solid #1f1f1f;
 }
 
 .calculadora-header > p:first-child {
     margin: 0 0 16px;
-    color: #ef1b28;
+    color: #ec0d1c;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -155,7 +155,7 @@ main {
     width: 28px;
     height: 1px;
     margin: 0 8px 3px;
-    background-color: #8d1a20;
+    background-color: #73050A;
 }
 
 .calculadora-header h1 {
@@ -173,7 +173,7 @@ main {
 .calculadora-header > p:last-child {
     max-width: 700px;
     margin: 16px auto 0;
-    color: #91919a;
+    color: #a9a3b8;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -194,9 +194,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #19191c;
-    color: #74747b;
-    border: 1px solid #303036;
+    background-color: #17171b;
+    color: #a9a3b8;
+    border: 1px solid #34343a;
     border-radius: 50%;
     font-size: 0;
 }
@@ -217,9 +217,9 @@ main {
 }
 
 .indicador-pasos span:nth-of-type(2) {
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
-    border-color: #ef0712;
+    border-color: #ec0d1c;
 }
 
 .resumen-previo {
@@ -227,8 +227,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto 20px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -238,12 +238,12 @@ main {
 }
 
 .caja-dato:first-child {
-    border-right: 1px solid #29292e;
+    border-right: 1px solid #34343a;
 }
 
 .caja-dato p {
     margin: 0 0 7px;
-    color: #888891;
+    color: #a9a3b8;
     font-size: 10px;
 }
 
@@ -264,7 +264,7 @@ main {
 }
 
 .caja-dato:last-child output {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 
 .paso-calculadora {
@@ -279,8 +279,8 @@ main {
 .paso-calculadora fieldset {
     margin: 0;
     padding: 26px;
-    background-color: #17171a;
-    border: 1px solid #29292e;
+    background-color: #17171b;
+    border: 1px solid #34343a;
     border-radius: 14px;
 }
 
@@ -298,7 +298,7 @@ main {
 
 .paso-calculadora fieldset > p:first-of-type {
     margin: 0 0 22px;
-    color: #777780;
+    color: #a9a3b8;
     font-size: 10px;
 }
 
@@ -322,16 +322,16 @@ main {
     display: block;
     padding: 18px;
     position: relative;
-    background-color: #111113;
+    background-color: #17171b;
     color: #ffffff;
-    border: 1px solid #303036;
+    border: 1px solid #34343a;
     border-radius: 9px;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .btn-opcion-objetivo:hover {
-    border-color: #55555c;
+    border-color: #73050A;
 }
 
 .btn-opcion-objetivo input {
@@ -354,7 +354,7 @@ main {
     display: block;
     min-height: 48px;
     margin-bottom: 13px;
-    color: #8a8a92;
+    color: #a9a3b8;
     font-size: 9px;
     line-height: 1.6;
 }
@@ -367,21 +367,21 @@ main {
 }
 
 .contenedor-objetivos > div:first-child .btn-opcion-objetivo > span {
-    color: #22d678;
+    color: #2ecc71;
 }
 
 .contenedor-objetivos > div:first-child .btn-opcion-objetivo > b {
-    color: #2bdd83;
-    background-color: #08291a;
+    color: #2ecc71;
+    background-color: #1A2D25;
 }
 
 .contenedor-objetivos > div:last-child .btn-opcion-objetivo > span {
-    color: #ff4653;
+    color: #ff3b4b;
 }
 
 .contenedor-objetivos > div:last-child .btn-opcion-objetivo > b {
-    color: #ff5964;
-    background-color: #351013;
+    color: #ff3b4b;
+    background-color: #331F24;
 }
 
 .btn-opcion-objetivo > b + small {
@@ -392,20 +392,20 @@ main {
 }
 
 .contenedor-objetivos > div:first-child .btn-opcion-objetivo:has(input:checked) {
-    background-color: #0b1711;
-    border-color: #187d4c;
+    background-color: #1A2D25;
+    border-color: #2ecc71;
 }
 
 .contenedor-objetivos > div:last-child .btn-opcion-objetivo:has(input:checked) {
-    background-color: #1b0c0e;
-    border-color: #b21c26;
+    background-color: #331F24;
+    border-color: #ec0d1c;
 }
 
 #btn-ver-resultados {
     width: 100%;
     height: 48px;
     margin-top: 22px;
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -416,7 +416,7 @@ main {
 }
 
 #btn-ver-resultados:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 .paso-calculadora fieldset > p:last-child {
@@ -425,7 +425,7 @@ main {
 }
 
 .paso-calculadora fieldset > p:last-child a {
-    color: #777780;
+    color: #a9a3b8;
     font-size: 9px;
     transition: 0.2s;
 }
@@ -435,9 +435,9 @@ main {
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer-contenido {
@@ -458,7 +458,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -481,7 +481,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -493,7 +493,7 @@ footer {
 }
 
 .footer-redes a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
     background-color: #242429;
 }
 
@@ -518,7 +518,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -526,7 +526,7 @@ footer {
 }
 
 .footer-enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer-contacto p {
@@ -536,7 +536,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -544,13 +544,13 @@ footer {
 .footer-contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer-inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer-inferior-contenido {
@@ -563,7 +563,7 @@ footer {
 }
 
 .footer-inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -574,7 +574,7 @@ footer {
 }
 
 .footer-inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -582,7 +582,7 @@ footer {
 }
 
 .footer-inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
 
 @media (max-width: 900px) {

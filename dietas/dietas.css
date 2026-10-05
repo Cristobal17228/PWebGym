@@ -92,7 +92,7 @@ button {
 }
 
 .menu .nutricion {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
@@ -101,7 +101,7 @@ button {
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -115,7 +115,7 @@ button {
 }
 
 .boton_unete:hover {
-    background-color: #ff202b;
+    background-color: #73050A;
 }
 
 .contenedor-interno {
@@ -178,7 +178,7 @@ button {
     border-radius: 999px;
     background: rgba(30, 30, 34, .7);
     backdrop-filter: blur(6px);
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .85rem;
     text-decoration: none;
     transition: background .2s;
@@ -188,7 +188,7 @@ button {
 .hero-badge {
     padding: 5px 12px;
     border-radius: 999px;
-    background: #e50914;
+    background: #ec0d1c;
     color: #fff;
     font-size: .7rem;
     font-weight: 700;
@@ -201,7 +201,7 @@ button {
     align-items: center;
     gap: 10px;
     margin: 0 0 10px;
-    color: #e50914;
+    color: #ec0d1c;
     font-size: .8rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -211,7 +211,7 @@ button {
     content: "";
     width: 28px;
     height: 1px;
-    background: #e50914;
+    background: #ec0d1c;
 }
  
 .hero-fila {
@@ -232,7 +232,7 @@ button {
 }
 .hero-sub {
     margin: 6px 0 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: 1.05rem;
 }
  
@@ -259,7 +259,7 @@ button {
     color: #a9a3b8;
     font-size: .85rem;
 }
-.dato .bi { color: #e50914; }
+.dato .bi { color: #ec0d1c; }
  
 /* Etiqueta de nivel */
 .nivel {
@@ -269,9 +269,9 @@ button {
     font-size: .7rem;
     font-weight: 600;
 }
-.nivel-facil    { color: #2ecc71; background: rgba(46, 204, 113, .12); border-color: rgba(46, 204, 113, .4); }
-.nivel-moderado { color: #f1c40f; background: rgba(241, 196, 15, .12); border-color: rgba(241, 196, 15, .4); }
-.nivel-avanzado { color: #ff5c6a; background: rgba(255, 92, 106, .12); border-color: rgba(255, 92, 106, .4); }
+.nivel-facil    { color: #2ecc71; background: #1A2D25; border-color: #2ecc71; }
+.nivel-moderado { color: #f1c40f; background: #312C1A; border-color: #f1c40f; }
+.nivel-avanzado { color: #ff3b4b; background: #331F24; border-color: #ff3b4b; }
  
 .btn-rojo {
     display: inline-flex;
@@ -281,7 +281,7 @@ button {
     padding: 10px 22px;
     border: 0;
     border-radius: 8px;
-    background: #e50914;
+    background: #ec0d1c;
     color: #fff;
     font-family: inherit;
     font-size: .85rem;
@@ -298,7 +298,7 @@ button {
 .dieta-titulo {
     margin: 0 0 18px;
     padding-left: 12px;
-    border-left: 4px solid #e50914;
+    border-left: 4px solid #ec0d1c;
     color: #fff;
     font-size: 1.15rem;
     font-weight: 700;
@@ -312,7 +312,7 @@ button {
 .dieta-acerca-texto {
     max-width: 600px;
     margin: 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -332,15 +332,15 @@ button {
     display: flex;
     flex-direction: column;
     padding: 24px 20px;
-    background: #0b0c0e;
-    border: 1px solid #1a1b1f;
+    background: #17171b;
+    border: 1px solid #34343a;
     border-radius: 14px;
 }
 
 .dieta-tarjeta-titulo {
     margin: 0 0 22px;
     padding-left: 12px;
-    border-left: 4px solid #e50914;
+    border-left: 4px solid #ec0d1c;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 700;
@@ -355,7 +355,7 @@ button {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6px;
-    color: #c9c6d3;
+    color: #a9a3b8;
     font-size: .8rem;
 }
 .macro-fila b {
@@ -363,7 +363,7 @@ button {
 }
 .macro-barra {
     height: 6px;
-    background: #1c1d22;
+    background: #34343a;
     border-radius: 999px;
     overflow: hidden;
 }
@@ -372,9 +372,9 @@ button {
     height: 100%;
     border-radius: 999px;
 }
-.macro-prot  { background: #e50914; }
-.macro-carb  { background: #f5b50a; }
-.macro-grasa { background: #1450d6; }
+.macro-prot  { background: #ff3b4b; }
+.macro-carb  { background: #2ecc71; }
+.macro-grasa { background: #f1c40f; }
  
 .macro-calorias {
     margin: auto 0 0;
@@ -387,7 +387,7 @@ button {
 }
 .macro-calorias .bi {
     margin-right: 4px;
-    color: #e50914;
+    color: #ec0d1c;
 }
  
 /* ---------- ¿Para quién es? ---------- */
@@ -406,7 +406,7 @@ button {
     font-size: .8rem;
 }
 .publico-objetivo .bi {
-    color: #f5d90a;
+    color: #f1c40f;
 }
 .publico-pildora {
     align-self: flex-start;
@@ -414,10 +414,10 @@ button {
     align-items: center;
     gap: 6px;
     padding: 7px 14px;
-    background: rgba(229, 9, 20, .15);
-    border: 1px solid rgba(229, 9, 20, .35);
+    background: rgba(236, 13, 28, .15);
+    border: 1px solid rgba(236, 13, 28, .35);
     border-radius: 999px;
-    color: #ff5c6a;
+    color: #ec0d1c;
     font-size: .8rem;
     font-weight: 600;
 }
@@ -434,14 +434,14 @@ button {
     font-size: .7rem;
 }
 .icono-rojo {
-    color: #ff5c6a;
-    background: rgba(229, 9, 20, .18);
-    border-color: rgba(229, 9, 20, .45);
+    color: #ec0d1c;
+    background: rgba(236, 13, 28, .18);
+    border-color: rgba(236, 13, 28, .45);
 }
 .icono-verde {
-    color: #2ee6a0;
-    background: rgba(46, 230, 160, .12);
-    border-color: rgba(46, 230, 160, .4);
+    color: #2ecc71;
+    background: rgba(46, 204, 113, .12);
+    border-color: rgba(46, 204, 113, .4);
 }
  
 /* ---------- Beneficios ---------- */
@@ -458,10 +458,10 @@ button {
     align-items: center;
     gap: 12px;
     padding: 14px 16px;
-    background: #0b0c0e;
-    border: 1px solid #141519;
+    background: #17171b;
+    border: 1px solid #34343a;
     border-radius: 10px;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .8rem;
 }
  
@@ -481,11 +481,11 @@ button {
 }
 .alimentos-permitidos {
     background: #060b0a;
-    border-color: rgba(46, 230, 160, .18);
+    border-color: rgba(46, 204, 113, .18);
 }
 .alimentos-evitar {
     background: #0b0607;
-    border-color: rgba(229, 9, 20, .25);
+    border-color: rgba(236, 13, 28, .25);
 }
  
 .alimentos-tarjeta h3 {
@@ -496,8 +496,8 @@ button {
     font-size: 1.05rem;
     font-weight: 700;
 }
-.alimentos-permitidos h3 { color: #2ee6a0; }
-.alimentos-evitar h3     { color: #ff5c6a; }
+.alimentos-permitidos h3 { color: #2ecc71; }
+.alimentos-evitar h3     { color: #ec0d1c; }
  
 .alimentos-tarjeta .icono-circulo {
     width: 28px;
@@ -514,7 +514,7 @@ button {
     position: relative;
     padding-left: 18px;
     margin-bottom: 11px;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .8rem;
 }
 .alimentos-tarjeta li:last-child {
@@ -530,8 +530,8 @@ button {
     margin-top: -2.5px;
     border-radius: 50%;
 }
-.alimentos-permitidos li::before { background: #1fd15f; }
-.alimentos-evitar li::before     { background: #e50914; }
+.alimentos-permitidos li::before { background: #2ecc71; }
+.alimentos-evitar li::before     { background: #ec0d1c; }
 
 .dieta-plan {
     padding-bottom: 56px;
@@ -545,14 +545,14 @@ button {
  
 /* ---------- Tarjeta del día ---------- */
 .dia {
-    background: #18181b;
-    border: 1px solid #2a2a30;
+    background: #17171b;
+    border: 1px solid #34343a;
     border-radius: 16px;
     overflow: hidden;
 }
 
 .dia:hover {
-    border-color: rgba(229, 9, 20, .25);
+    border-color: #73050A;
     box-shadow: 0 10px 30px rgba(255, 45, 58, .15);
 }
  
@@ -570,7 +570,7 @@ button {
     display: none;                 /* saca el triángulo por defecto (Chrome y Safari) */
 }
 .dia summary:hover {
-    background: #1e1e22;
+    background: #1f1f1f;
 }
  
 /* Cuadradito con la abreviatura */
@@ -581,10 +581,10 @@ button {
     flex-shrink: 0;
     width: 50px;
     height: 50px;
-    background: rgba(229, 9, 20, .18);
-    border: 1px solid rgba(229, 9, 20, .35);
+    background: rgba(236, 13, 28, .18);
+    border: 1px solid rgba(236, 13, 28, .35);
     border-radius: 12px;
-    color: #ff5c6a;
+    color: #ec0d1c;
     font-size: .85rem;
     font-weight: 700;
 }
@@ -598,7 +598,7 @@ button {
 /* Flecha a la derecha: apunta al costado cerrada, hacia abajo abierta */
 .dia-flecha {
     margin-left: auto;
-    color: #8e8a9c;
+    color: #a9a3b8;
     font-size: 1rem;
     transition: transform .25s;
 }
@@ -612,18 +612,18 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
     padding: 24px 26px 26px;
-    border-top: 1px solid #2a2a2e;
+    border-top: 1px solid #34343a;
 }
  
 .comida {
     padding: 16px 18px;
-    background: #121214;
+    background: #000000;
     border-radius: 12px;
 }
 .comida-tipo {
     display: block;
     margin-bottom: 6px;
-    color: #ff5c6a;
+    color: #ec0d1c;
     font-size: .8rem;
     font-weight: 700;
     letter-spacing: .5px;
@@ -631,15 +631,15 @@ button {
 }
 .comida p {
     margin: 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .95rem;
     line-height: 1.5;
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer_contenido {
@@ -660,7 +660,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -683,7 +683,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -695,8 +695,7 @@ footer {
 }
 
 .footer_redes a:hover {
-    color: #ff2633;
-    background-color: #242429;
+    color: #ec0d1c;
 }
 
 .footer_enlaces,
@@ -720,7 +719,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -728,7 +727,7 @@ footer {
 }
 
 .footer_enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer_contacto p {
@@ -738,7 +737,7 @@ footer {
 
     margin: 0 0 23px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 }
@@ -746,13 +745,13 @@ footer {
 .footer_contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer_inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer_inferior_contenido {
@@ -765,7 +764,7 @@ footer {
 }
 
 .footer_inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -776,7 +775,7 @@ footer {
 }
 
 .footer_inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -784,5 +783,5 @@ footer {
 }
 
 .footer_inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
