@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockIn - Planes de Entrenamiento - Atleta Total</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="planes.css">
+</head>
+
+<body>
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
+    <header class="barra_superior">
+        <div class="contenedor header_contenido">
+            <a href="../inicio.html" class="logo">
+                <img src="../imagenes/logo.png" alt="LockIn Logo">
+            </a>
+            <nav class="menu">
+                <a href="../inicio.html" class="inicio">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes" class="planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="../nutricion.html" class="nutricion">
+                    <i class="bi bi-apple"></i>
+                    Nutrición
+                </a>
+                <a href="../calculadora1.html">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="../registrarse.html" class="boton_unete">
+                Únete Ahora
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!--=================== PORTADA ========================-->
+        <section class="plan-hero">
+
+            <div class="hero-imagen">
+                <img class="hero-bg" src="../imagenes/Plan - Atleta Total.png" alt="Atleta Total">
+
+                <div class="contenedor-interno">
+                    <a href="../inicio.html#planes" class="hero-volver">
+                        <i class="bi bi-arrow-left"></i> Volver a planes
+                    </a>
+                    <span class="hero-badge">ELITE</span>
+                </div>
+
+                <div class="contenedor-interno hero-titulo">
+                    <p class="hero-etiqueta">CROSSFIT · RENDIMIENTO HÍBRIDO</p>
+                    <div class="hero-fila">
+                        <span class="hero-emoji">⚡</span>
+                        <div>
+                            <h1>Atleta Total</h1>
+                            <p class="hero-sub">Rendimiento completo en todos los dominios físicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila de datos + botón -->
+            <div class="contenedor-interno hero-datos">
+                <div class="hero-datos-info">
+                    <span class="nivel nivel-avanzado">Avanzado</span>
+                    <span class="categoria-badge categoria-estetica">CrossFit</span>
+                    <span class="dato"><i class="bi bi-clock"></i> 5 sesiones/semana · 20 semanas</span>
+                    <span class="dato"><i class="bi bi-tools"></i> Gimnasio completo con olímpicos</span>
+                </div>
+                <button type="button" class="btn-rojo" onclick="alert('¡Empezaste el plan Atleta Total! ¡A darlo todo!')">Empezar Plan <i class="bi bi-chevron-right"></i></button>
+            </div>
+
+        </section>
+
+        <!-- ==================== SOBRE ESTE PLAN ==================== -->
+        <section class="plan-acerca">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Sobre este plan</h2>
+                <p class="plan-acerca-texto">
+                    Atleta Total es el programa definitivo de acondicionamiento físico general para quienes no se conforman con una sola disciplina. Integra levantamiento olímpico, calistenia avanzada y capacidad cardiovascular de alta intensidad en sesiones estructuradas. Inspirado en la metodología cross-training de competición, este plan de 20 semanas dividido en 4 fases optimiza la potencia explosiva, la fuerza bruta, la agilidad gimnástica y la resistencia metabólica bajo fatiga extrema.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== DISTRIBUCIÓN DEL VOLUMEN Y PÚBLICO ==================== -->
+        <section class="plan-info">
+            <div class="contenedor-interno plan-info-grid">
+
+                <!-- Cuadro 1: Distribución del volumen -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">Distribución del volumen</h3>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Fuerza / Resistencia</span>
+                            <b>45%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-fuerza" style="width: 45%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Cardio / Metabólico</span>
+                            <b>35%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-cardio" style="width: 35%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Movilidad / Técnica</span>
+                            <b>20%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-movilidad" style="width: 20%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="volumen-dias">
+                        <span class="volumen-item"><i class="bi bi-lightning-charge-fill"></i> <b>5 días de entreno</b></span>
+                        <span class="volumen-item"><i class="bi bi-arrow-repeat"></i> <b>2 días de descanso</b></span>
+                    </div>
+                </article>
+
+                <!-- Cuadro 2: ¿Para quién es? -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">¿Para quién es?</h3>
+                    <p class="publico-texto">
+                        Atletas y deportistas avanzados que dominan los patrones básicos de fuerza y buscan llevar su capacidad de trabajo al nivel más alto. Ideal para quienes quieren competir en eventos híbridos o dominar cualquier desafío físico.
+                    </p>
+
+                    <p class="publico-objetivo"><i class="bi bi-star"></i> <b>Objetivo</b></p>
+                    <span class="publico-pildora"><i class="bi bi-bullseye"></i> Fuerza, potencia y resistencia híbrida</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== BENEFICIOS COMPROBADOS ==================== -->
+        <section class="plan-beneficios">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Beneficios comprobados</h2>
+
+                <div class="beneficios-grid">
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Desarrollo de potencia explosiva con levantamientos olímpicos
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Mejora drástica del VO2 máx y resistencia lactácida
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Dominio corporal total mediante gimnásticos avanzados
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Composición corporal magra y atlética
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Capacidad de rendimiento sostenido bajo fatiga extrema
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Planificación por bloques con picos de rendimiento programados
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROGRAMA SEMANAL ==================== -->
+        <section class="plan">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Programa semanal</h2>
+                <p class="programa-subtitulo">5 sesiones de entrenamiento · Expandí cada día para ver los ejercicios</p>
+
+                <div class="plan-lista">
+
+                    <!-- Lunes -->
+                    <details class="dia" open>
+                        <summary>
+                            <span class="dia-abrev">Lun</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Lunes — Fuerza y Potencia Olímpica</span>
+                                <span class="dia-sub">Snatch, sentadilla frontal pesada y WOD metabólico</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Potencia Olímpica</span>
+                                <p>Power Snatch (Arrancada de potencia): 5x3 al 75-80% 1RM con pausa en recepción</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fuerza Pierna</span>
+                                <p>Sentadilla frontal (Front Squat): 4x5 al 80% 1RM con torso vertical estricto</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Gimnástico</span>
+                                <p>Bar Muscle-Ups o dominadas al pecho: 4x6 con técnica fluida y descanso de 90s</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Metcon / WOD</span>
+                                <p>AMRAP 12 min: 10 Thrusters con barra (43/30 kg) + 10 Burpees sobre la barra</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Core Pesado</span>
+                                <p>Good Mornings con barra ligera (3x12) + GHD Sit-Ups o abdominales con peso en decline (3x15)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad Post-Sesión</span>
+                                <p>Estiramiento de cadera en posición de paloma (2x45s por lado) + movilidad de tobillo en pared (2x20 repeticiones)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Martes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Mar</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Martes — Capacidad Gimnástica y Accesorios</span>
+                                <span class="dia-sub">Handstand push-ups, tracciones y resistencia de agarre</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Gimnástico Empuje</span>
+                                <p>Handstand Push-Ups estrictos o con kipping: 5x8 controlando descenso</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fuerza Tracción</span>
+                                <p>Dominadas lastradas: 4x5 con sobrecarga progresiva</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Accesorios Torso</span>
+                                <p>Press de banca con mancuernas (3x10) + Remo Pendlay con barra (3x8)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cardio Intervalado</span>
+                                <p>SkiErg o Remo: 6 series de 500m a ritmo de carrera (1:1 de descanso)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Core Antirotación</span>
+                                <p>Pallof Press en polea (3x12 por lado) + Hollow Body hold (3x30s) para estabilidad del núcleo bajo fatiga</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad de Hombros</span>
+                                <p>Dislocaciones de hombro con banda (2x15) + estiramiento del manguito rotador en pared (2x30s por lado)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Miércoles -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Mié</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Miércoles — Descanso activo</span>
+                                <span class="dia-sub">Movilidad articular, trabajo miofascial y caminata suave 40 min</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Jueves -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Jue</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Jueves — Halterofilia y Empuje Pesado</span>
+                                <span class="dia-sub">Clean & Jerk, press militar y trabajo de core</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Levantamiento Olímpico</span>
+                                <p>Clean & Jerk (Dos tiempos): 5 series de 2+1 repeticiones al 80% 1RM</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fuerza Hombros</span>
+                                <p>Press militar estricto de pie con barra: 4x6 al 75% 1RM</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fuerza Accesoria</span>
+                                <p>Zancadas búlgaras con mancuernas (3x10 por pierna) + Fondos en anillas (3x10)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Metcon Intenso</span>
+                                <p>3 rondas por tiempo: 400m carrera + 21 Kettlebell Swings (24/16 kg) + 12 Toes-to-Bar</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Técnica Olímpica</span>
+                                <p>Hang Power Clean (colgante de potencia): 4x3 al 70% 1RM para trabajar la recepción alta y la triple extensión</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad de Tobillo y Cadena</span>
+                                <p>Sentadilla en pared con soporte (3x40s buscando profundidad) + estiramiento de muñecas en posición frontal (2x20s por lado)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Viernes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Vie</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Viernes — Fuerza de Tirón y Cadena Posterior</span>
+                                <span class="dia-sub">Peso muerto convencional, gimnásticos de tracción y finisher</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fuerza Máxima</span>
+                                <p>Peso muerto convencional con barra: 4x4 al 82% 1RM con técnica impoluta</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Cadena Posterior</span>
+                                <p>GHD Hip Extensions o Buenos Días con barra: 3x12 con 2s de pausa arriba</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Gimnástico</span>
+                                <p>Chest-to-bar Pull-Ups: 4x10 o transiciones avanzadas en barra</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Chipper Condicionamiento</span>
+                                <p>Por tiempo: 50 Wall Balls (9/6 kg) + 40 Box Jumps (24/20") + 30 D-Ball Cleans (40/30 kg)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Tracción Accesoria</span>
+                                <p>Remo en barra fija agarre supino (3x10) + Face pulls con banda (3x15) para completar el volumen de espalda y deltoides posterior</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad Cadena Posterior</span>
+                                <p>Estiramiento de isquiotibiales en el suelo con banda (2x40s por pierna) + pigeon pose para apertura de cadera (2x40s por lado)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Sábado -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Sáb</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Sábado — Resistencia Híbrida / Long Metcon</span>
+                                <span class="dia-sub">Trabajo por intervalos de alta duración y máquina de cardio</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Bloque Ergos</span>
+                                <p>Bicicleta Echo / Assault Bike: 5x1 min max cal con 2 min de recuperación activa</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Doble Comba</span>
+                                <p>Double Unders (Saltos dobles de comba): 4x50 repeticiones continuas</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Transporte de Cargas</span>
+                                <p>Paseo del granjero con mancuernas pesadas: 4x50 metros sin soltar</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Finisher de Core</span>
+                                <p>Hollow Rocks (3x30s) + Plancha lateral con rotación (3x15 por lado)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Yoke / Sled Push</span>
+                                <p>Empuje de trineo o sustituto (3x20m) a máxima potencia con descanso completo entre series para desarrollar la fuerza de aceleración</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Recuperación Activa Final</span>
+                                <p>10 minutos de bicicleta estática a ritmo muy suave (Zona 1) + foam rolling de cuádriceps, isquios y gemelos para facilitar la recuperación semanal</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Domingo -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Dom</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Domingo — Descanso completo</span>
+                                <span class="dia-sub">Recuperación neuromuscular, hidratación y recarga nutricional</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div class="contenedor footer_contenido">
+            <div class="footer_marca">
+
+                <img src="../imagenes/logo.png" alt="LockIn">
+
+                <p>
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
+                </p>
+
+                <div class="footer_redes">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_enlaces">
+
+                <h4>Enlaces Rápidos</h4>
+
+                <a href="../inicio.html">
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes">
+                    Planes
+                </a>
+                <a href="../nutricion.html">
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    Gimnasios
+                </a>
+            </div>
+
+            <div class="footer_contacto">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
+
+            </div>
+        </div>
+
+        <div class="footer_inferior">
+            <div class="contenedor footer_inferior_contenido">
+
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

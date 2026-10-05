@@ -1,245 +1,400 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>LockIn - Planes de Dieta y Nutrición</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="nutricion.css">
 </head>
 <body>
 
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
-    <header>
-        <img src="imagenes/logo.png" alt="LockIn Logo" width="120">
-        
-        <nav>
-            <a href="inicio.html">Inicio</a>
-            <a href="inicio.html#planes">Planes</a>
-            <a href="nutricion.html">Nutrición</a>
-            <a href="calculadora.html">Calculadora</a>
-            <a href="mapa.html">Gimnasios Cercanos</a>
-            <a href="registrarse.html">
-                <button type="button">Únete Ahora</button>
+    <header class="barra-superior">
+        <div class="contenedor header-contenido">
+            <a href="inicio.html" class="logo">
+                <img src="imagenes/logo.png" alt="LockIn Logo">
             </a>
-        </nav>
+            <nav class="menu">
+                <a href="inicio.html">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="inicio.html#planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="nutricion.html" class="seleccionado">
+                    <i class="bi bi-basket"></i>
+                    Nutrición
+                </a>
+                <a href="calculadora1.html">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="registrarse.html" class="boton-unete">
+                Únete Ahora
+            </a>
+        </div>
     </header>
 
-    <hr>
-
-    <!-- ==================== ENCABEZADO DE NUTRICIÓN ==================== -->
-    <section>
-        <p><b>NUTRICIÓN</b></p>
-        <h2>Planes de <b>Dieta</b></h2>
-        <p>
+    <section class="hero">
+        <p class="hero-label"><b>NUTRICIÓN</b></p>
+        <h2 class="hero-title">Planes <span class="titulo_principal_rojo">nutricionales</span></h2>
+        <p class="hero-text">
             Elige el plan nutricional que se adapte a tus objetivos. 
             Cada dieta incluye plan semanal completo, macronutrientes y lista de alimentos detallada.
         </p>
 
         <!-- Indicadores rápidos -->
-        <div>
-            <span>✔ 6 planes disponibles</span> |
-            <span>✔ Plan semanal incluido</span> |
-            <span>✔ Actualizado 2025</span>
+        <div class="hero-stats">
+            <span><i class="bi bi-lightning-charge-fill"></i> 6 planes disponibles</span>
+            <span><i class="bi bi-bullseye"></i> Plan semanal incluido</span>
+            <span><i class="bi bi-clock"></i> Actualizado 2026</span>
         </div>
     </section>
-
-    <hr>
 
     <!-- ==================== TARJETAS DE DIETAS ==================== -->
-    <section>
-        <h3>Nuestras Dietas Disponibles</h3>
+    <section class="dietas">
+        <h3 class="dietas-titulo">Nuestras Dietas Disponibles</h3>
 
-        <div>
+        <div class="dietas-grid">
+
             <!-- Dieta 1: Cetogénica -->
-            <div>
-                <p><small><b>MÁS POPULAR</b></small></p>
-                <img src="imagenes/Dieta - Cetogénica.png" alt="Dieta Cetogénica" width="160">
-                <p>  </p>
-                <h3>Dieta Cetogénica <small>(Moderado)</small></h3>
-                <p><b>Quema grasa como combustible principal</b></p>
-                <p>
-                    Alta en grasas, muy baja en carbohidratos. 
-                    Induce cetosis para que el cuerpo use grasa como fuente de energía.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 25% | 
-                        <b>Carbs:</b> 5% | 
-                        <b>Grasa:</b> 70%
-                    </small>
-                </p>
-                <p><small>Objetivo: Pérdida de grasa | Duración: 8-12 semanas</small></p>
-                <a href="dietas/cetogenica.html">Ver dieta &gt;</a>
-            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Cetogénica.png" alt="Dieta Cetogénica">
+                    <span class="tarjeta-badge">MÁS POPULAR</span>
+                    <span class="tarjeta-emoji">🥑</span>
+                </div>
 
-            <br><hr><br>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Dieta Cetogénica</h3>
+                        <span class="nivel nivel-moderado">Moderado</span>
+                    </div>
+
+                    <p class="tarjeta-sub">Quema grasa como combustible principal</p>
+                    <p class="tarjeta-desc">
+                        Alta en grasas, muy baja en carbohidratos.
+                        Induce cetosis para que el cuerpo use grasa como fuente de energía.
+                    </p>
+
+                    <!-- Macros: el ancho de cada tramo sale de la variable --p, --c, --g -->
+                    <div class="macros" style="--p:25; --c:5; --g:70;">
+                        <div class="macros-labels">
+                            <span>Proteína 25%</span>
+                            <span>Carbs 5%</span>
+                            <span>Grasa 70%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Pérdida de grasa</span>
+                        <span class="meta"><i class="bi bi-clock"></i> 8-12 semanas</span>
+                        <a href="dietas/cetogenica.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Dieta 2: Mediterránea -->
-            <div>
-                <p><small><b>RECOMENDADA</b></small></p>
-                <img src="imagenes/Dieta - Mediterránea.png" alt="Dieta Mediterránea" width="160">
-                <p>🫒</p>
-                <h3>Dieta Mediterránea <small>(Fácil)</small></h3>
-                <p><b>El equilibrio perfecto entre salud y sabor</b></p>
-                <p>
-                    Basada en los alimentos tradicionales del Mediterráneo: 
-                    aceite de oliva, vegetales, legumbres y pescado fresco.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 18% | 
-                        <b>Carbs:</b> 50% | 
-                        <b>Grasa:</b> 32%
-                    </small>
-                </p>
-                <p><small>Objetivo: Salud general | Duración: Estilo de vida</small></p>
-                <a href="dietas/mediterranea.html">Ver dieta &gt;</a>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Mediterránea.png" alt="Dieta Mediterránea">
+                    <span class="tarjeta-badge">RECOMENDADA</span>
+                    <span class="tarjeta-emoji">🫒</span>
+                </div>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Dieta Mediterránea</h3>
+                        <span class="nivel nivel-facil">Fácil</span>
+                    </div>
+                    <p class="tarjeta-sub">El equilibrio perfecto entre salud y sabor</p>
+                    <p class="tarjeta-desc">
+                        Basada en los alimentos tradicionales del Mediterráneo:
+                        aceite de oliva, vegetales, legumbres y pescado fresco.
+                    </p>
+                    <div class="macros" style="--p:18; --c:50; --g:32;">
+                        <div class="macros-labels">
+                            <span>Proteína 18%</span>
+                            <span>Carbs 50%</span>
+                            <span>Grasa 32%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Salud general</span>
+                        <span class="meta"><i class="bi bi-clock"></i> Estilo de vida</span>
+                        <a href="dietas/mediterranea.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <br><hr><br>
 
             <!-- Dieta 3: Paleo -->
-            <div>
-                <p><small><b>FUERZA</b></small></p>
-                <img src="imagenes/Dieta - Paleo.png" alt="Dieta Paleo" width="160">
-                <p>🍖</p>
-                <h3>Dieta Paleo <small>(Moderado)</small></h3>
-                <p><b>Come como nuestros ancestros, rinde como un atleta</b></p>
-                <p>
-                    Imita la alimentación del paleolítico: 
-                    carnes magras, pescado, frutas, vegetales, nueces. Sin procesados ni granos.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 30% | 
-                        <b>Carbs:</b> 35% | 
-                        <b>Grasa:</b> 35%
-                    </small>
-                </p>
-                <p><small>Objetivo: Composición corporal | Duración: 12 semanas</small></p>
-                <a href="dietas/paleo.html">Ver dieta &gt;</a>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Paleo.png" alt="Dieta Paleo">
+                    <span class="tarjeta-badge">FUERZA</span>
+                    <span class="tarjeta-emoji">🍖</span>
+                </div>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Dieta Paleo</h3>
+                        <span class="nivel nivel-moderado">Moderado</span>
+                    </div>
+                    <p class="tarjeta-sub">Come como nuestros ancestros, rinde como un atleta</p>
+                    <p class="tarjeta-desc">
+                        Imita la alimentación del paleolítico:
+                        carnes magras, pescado, frutas, vegetales, nueces. Sin procesados ni granos.
+                    </p>
+                    <div class="macros" style="--p:30; --c:35; --g:35;">
+                        <div class="macros-labels">
+                            <span>Proteína 30%</span>
+                            <span>Carbs 35%</span>
+                            <span>Grasa 35%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Composición corporal</span>
+                        <span class="meta"><i class="bi bi-clock"></i> 12 semanas</span>
+                        <a href="dietas/paleo.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <br><hr><br>
 
             <!-- Dieta 4: Ayuno Intermitente -->
-            <div>
-                <p><small><b>EFICIENCIA</b></small></p>
-                <img src="imagenes/Dieta - Ayuno Intermitente.png" alt="Ayuno Intermitente" width="160">
-                <p>⏱️</p>
-                <h3>Ayuno Intermitente <small>(Moderado)</small></h3>
-                <p><b>Maximiza los resultados con ventanas de alimentación</b></p>
-                <p>
-                    Cicla entre periodos de ayuno y alimentación (16:8, 18:6, 5:2) 
-                    para optimizar la quema de grasa y la autofagia.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 30% | 
-                        <b>Carbs:</b> 40% | 
-                        <b>Grasa:</b> 30%
-                    </small>
-                </p>
-                <p><small>Objetivo: Pérdida de peso y longevidad | Duración: Estilo de vida</small></p>
-                <a href="dietas/ayunoIntermitente.html">Ver dieta &gt;</a>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Ayuno Intermitente.png" alt="Ayuno Intermitente">
+                    <span class="tarjeta-badge">EFICIENCIA</span>
+                    <span class="tarjeta-emoji">⏱️</span>
+                </div>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Ayuno Intermitente</h3>
+                        <span class="nivel nivel-moderado">Moderado</span>
+                    </div>
+                    <p class="tarjeta-sub">Maximiza los resultados con ventanas de alimentación</p>
+                    <p class="tarjeta-desc">
+                        Cicla entre periodos de ayuno y alimentación (16:8, 18:6, 5:2)
+                        para optimizar la quema de grasa y la autofagia.
+                    </p>
+                    <div class="macros" style="--p:30; --c:40; --g:30;">
+                        <div class="macros-labels">
+                            <span>Proteína 30%</span>
+                            <span>Carbs 40%</span>
+                            <span>Grasa 30%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Pérdida de peso y longevidad</span>
+                        <span class="meta"><i class="bi bi-clock"></i> Estilo de vida</span>
+                        <a href="dietas/ayunoIntermitente.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <br><hr><br>
 
             <!-- Dieta 5: Vegana Fitness -->
-            <div>
-                <p><small><b>SOSTENIBLE</b></small></p>
-                <img src="imagenes/Dieta - Vegana Fitness.png" alt="Dieta Vegana Fitness" width="160">
-                <p>🌱</p>
-                <h3>Dieta Vegana Fitness <small>(Avanzado)</small></h3>
-                <p><b>Planta el poder, cosecha el rendimiento</b></p>
-                <p>
-                    100% plant-based orientada al rendimiento deportivo. 
-                    Alta en proteínas vegetales para ganar músculo sin productos animales.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 25% | 
-                        <b>Carbs:</b> 55% | 
-                        <b>Grasa:</b> 20%
-                    </small>
-                </p>
-                <p><small>Objetivo: Masa muscular vegana | Duración: Estilo de vida</small></p>
-                <a href="dietas/veganaFitness.html">Ver dieta &gt;</a>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Vegana Fitness.png" alt="Dieta Vegana Fitness">
+                    <span class="tarjeta-badge">SOSTENIBLE</span>
+                    <span class="tarjeta-emoji">🌱</span>
+                </div>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Dieta Vegana Fitness</h3>
+                        <span class="nivel nivel-avanzado">Avanzado</span>
+                    </div>
+                    <p class="tarjeta-sub">Planta el poder, cosecha el rendimiento</p>
+                    <p class="tarjeta-desc">
+                        100% plant-based orientada al rendimiento deportivo.
+                        Alta en proteínas vegetales para ganar músculo sin productos animales.
+                    </p>
+                    <div class="macros" style="--p:25; --c:55; --g:20;">
+                        <div class="macros-labels">
+                            <span>Proteína 25%</span>
+                            <span>Carbs 55%</span>
+                            <span>Grasa 20%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Masa muscular vegana</span>
+                        <span class="meta"><i class="bi bi-clock"></i> Estilo de vida</span>
+                        <a href="dietas/veganaFitness.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <br><hr><br>
-
-            <!-- Dieta 6: Dieta de Volumen -->
-            <div>
-                <p><small><b>MASA MUSCULAR</b></small></p>
-                <img src="imagenes/Dieta - Volumen.png" alt="Dieta de Volumen" width="160">
-                <p>💪</p>
-                <h3>Dieta de Volumen <small>(Avanzado)</small></h3>
-                <p><b>Construye músculo, define tu físico</b></p>
-                <p>
-                    Superávit calórico controlado con alta proteína 
-                    para maximizar la síntesis muscular y minimizar la ganancia de grasa.
-                </p>
-                <!-- Macronutrientes -->
-                <p>
-                    <small>
-                        <b>Proteína:</b> 30% | 
-                        <b>Carbs:</b> 50% | 
-                        <b>Grasa:</b> 20%
-                    </small>
-                </p>
-                <p><small>Objetivo: Ganancia de músculo | Duración: 16-20 semanas</small></p>
-                <a href="dietas/volumen.html">Ver dieta &gt;</a>
+            <!-- Dieta 6: Volumen -->
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="imagenes/Dieta - Volumen.png" alt="Dieta de Volumen">
+                    <span class="tarjeta-badge">MASA MUSCULAR</span>
+                    <span class="tarjeta-emoji">💪</span>
+                </div>
+                <div class="tarjeta-body">
+                    <div class="tarjeta-head">
+                        <h3>Dieta de Volumen</h3>
+                        <span class="nivel nivel-avanzado">Avanzado</span>
+                    </div>
+                    <p class="tarjeta-sub">Construye músculo, define tu físico</p>
+                    <p class="tarjeta-desc">
+                        Superávit calórico controlado con alta proteína
+                        para maximizar la síntesis muscular y minimizar la ganancia de grasa.
+                    </p>
+                    <div class="macros" style="--p:30; --c:50; --g:20;">
+                        <div class="macros-labels">
+                            <span>Proteína 30%</span>
+                            <span>Carbs 50%</span>
+                            <span>Grasa 20%</span>
+                        </div>
+                        <div class="macros-bar">
+                            <span class="m-prot"></span>
+                            <span class="m-carb"></span>
+                            <span class="m-grasa"></span>
+                        </div>
+                    </div>
+                    <div class="tarjeta-foot">
+                        <span class="meta"><i class="bi bi-record-circle"></i> Ganancia de músculo</span>
+                        <span class="meta"><i class="bi bi-clock"></i> 16-20 semanas</span>
+                        <a href="dietas/volumen.html" class="tarjeta-link">Ver dieta <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <hr>
-
-    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
     <footer>
-        <div>
-            <!-- Columna 1: Marca y descripción -->
-            <div>
-                <h3>LOCK-IN</h3>
+        <div class="contenedor footer_contenido">
+            <div class="footer_marca">
+
+                <img src="imagenes/logo.png" alt="LockIn">
+
                 <p>
-                    Tu plataforma de entrenamiento online. 
-                    Transforma tu cuerpo y mente desde un solo lugar.
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
                 </p>
-                <p>
-                    <a href="https://facebook.com" target="_blank">Facebook</a> |
-                    <a href="https://instagram.com" target="_blank">Instagram</a> |
-                    <a href="https://twitter.com" target="_blank">Twitter</a> |
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
-                </p>
+
+                <div class="footer_redes">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Columna 2: Contacto -->
-            <div>
-                <h4>Contacto</h4>
-                <p>Email: info@lockin.com</p>
-                <p>Teléfono: +54 351 000 0000</p>
-                <p>Ubicación: Córdoba, Argentina</p>
+            <div class="footer_enlaces">
+
+                <h4>Enlaces Rápidos</h4>
+
+                <a href="inicio.html">
+                    Inicio
+                </a>
+                <a href="#planes">
+                    Planes
+                </a>
+                <a href="nutricion.html">
+                    Nutrición
+                </a>
+                <a href="calculadora.html">
+                    Calculadora
+                </a>
+                <a href="mapa.html">
+                    Gimnasios
+                </a>
+            </div>
+
+            <div class="footer_contacto">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
+
             </div>
         </div>
 
-        <hr>
+        <div class="footer_inferior">
+            <div class="contenedor footer_inferior_contenido">
 
-        <!-- Copyright y enlaces legales -->
-        <div>
-            <p>&copy; 2026 LockIn - Todos los derechos reservados.</p>
-            <p>
-                <a href="#">Términos y Condiciones</a> | 
-                <a href="#">Política de Privacidad</a> | 
-                <a href="#">Cookies</a>
-            </p>
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>

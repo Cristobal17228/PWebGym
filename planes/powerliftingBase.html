@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockIn - Planes de Entrenamiento - Powerlifting Base</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="planes.css">
+</head>
+
+<body>
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
+    <header class="barra_superior">
+        <div class="contenedor header_contenido">
+            <a href="../inicio.html" class="logo">
+                <img src="../imagenes/logo.png" alt="LockIn Logo">
+            </a>
+            <nav class="menu">
+                <a href="../inicio.html" class="inicio">
+                    <i class="bi bi-house-door"></i>
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes" class="planes">
+                    <i class="bi bi-activity"></i>
+                    Planes
+                </a>
+                <a href="../nutricion.html" class="nutricion">
+                    <i class="bi bi-apple"></i>
+                    Nutrición
+                </a>
+                <a href="../calculadora1.html">
+                    <i class="bi bi-calculator"></i>
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    <i class="bi bi-geo-alt"></i>
+                    Gimnasios Cercanos
+                </a>
+            </nav>
+            <a href="../registrarse.html" class="boton_unete">
+                Únete Ahora
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!--=================== PORTADA ========================-->
+        <section class="plan-hero">
+
+            <div class="hero-imagen">
+                <img class="hero-bg" src="../imagenes/Plan - Powerlifting Base.png" alt="Powerlifting Base">
+
+                <div class="contenedor-interno">
+                    <a href="../inicio.html#planes" class="hero-volver">
+                        <i class="bi bi-arrow-left"></i> Volver a planes
+                    </a>
+                    <span class="hero-badge">FUERZA MÁXIMA</span>
+                </div>
+
+                <div class="contenedor-interno hero-titulo">
+                    <p class="hero-etiqueta">FUERZA · POWERLIFTING</p>
+                    <div class="hero-fila">
+                        <span class="hero-emoji">🏋️‍♂️</span>
+                        <div>
+                            <h1>Powerlifting Base</h1>
+                            <p class="hero-sub">Construí fuerza real desde cero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila de datos + botón -->
+            <div class="contenedor-interno hero-datos">
+                <div class="hero-datos-info">
+                    <span class="nivel nivel-avanzado">Avanzado</span>
+                    <span class="categoria-badge categoria-estetica">Fuerza</span>
+                    <span class="dato"><i class="bi bi-clock"></i> 3 sesiones/semana · 16 semanas</span>
+                    <span class="dato"><i class="bi bi-tools"></i> Barra + discos + rack + banco</span>
+                </div>
+                <button type="button" class="btn-rojo" onclick="alert('¡Empezaste el plan Powerlifting Base! ¡A levantar pesado!')">Empezar Plan <i class="bi bi-chevron-right"></i></button>
+            </div>
+
+        </section>
+
+        <!-- ==================== SOBRE ESTE PLAN ==================== -->
+        <section class="plan-acerca">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Sobre este plan</h2>
+                <p class="plan-acerca-texto">
+                    Powerlifting Base es un programa estructurado en torno a los tres movimientos de competición: la sentadilla (squat), el press de banca (bench press) y el peso muerto (deadlift). Basado en el modelo de periodización lineal ondulada, este plan de 16 semanas optimiza la eficiencia biomecánica, la coordinación neuromuscular y la capacidad de expresar fuerza máxima en un intento de una repetición (1RM), protegiendo la salud articular mediante accesorios específicos.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== DISTRIBUCIÓN DEL VOLUMEN Y PÚBLICO ==================== -->
+        <section class="plan-info">
+            <div class="contenedor-interno plan-info-grid">
+
+                <!-- Cuadro 1: Distribución del volumen -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">Distribución del volumen</h3>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Fuerza / Resistencia</span>
+                            <b>80%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-fuerza" style="width: 80%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Cardio / Metabólico</span>
+                            <b>10%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-cardio" style="width: 10%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-volumen">
+                        <div class="volumen-fila">
+                            <span>Movilidad / Técnica</span>
+                            <b>10%</b>
+                        </div>
+                        <div class="volumen-barra">
+                            <span class="volumen-relleno volumen-movilidad" style="width: 10%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="volumen-dias">
+                        <span class="volumen-item"><i class="bi bi-lightning-charge-fill"></i> <b>3 días de entreno</b></span>
+                        <span class="volumen-item"><i class="bi bi-arrow-repeat"></i> <b>4 días de descanso</b></span>
+                    </div>
+                </article>
+
+                <!-- Cuadro 2: ¿Para quién es? -->
+                <article class="plan-tarjeta">
+                    <h3 class="plan-tarjeta-titulo">¿Para quién es?</h3>
+                    <p class="publico-texto">
+                        Levantadores que quieren maximizar su fuerza absoluta en los tres grandes movimientos, ya sea para competir en powerlifting o para construir una base de fuerza inquebrantable aplicable a cualquier deporte.
+                    </p>
+
+                    <p class="publico-objetivo"><i class="bi bi-star"></i> <b>Objetivo</b></p>
+                    <span class="publico-pildora"><i class="bi bi-bullseye"></i> Aumento de 1RM en Sentadilla, Banca y Peso Muerto</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== BENEFICIOS COMPROBADOS ==================== -->
+        <section class="plan-beneficios">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Beneficios comprobados</h2>
+
+                <div class="beneficios-grid">
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Incremento probado de la fuerza máxima (1RM)
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Perfeccionamiento técnico en los tres levantamientos
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Aumento de la densidad ósea y refuerzo tendinoso
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Dominio del sistema de regulación de esfuerzo RPE / RIR
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Prevención de desbalances con accesorios específicos
+                    </div>
+                    <div class="beneficio">
+                        <span class="icono-circulo icono-rojo"><i class="bi bi-check-lg"></i></span>
+                        Metodología comprobada de peaking para toma de marcas
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROGRAMA SEMANAL ==================== -->
+        <section class="plan">
+            <div class="contenedor-interno">
+                <h2 class="plan-titulo">Programa semanal</h2>
+                <p class="programa-subtitulo">3 sesiones de entrenamiento · Expandí cada día para ver los ejercicios</p>
+
+                <div class="plan-lista">
+
+                    <!-- Lunes -->
+                    <details class="dia" open>
+                        <summary>
+                            <span class="dia-abrev">Lun</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Lunes — Sentadilla Pesada y Banca de Volumen</span>
+                                <span class="dia-sub">Sentadilla de competición y acumulación en press de banca</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Sentadilla Principal</span>
+                                <p>Sentadilla trasera con barra: 4x4 al 80% 1RM con pausa en paralelo y walkout firme</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Banca Secundaria</span>
+                                <p>Press de banca con parada en el pecho: 4x6 al 72% 1RM enfocando retracción escapular</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Accesorio Cuádriceps</span>
+                                <p>Prensa de piernas o Sentadilla frontal ligera: 3x10 a ritmo controlado</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Core y Estabilidad</span>
+                                <p>Plancha con peso en espalda (3x45s) + Hiperextensiones lumbares (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Curl Femoral Accesorio</span>
+                                <p>Curl femoral nórdico excéntrico o en máquina tumbado: 3x8 controlando 4 segundos la bajada para prevenir lesiones</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad de Cadera</span>
+                                <p>Estiramiento 90-90 en el suelo (3x40s por lado) + Rotaciones de cadera en cuatro apoyos (2x10 círculos por pierna)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Martes -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Mar</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Martes — Descanso y Recuperación</span>
+                                <span class="dia-sub">Descanso completo o caminata suave 30 min y movilidad de cadera</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Miércoles -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Mié</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Miércoles — Press de Banca Pesado y Accesorios de Empuje</span>
+                                <span class="dia-sub">Banca de competición, trabajo de tríceps y deltoides</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Banca Principal</span>
+                                <p>Press de banca con barra: 5x3 al 82% 1RM con arco competitivo y leg drive sólido</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Banca Variación</span>
+                                <p>Press de banca con agarre cerrado: 3x6 al 75% 1RM para sobrecarga de tríceps</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Espalda Soporte</span>
+                                <p>Remo con barra apoyado en pecho o con mancuernas: 4x10 para base de empuje</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Accesorios Brazo</span>
+                                <p>Press militar de pie (3x8) + Extensiones de tríceps en polea (3x12)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Fortalecimiento Manguito</span>
+                                <p>Rotaciones externas con banda elástica (3x15 por lado) + Face pulls con cuerda (3x15) para proteger el hombro bajo cargas máximas</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad Torácica</span>
+                                <p>Extensiones torácicas sobre foam roller (2x40s) + rotaciones torácicas en cuatro apoyos (2x10 por lado)</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Jueves -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Jue</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Jueves — Descanso</span>
+                                <span class="dia-sub">Nutrición rica en proteínas, hidratación y sueño reparador</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Viernes -->
+                    <details class="dia">
+                        <summary>
+                            <span class="dia-abrev">Vie</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Viernes — Peso Muerto y Sentadilla Secundaria</span>
+                                <span class="dia-sub">Tirón pesado convencional o sumo y sentadilla pausada</span>
+                            </div>
+                            <i class="bi bi-chevron-right dia-flecha"></i>
+                        </summary>
+                        <div class="dia-ejercicios">
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Peso Muerto Principal</span>
+                                <p>Peso muerto convencional/sumo: 4x3 al 80% 1RM con bloqueo firme de glúteos</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Sentadilla Técnica</span>
+                                <p>Sentadilla con parada de 2 segundos en el fondo (Pause Squat): 3x4 al 70% 1RM</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Accesorio Isquios</span>
+                                <p>Peso muerto rumano con mancuernas o barra: 3x8 manteniendo espalda neutra</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Espalda Alta y Agarre</span>
+                                <p>Jalón al pecho agarre prono (3x10) + Farmer's Walk con agarre estricto (3x40m)</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Hip Thrust Accesorio</span>
+                                <p>Hip Thrust con barra en banco: 3x10 con pausa de 1s arriba para fortalecer el glúteo de apoyo en el arrancado del peso muerto</p>
+                            </div>
+                            <div class="ejercicio">
+                                <span class="ejercicio-tipo">Movilidad de Tobillo y Cadera</span>
+                                <p>Estiramiento de tobillo en pared (2x20 repeticiones por lado) + estiramiento de glúteo en mariposa (2x40s) para mejorar la posición en el levantamiento</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Sábado -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Sáb</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Sábado — Descanso activo</span>
+                                <span class="dia-sub">Estiramientos dinámicos, movilidad de tobillos y hombros</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                    <!-- Domingo -->
+                    <details class="dia dia-descanso">
+                        <summary>
+                            <span class="dia-abrev">Dom</span>
+                            <div class="dia-info-header">
+                                <span class="dia-nombre">Domingo — Descanso total</span>
+                                <span class="dia-sub">Recuperación total y preparación para el siguiente microciclo</span>
+                            </div>
+                        </summary>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div class="contenedor footer_contenido">
+            <div class="footer_marca">
+
+                <img src="../imagenes/logo.png" alt="LockIn">
+
+                <p>
+                    Tu gimnasio virtual de confianza.
+                    Transforma tu cuerpo y mente desde cualquier lugar.
+                </p>
+
+                <div class="footer_redes">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_enlaces">
+
+                <h4>Enlaces Rápidos</h4>
+
+                <a href="../inicio.html">
+                    Inicio
+                </a>
+                <a href="../inicio.html#planes">
+                    Planes
+                </a>
+                <a href="../nutricion.html">
+                    Nutrición
+                </a>
+                <a href="../calculadora.html">
+                    Calculadora
+                </a>
+                <a href="../mapa.html">
+                    Gimnasios
+                </a>
+            </div>
+
+            <div class="footer_contacto">
+
+                <h4>
+                    Contacto
+                </h4>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@lock-in.fit
+                </p>
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +54 351 000-0000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Córdoba, Argentina
+                </p>
+
+            </div>
+        </div>
+
+        <div class="footer_inferior">
+            <div class="contenedor footer_inferior_contenido">
+
+                <p>
+                    © 2026 LockIn - Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
-<header class="barra_superior">
-    <div class="contenedor header_contenido">
+<header class="barra-superior">
+    <div class="contenedor header-contenido">
         <a href="inicio.html" class="logo">
             <img src="imagenes/logo.png" alt="LockIn Logo">
         </a>
         <nav class="menu">
-            <a href="inicio.html" class="inicio">
+            <a href="inicio.html" class="seleccionado">
                 <i class="bi bi-house-door"></i>
                 Inicio
             </a>
@@ -26,7 +26,7 @@
                 Planes
             </a>
             <a href="nutricion.html">
-                <i class="bi bi-apple"></i>
+                <i class="bi bi-basket"></i>
                 Nutrición
             </a>
             <a href="calculadora1.html">
@@ -38,7 +38,7 @@
                 Gimnasios Cercanos
             </a>
         </nav>
-        <a href="registrarse.html" class="boton_unete">
+        <a href="registrarse.html" class="boton-unete">
             Únete Ahora
         </a>
     </div>
@@ -46,35 +46,35 @@
 
 <main>
 <section class="hero">
-    <div class="contenedor hero_contenido">
-        <p class="frase_antes_del_titulo">
+    <div class="contenedor hero-contenido">
+        <p class="frase-antes-del-titulo">
             <span class="punto"></span>
             Tu gimnasio, en cualquier lugar
         </p>
-        <h1 class="titulo_principal">
-            <span class="titulo_principal_blanco">
+        <h1 class="titulo-principal">
+            <span class="titulo-principal-blanco">
                 TRANSFORMA TU
             </span>
-            <span class="titulo_principal_rojo">
+            <span class="titulo-principal-rojo">
                 CUERPO Y MENTE
             </span>
         </h1>
-        <p class="descripcion_hero">
+        <p class="descripcion-hero">
             Lock In es un proyecto que busca ayudar a los usuarios a organizar y mejorar su estilo
             de vida saludable, permitiéndoles gestionar sus planes de entrenamiento y
             alimentación desde un mismo lugar.
         </p>
-        <div class="botones_hero">
-            <a href="#planes" class="boton_entrenamiento">
+        <div class="botones-hero">
+            <a href="#planes" class="boton-entrenamiento">
                 Empieza tu entrenamiento online
                 <i class="bi bi-arrow-right"></i>
             </a>
-            <button class="boton_demo" type="button">
-                <i class="bi bi-play"></i>
-                Ver demo
-            </button>
+            <a href="registrarse.html" class="boton_demo">
+    <i class="bi bi-person-plus"></i>
+    Registrarse
+    </a>
         </div>
-        <div class="estadisticas_hero">
+        <div class="estadisticas-hero">
             <div class="estadistica">
                 <h3>5K+</h3>
                 <p>Miembros Activos</p>
@@ -93,18 +93,18 @@
 
 <section class="beneficios">
     <div class="contenedor">
-        <div class="encabezado_centrado">
-            <p class="etiqueta_seccion">BENEFICIOS</p>
-            <h2 class="beneficios_titulo">
+        <div class="encabezado-centrado">
+            <p class="etiqueta-seccion">BENEFICIOS</p>
+            <h2 class="beneficios-titulo">
                 ¿Por qué elegir <span>Lock In?</span>
             </h2>
-            <p class="beneficios_descripcion">
+            <p class="beneficios-descripcion">
                 Todo lo que necesitas para alcanzar tus metas fitness en un solo lugar
             </p>
         </div>
-        <div class="beneficios_contenedor">
+        <div class="beneficios-contenedor">
             <div class="beneficio">
-                <div class="beneficio_icono icono_naranja">
+                <div class="beneficio-icono icono-naranja">
                     <i class="bi bi-person"></i>
                 </div>
                 <h3>
@@ -119,7 +119,7 @@
             </div>
 
             <div class="beneficio">
-                <div class="beneficio_icono icono_rojo">
+                <div class="beneficio-icono icono-rojo">
                     <i class="bi bi-camera-video"></i>
                 </div>
                 <h3>Rutinas Virtuales</h3>
@@ -130,7 +130,7 @@
             </div>
 
             <div class="beneficio">
-                <div class="beneficio_icono icono_naranja">
+                <div class="beneficio-icono icono-naranja">
                     <i class="bi bi-apple"></i>
                 </div>
                 <h3>Nutrición Online</h3>
@@ -141,7 +141,7 @@
             </div>
 
             <div class="beneficio">
-                <div class="beneficio_icono icono_rojo">
+                <div class="beneficio-icono icono-rojo">
                     <i class="bi bi-people"></i>
                 </div>
                 <h3>
@@ -160,16 +160,16 @@
 
 <section id="planes" class="planes">
     <div class="contenedor">
-        <p class="planes_etiqueta">ENTRENAMIENTO</p>
-        <h2 class="planes_titulo">
+        <p class="planes-etiqueta">ENTRENAMIENTO</p>
+        <h2 class="planes-titulo">
             Planes de <span>Entrenamiento</span>
         </h2>
-        <p class="planes_descripcion">
+        <p class="planes-descripcion">
             Elegí el programa que se adapte a tus objetivos. Cada plan incluye rutinas
             semanales completas, progresión y guía de ejercicios.
         </p>
 
-        <div class="planes_resumen">
+        <div class="planes-resumen">
             <span>
                 <i class="bi bi-lightning-charge-fill"></i>
                 6 planes disponibles
@@ -184,29 +184,29 @@
             </span>
         </div>
 
-        <div class="planes_tarjetas">
-            <article class="plan_tarjeta plan_destacado">
-                <div class="plan_media">
+        <div class="planes-tarjetas">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Definición Total.png" alt="Definición Total">
-                    <span class="plan_popular">MÁS POPULAR</span>
-                    <div class="plan_icono">
+                    <span class="plan-popular">MÁS POPULAR</span>
+                    <div class="plan-icono">
                         <i class="bi bi-lightning-charge-fill"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_estetica">Estética</span>
-                        <span class="badge nivel_intermedio">Intermedio</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-estetica">Estética</span>
+                        <span class="badge nivel-intermedio">Intermedio</span>
                     </div>
                     <h3>Definición Total</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Esculpí tu cuerpo, bajá el porcentaje graso
                     </p>
-                    <p class="plan_descripcion">
+                    <p class="plan-descripcion">
                         Entrenamiento de resistencia progresivo con énfasis en hipertrofia
                         moderada y reducción de grasa corporal.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             4 sesiones/semana · 12 semanas
@@ -216,34 +216,34 @@
                             Pesas libres + máquinas + cardio
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/definicionTotal.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </article>
 
-            <article class="plan_tarjeta">
-                <div class="plan_media">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Powerlifting Base.png" alt="Powerlifting Base">
-                    <div class="plan_icono">
+                    <div class="plan-icono">
                         <i class="bi bi-sliders2"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_fuerza">Fuerza</span>
-                        <span class="badge nivel_avanzado">Avanzado</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-fuerza">Fuerza</span>
+                        <span class="badge nivel-avanzado">Avanzado</span>
                     </div>
                     <h3>Powerlifting Base</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Construí fuerza real desde cero
                     </p>
-                    <p class="plan_descripcion">
+                    <p class="plan-descripcion">
                         Programa centrado en los tres grandes levantamientos con
                         periodización lineal y progresión de carga semanal.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             3 sesiones/semana · 16 semanas
@@ -253,34 +253,34 @@
                             Barra + discos + rack + banco
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/powerliftingBase.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </article>
 
-            <article class="plan_tarjeta">
-                <div class="plan_media">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Resistencia Runner.png" alt="Resistencia Runner">
-                    <div class="plan_icono plan_icono_azul">
+                    <div class="plan-icono plan-icono-azul">
                         <i class="bi bi-wind"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_cardio">Cardio</span>
-                        <span class="badge nivel_principiante">Principiante</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-cardio">Cardio</span>
+                        <span class="badge nivel-principiante">Principiante</span>
                     </div>
                     <h3>Resistencia Runner</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Mejorá tu capacidad cardiovascular al máximo
                     </p>
-                    <p class="plan_descripcion">
+                    <p class="plan-descripcion">
                         Plan progresivo para mejorar la resistencia aeróbica con rodajes,
                         series y fuerza de apoyo para corredores.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             5 sesiones/semana · 8 semanas
@@ -290,34 +290,34 @@
                             Calzado running · Sin equipamiento extra
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/resistenciaRunner.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </article>
 
-            <article class="plan_tarjeta">
-                <div class="plan_media">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Quema Máxima.png" alt="Quema Máxima">
-                    <div class="plan_icono plan_icono_naranja">
+                    <div class="plan-icono plan-icono-naranja">
                         <i class="bi bi-fire"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_hiit">HIIT</span>
-                        <span class="badge nivel_intermedio">Intermedio</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-hiit">HIIT</span>
+                        <span class="badge nivel-intermedio">Intermedio</span>
                     </div>
                     <h3>Quema Máxima</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Intervalos de alta intensidad para resultados rápidos
                     </p>
-                    <p class="plan_descripcion">
-                        Sesiones explosivas de 30–40 minutos que maximizan la quema
+                    <p class="plan-descripcion">
+                        Sesiones explosivas de 30-40 minutos que maximizan la quema
                         calórica con trabajo de alta intensidad.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             4 sesiones/semana · 6 semanas
@@ -327,34 +327,34 @@
                             Mínimo: mat, mancuernas opcionales
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/quemaMaxima.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </article>
 
-            <article class="plan_tarjeta">
-                <div class="plan_media">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Movimiento Libre.png" alt="Movimiento Libre">
-                    <div class="plan_icono plan_icono_verde">
+                    <div class="plan-icono plan-icono-verde">
                         <i class="bi bi-arrow-counterclockwise"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_movilidad">Movilidad</span>
-                        <span class="badge nivel_principiante">Principiante</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-movilidad">Movilidad</span>
+                        <span class="badge nivel-principiante">Principiante</span>
                     </div>
                     <h3>Movimiento Libre</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Recuperá la movilidad y prevenite de lesiones
                     </p>
-                    <p class="plan_descripcion">
+                    <p class="plan-descripcion">
                         Programa de movilidad funcional, trabajo de core y flexibilidad
                         dinámica para recuperar el movimiento libre.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             3 sesiones/semana · 8 semanas
@@ -364,35 +364,35 @@
                             Mat de yoga · Sin equipamiento extra
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/movimientoLibre.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </article>
 
-            <article class="plan_tarjeta">
-                <div class="plan_media">
+            <article class="plan-tarjeta">
+                <div class="plan-media">
                     <img src="imagenes/Plan - Atleta Total.png" alt="Atleta Total">
-                    <span class="plan_popular">ELITE</span>
-                    <div class="plan_icono plan_icono_rojo">
+                    <span class="plan-popular">ELITE</span>
+                    <div class="plan-icono plan-icono-rojo">
                         <i class="bi bi-heart"></i>
                     </div>
                 </div>
-                <div class="plan_contenido">
-                    <div class="plan_badges">
-                        <span class="badge categoria_crossfit">CrossFit</span>
-                        <span class="badge nivel_avanzado">Avanzado</span>
+                <div class="plan-contenido">
+                    <div class="plan-badges">
+                        <span class="badge categoria-crossfit">CrossFit</span>
+                        <span class="badge nivel-avanzado">Avanzado</span>
                     </div>
                     <h3>Atleta Total</h3>
-                    <p class="plan_subtitulo">
+                    <p class="plan-subtitulo">
                         Rendimiento completo en todos los dominios físicos
                     </p>
-                    <p class="plan_descripcion">
+                    <p class="plan-descripcion">
                         Entrenamiento cruzado de alto rendimiento: pesas olímpicas,
                         gimnástica y cardio metabólico.
                     </p>
-                    <div class="plan_datos">
+                    <div class="plan-datos">
                         <p>
                             <i class="bi bi-clock"></i>
                             5 sesiones/semana · 20 semanas
@@ -402,7 +402,7 @@
                             Gimnasio completo con olímpicos
                         </p>
                     </div>
-                    <a href="planes.html" class="plan_enlace">
+                    <a href="planes/atletaTotal.html" class="plan-enlace">
                         Ver plan
                         <i class="bi bi-chevron-right"></i>
                     </a>
@@ -414,26 +414,26 @@
 
 <section class="testimonios">
     <div class="contenedor">
-        <div class="encabezado_centrado">
-            <p class="etiqueta_seccion">TESTIMONIOS</p>
-            <h2 class="testimonios_titulo">
+        <div class="encabezado-centrado">
+            <p class="etiqueta-seccion">TESTIMONIOS</p>
+            <h2 class="testimonios-titulo">
                 Lo que dicen <span>Nuestros Miembros</span>
             </h2>
-            <p class="testimonios_descripcion">
+            <p class="testimonios-descripcion">
                 Miles de personas han transformado sus vidas con Lock In
             </p>
         </div>
 
-        <div class="testimonios_contenedor">
+        <div class="testimonios-contenedor">
             <article class="testimonio">
                 <div class="comillas">”</div>
                 <div class="estrellas">★★★★★</div>
-                <p class="testimonio_texto">
+                <p class="testimonio-texto">
                     "En 3 meses he logrado transformar completamente mi cuerpo.
                     Los entrenamientos son intensos pero efectivos, y el apoyo
                     nutricional ha sido clave. ¡100% recomendado!"
                 </p>
-                <div class="testimonio_autor">
+                <div class="testimonio-autor">
                     <div class="avatar">MG</div>
                     <div>
                         <h4>María González</h4>
@@ -445,12 +445,12 @@
             <article class="testimonio">
                 <div class="comillas">”</div>
                 <div class="estrellas">★★★★★</div>
-                <p class="testimonio_texto">
+                <p class="testimonio-texto">
                     "Trabajo desde casa y Lock In me ha dado la flexibilidad que
                     necesitaba. Las clases en vivo son increíbles y la comunidad
                     es muy motivadora."
                 </p>
-                <div class="testimonio_autor">
+                <div class="testimonio-autor">
                     <div class="avatar">CR</div>
                     <div>
                         <h4>Carlos Ramírez</h4>
@@ -462,12 +462,12 @@
             <article class="testimonio">
                 <div class="comillas">”</div>
                 <div class="estrellas">★★★★★</div>
-                <p class="testimonio_texto">
+                <p class="testimonio-texto">
                     "Los entrenadores son profesionales excepcionales. Me han ayudado
                     a superar mis límites y alcanzar metas que creía imposibles.
                     Mejor inversión en mi salud."
                 </p>
-                <div class="testimonio_autor">
+                <div class="testimonio-autor">
                     <div class="avatar">AM</div>
                     <div>
                         <h4>Ana Martínez</h4>
@@ -477,20 +477,20 @@
             </article>
         </div>
 
-        <div class="testimonios_estadisticas">
-            <div class="testimonio_estadistica">
+        <div class="testimonios-estadisticas">
+            <div class="testimonio-estadistica">
                 <h3>4.9/5</h3>
                 <p>Calificación promedio</p>
             </div>
-            <div class="testimonio_estadistica">
+            <div class="testimonio-estadistica">
                 <h3>5,000+</h3>
                 <p>Miembros activos</p>
             </div>
-            <div class="testimonio_estadistica">
+            <div class="testimonio-estadistica">
                 <h3>15K+</h3>
                 <p>Clases impartidas</p>
             </div>
-            <div class="testimonio_estadistica">
+            <div class="testimonio-estadistica">
                 <h3>98%</h3>
                 <p>Recomiendan</p>
             </div>
@@ -500,14 +500,14 @@
 </main>
 
 <footer>
-    <div class="contenedor footer_contenido">
-        <div class="footer_marca">
+    <div class="contenedor footer-contenido">
+        <div class="footer-marca">
             <img src="imagenes/logo.png" alt="LockIn">
             <p>
                 Tu gimnasio virtual de confianza.
                 Transforma tu cuerpo y mente desde cualquier lugar.
             </p>
-            <div class="footer_redes">
+            <div class="footer-redes">
                 <a href="https://facebook.com" target="_blank">
                     <i class="bi bi-facebook"></i>
                 </a>
@@ -523,7 +523,7 @@
             </div>
         </div>
 
-        <div class="footer_enlaces">
+        <div class="footer-enlaces">
             <h4>Enlaces Rápidos</h4>
             <a href="inicio.html">Inicio</a>
             <a href="#planes">Planes</a>
@@ -532,7 +532,7 @@
             <a href="mapa.html">Gimnasios</a>
         </div>
 
-        <div class="footer_contacto">
+        <div class="footer-contacto">
             <h4>Contacto</h4>
             <p>
                 <i class="bi bi-envelope"></i>
@@ -549,8 +549,8 @@
         </div>
     </div>
 
-    <div class="footer_inferior">
-        <div class="contenedor footer_inferior_contenido">
+    <div class="footer-inferior">
+        <div class="contenedor footer-inferior-contenido">
             <p>
                 © 2026 LockIn - Todos los derechos reservados.
             </p>

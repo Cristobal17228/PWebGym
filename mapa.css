@@ -1,0 +1,618 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.contenedor {
+    width: min(1215px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.barra-superior {
+    height: 96px;
+    background-color: #000000;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.header-contenido {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 16px;
+
+    color: #bdbdbd;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.menu a i {
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    background-color: #141414;
+}
+
+.menu .seleccionado {
+    color: #ff2935;
+    background-color: #200709;
+}
+
+.boton-unete {
+    flex-shrink: 0;
+
+    padding: 16px 27px;
+
+    background-color: #ef0712;
+    color: #ffffff;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.boton-unete:hover {
+    background-color: #ff202b;
+}
+
+.hero {
+    padding: 90px 94px 80px;
+    background:
+        radial-gradient(ellipse at 20% 0%, rgba(120, 20, 30, 0.35), transparent 60%),
+        linear-gradient(180deg, #1a1215 0%, #000 100%);
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.hero-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 16px;
+    color: #ec0d1c;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hero-label::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #ec0d1c;
+}
+
+.hero-title {
+    margin: 0 0 24px;
+    color: #fff;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.hero-title span {
+    color: #ec0d1c;
+}
+
+.hero-text {
+    max-width: 780px;
+    margin: 0 0 32px;
+    color: #a9a3b8;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+ 
+/* ---------- Layout: mapa a la izquierda, lista a la derecha ---------- */
+.mapa-seccion {
+    padding: 40px 0 70px;
+}
+.mapa-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 24px;
+    align-items: start;
+}
+ 
+/* ---------- Caja del mapa ---------- */
+.mapa-caja {
+    position: relative;
+    height: 480px;
+    background: #0b0b0d;
+    border: 1px solid #26262a;
+    border-radius: 16px;
+    overflow: hidden;              /* recorta el mapa con las esquinas redondeadas */
+}
+#mapa {
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Etiqueta flotante arriba a la izquierda */
+.mapa-pildora {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 1000;                 /* por encima de las capas de Leaflet */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(20, 20, 23, .9);
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    backdrop-filter: blur(6px);
+}
+.mapa-pildora .bi {
+    color: #ff2d3a;
+}
+ 
+/* ---------- Mapa oscuro (sin API key) ----------
+   Se invierten los colores de los tiles de OpenStreetMap.
+   Solo afecta a los tiles: marcadores y popups no se tocan. */
+.leaflet-container {
+    background: #0b0b0d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.leaflet-tile-pane {
+    filter: /*invert(100%) hue-rotate(180deg) grayscale(100%)*/ brightness(80%) contrast(95%);
+}
+ 
+/* Controles de zoom */
+.leaflet-touch .leaflet-bar {
+    border: 1px solid #2a2a2e;
+    box-shadow: none;
+}
+.leaflet-bar a {
+    background: #1a1a1d;
+    color: #fff;
+    border-bottom: 1px solid #2a2a2e;
+}
+.leaflet-bar a:hover {
+    background: #26262a;
+    color: #fff;
+}
+ 
+/* Atribución (hay que dejarla visible por la licencia de OpenStreetMap) */
+.leaflet-container .leaflet-control-attribution {
+    background: rgba(0, 0, 0, .65);
+    color: #8e8a9c;
+}
+.leaflet-container .leaflet-control-attribution a {
+    color: #a9a3b8;
+}
+ 
+/* Marcador rojo */
+.marcador-sede i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    color: #e50914;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6));
+}
+ 
+/* Popup oscuro */
+.leaflet-popup-content-wrapper {
+    background: #17171a;
+    color: #fff;
+    border: 1px solid #2a2a2e;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+}
+.leaflet-popup-tip {
+    background: #17171a;
+}
+.leaflet-container a.leaflet-popup-close-button {
+    color: #8e8a9c;
+}
+.popup-sede strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #ff5c6a;
+    font-size: .85rem;
+}
+.popup-sede span,
+.popup-sede small {
+    display: block;
+    color: #d8d6e0;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+.popup-sede small {
+    color: #a9a3b8;
+}
+.popup-sede .bi-star-fill {
+    color: #f5c518;
+}
+ 
+/* ---------- Sede seleccionada ---------- */
+.sede-seleccionada {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: #151518;
+    border: 1px solid #26262a;
+    border-radius: 16px;
+}
+.sede-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background: rgba(229, 9, 20, .18);
+    border: 1px solid rgba(229, 9, 20, .35);
+    border-radius: 12px;
+    color: #ff5c6a;
+    font-size: 1.1rem;
+}
+.sede-info {
+    flex: 1;
+    min-width: 0;
+}
+.sede-info small {
+    display: block;
+    color: #8e8a9c;
+    font-size: .75rem;
+}
+.sede-info h3 {
+    margin: 2px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.sede-info p {
+    margin: 0;
+    color: #a9a3b8;
+    font-size: .8rem;
+}
+.boton-como-llegar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 11px 22px;
+    background: #e50914;
+    border-radius: 10px;
+    color: #fff;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: filter .2s, transform .2s;
+}
+.boton-como-llegar:hover {
+    filter: brightness(1.15);
+    transform: translateY(-1px);
+}
+ 
+/* ---------- Lista de sedes ---------- */
+.sedes-titulo {
+    margin: 0 0 16px;
+    color: #8e8a9c;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.sedes-scroll {
+    position: relative;            /* para poder desplazar la lista desde el JS */
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-height: 600px;
+    padding-right: 6px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2e transparent;
+}
+ 
+/* Tarjeta de sede */
+.tarjeta-sede {
+    padding: 18px 20px;
+    background: #151518;
+    border: 1px solid #26262a;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+}
+.tarjeta-sede:hover {
+    border-color: #6b1a20;
+}
+/* Sede elegida (la clase la agrega el JS) */
+.tarjeta-sede.activa {
+    background: #1a0d0f;
+    border-color: #e50914;
+}
+ 
+.sede-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.sede-cabecera h4 {
+    margin: 0;
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.tarjeta-sede.activa .sede-cabecera h4 {
+    color: #ff5c6a;
+}
+.sede-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.sede-rating .bi {
+    color: #f5c518;
+}
+ 
+.sede-dato {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 3px;
+    color: #d8d6e0;
+    font-size: .8rem;
+}
+.sede-dato .bi {
+    color: #ff2d3a;
+}
+.sede-zona-texto {
+    margin: 0 0 8px;
+    padding-left: 22px;            /* alineada con el texto de la dirección */
+    color: #8e8a9c;
+    font-size: .75rem;
+}
+ 
+/* Etiquetas (Musculación, Cardio, etc.) */
+.sede-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+.sede-tags span {
+    padding: 4px 11px;
+    background: #222226;
+    border: 1px solid #2f2f34;
+    border-radius: 999px;
+    color: #d8d6e0;
+    font-size: .7rem;
+    font-weight: 500;
+}
+.tarjeta-sede.activa .sede-tags span {
+    background: rgba(229, 9, 20, .14);
+    border-color: rgba(229, 9, 20, .45);
+    color: #ff5c6a;
+}
+
+footer {
+    background-color: #020202;
+
+    border-top: 1px solid #22252b;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 100px;
+
+    padding-top: 78px;
+    padding-bottom: 65px;
+}
+
+.footer-marca img {
+    width: 165px;
+}
+
+.footer-marca > p {
+    max-width: 350px;
+
+    margin: 28px 0 0;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.footer-redes a {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background-color: #19191d;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #ff2633;
+    background-color: #242429;
+}
+
+.footer-enlaces,
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-enlaces h4,
+.footer-contacto h4 {
+    margin: 5px 0 25px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.footer-enlaces a {
+    width: fit-content;
+
+    margin-bottom: 18px;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+    color: #ff2734;
+}
+
+.footer-contacto p {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin: 0 0 23px;
+
+    color: #9fadc1;
+
+    font-size: 16px;
+}
+
+.footer-contacto i {
+    width: 25px;
+
+    color: #ff2633;
+
+    font-size: 22px;
+}
+
+.footer-inferior {
+    border-top: 1px solid #24272c;
+}
+
+.footer-inferior-contenido {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-inferior p {
+    color: #707986;
+
+    font-size: 12px;
+}
+
+.footer-inferior-contenido > div {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-inferior a {
+    color: #707986;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.footer-inferior a:hover {
+    color: #ff2633;
+}
