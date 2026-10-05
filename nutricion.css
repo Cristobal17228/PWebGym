@@ -123,7 +123,7 @@ button {
     background:
         radial-gradient(ellipse at 20% 0%, rgba(255, 45, 58, .15), transparent 60%),
         linear-gradient(180deg, #1a1215 0%, #000 100%);
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #34343a;
 }
 
 .hero-label {

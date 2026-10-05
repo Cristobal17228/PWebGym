@@ -178,7 +178,7 @@ button {
     border-radius: 999px;
     background: rgba(30, 30, 34, .7);
     backdrop-filter: blur(6px);
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .85rem;
     text-decoration: none;
     transition: background .2s;
@@ -372,9 +372,9 @@ button {
     height: 100%;
     border-radius: 999px;
 }
-.macro-prot  { background: #ec0d1c; }
-.macro-carb  { background: #f1c40f; }
-.macro-grasa { background: #1450d6; }
+.macro-prot  { background: #ff3b4b; }
+.macro-carb  { background: #2ecc71; }
+.macro-grasa { background: #f1c40f; }
  
 .macro-calorias {
     margin: auto 0 0;
@@ -696,7 +696,6 @@ footer {
 
 .footer_redes a:hover {
     color: #ec0d1c;
-    background-color: #242429;
 }
 
 .footer_enlaces,

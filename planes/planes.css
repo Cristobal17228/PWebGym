@@ -92,16 +92,16 @@ button {
 }
 
 .menu .planes {
-    color: #ff2935;
+    color: #ec0d1c;
     background-color: #200709;
 }
 
-.boton_unete {
+.boton-unete {
     flex-shrink: 0;
 
     padding: 16px 27px;
 
-    background-color: #ef0712;
+    background-color: #ec0d1c;
     color: #ffffff;
 
     border-radius: 14px;
@@ -114,8 +114,8 @@ button {
     transition: 0.2s;
 }
 
-.boton_unete:hover {
-    background-color: #ff202b;
+.boton-unete:hover {
+    background-color: #73050A;
 }
 
 .contenedor-interno {
@@ -178,7 +178,7 @@ button {
     border-radius: 999px;
     background: rgba(30, 30, 34, .7);
     backdrop-filter: blur(6px);
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .85rem;
     text-decoration: none;
     transition: background .2s;
@@ -188,7 +188,7 @@ button {
 .hero-badge {
     padding: 5px 12px;
     border-radius: 999px;
-    background: #e50914;
+    background: #ec0d1c;
     color: #fff;
     font-size: .7rem;
     font-weight: 700;
@@ -201,7 +201,7 @@ button {
     align-items: center;
     gap: 10px;
     margin: 0 0 10px;
-    color: #e50914;
+    color: #ec0d1c;
     font-size: .8rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -211,7 +211,7 @@ button {
     content: "";
     width: 28px;
     height: 1px;
-    background: #e50914;
+    background: #ec0d1c;
 }
  
 .hero-fila {
@@ -232,7 +232,7 @@ button {
 }
 .hero-sub {
     margin: 6px 0 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: 1.05rem;
 }
  
@@ -269,9 +269,9 @@ button {
     font-size: .7rem;
     font-weight: 600;
 }
-.nivel-facil    { color: #2ecc71; background: rgba(46, 204, 113, .12); border-color: rgba(46, 204, 113, .4); }
-.nivel-moderado { color: #f1c40f; background: rgba(241, 196, 15, .12); border-color: rgba(241, 196, 15, .4); }
-.nivel-avanzado { color: #ff5c6a; background: rgba(255, 92, 106, .12); border-color: rgba(255, 92, 106, .4); }
+.nivel-facil    { color: #2ecc71; background: #1A2D25; border-color: #2ecc71; }
+.nivel-moderado { color: #f1c40f; background: #312C1A; border-color: #f1c40f; }
+.nivel-avanzado { color: #ff3b4b; background: #331F24; border-color: #ff3b4b; }
  
 /* Etiqueta de categoría (Estética, Fuerza, etc.) */
 .categoria-badge {
@@ -282,8 +282,8 @@ button {
     font-weight: 600;
 }
 .categoria-estetica {
-    color: #e6b422;
-    background: rgba(230, 180, 34, .12);
+    color: #f1c40f;
+    background: #312C1A;
     border-color: rgba(230, 180, 34, .4);
 }
 
@@ -295,7 +295,7 @@ button {
     padding: 10px 22px;
     border: 0;
     border-radius: 8px;
-    background: #e50914;
+    background: #ec0d1c;
     color: #fff;
     font-size: .85rem;
     font-weight: 700;
@@ -312,7 +312,7 @@ button {
 .plan-titulo {
     margin: 0 0 18px;
     padding-left: 12px;
-    border-left: 4px solid #e50914;
+    border-left: 4px solid #ec0d1c;
     color: #fff;
     font-size: 1.15rem;
     font-weight: 700;
@@ -326,7 +326,7 @@ button {
 .plan-acerca-texto {
     max-width: 600px;
     margin: 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -346,8 +346,8 @@ button {
     display: flex;
     flex-direction: column;
     padding: 24px 22px;
-    background: #151518;
-    border: 1px solid #26262a;
+    background: #17171b;
+    border: 1px solid #34343a;
     border-radius: 16px;
     transition: border-color .25s;
 }
@@ -355,7 +355,7 @@ button {
 .plan-tarjeta-titulo {
     margin: 0 0 22px;
     padding-left: 12px;
-    border-left: 4px solid #e50914;
+    border-left: 4px solid #ec0d1c;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 700;
@@ -378,7 +378,7 @@ button {
 }
 .volumen-barra {
     height: 6px;
-    background: #26262a;
+    background: #34343a;
     border-radius: 999px;
     overflow: hidden;
 }
@@ -387,9 +387,9 @@ button {
     height: 100%;
     border-radius: 999px;
 }
-.volumen-fuerza    { background: #ff2d3a; }
-.volumen-cardio    { background: #2f7bff; }
-.volumen-movilidad { background: #1fd15f; }
+.volumen-fuerza    { background: #2ecc71; }
+.volumen-cardio    { background: #ff3b4b; }
+.volumen-movilidad { background: #f1c40f; }
  
 /* Días de entreno / descanso */
 .volumen-dias {
@@ -399,7 +399,7 @@ button {
     gap: 12px;
     margin-top: auto;
     padding-top: 18px;
-    border-top: 1px solid #2a2a2e;
+    border-top: 1px solid #34343a;
 }
 .volumen-item {
     display: flex;
@@ -413,7 +413,7 @@ button {
     font-weight: 600;
 }
 .volumen-item .bi {
-    color: #e50914;
+    color: #ec0d1c;
 }
  
 /* ---------- ¿Para quién es? ---------- */
@@ -434,7 +434,7 @@ button {
     font-size: .8rem;
 }
 .publico-objetivo .bi {
-    color: #f5d90a;
+    color: #f1c40f;
 }
 .publico-pildora {
     align-self: flex-start;
@@ -442,10 +442,10 @@ button {
     align-items: center;
     gap: 6px;
     padding: 7px 14px;
-    background: rgba(229, 9, 20, .15);
+    background: rgba(236, 13, 28, .15);
     border: 1px solid rgba(229, 9, 20, .35);
     border-radius: 999px;
-    color: #ff5c6a;
+    color: #ec0d1c;
     font-size: .8rem;
     font-weight: 600;
 }
@@ -463,8 +463,8 @@ button {
     font-size: .7rem;
 }
 .icono-rojo {
-    color: #ff5c6a;
-    background: rgba(229, 9, 20, .18);
+    color: #ec0d1c;
+    background: rgba(236, 13, 28, .18);
     border-color: rgba(229, 9, 20, .45);
 }
  
@@ -482,16 +482,13 @@ button {
     align-items: flex-start;        /* el ícono queda alineado con la primera línea */
     gap: 12px;
     padding: 16px 18px;
-    background: #121214;
-    border: 1px solid #222226;
-    border-radius: 12px;
-    color: #e8e6ee;
+    background: #17171b;
+    border: 1px solid #34343a;
+    border-radius: 10px;
+    color: #d8d6e0;
     font-size: .85rem;
     line-height: 1.5;
     transition: border-color .25s;
-}
-.beneficio:hover {
-    border-color: #e50914;
 }
  
 /* ---------- Programa semanal ---------- */
@@ -500,7 +497,7 @@ button {
 }
 .programa-subtitulo {
     margin: -6px 0 22px;
-    color: #8e8a9c;
+    color: #a9a3b8;
     font-size: .85rem;
 }
 .plan-lista {
@@ -511,14 +508,14 @@ button {
  
 /* Tarjeta del día */
 .dia {
-    background: #151518;
-    border: 1px solid #26262a;
+    background: #17171b;
+    border: 1px solid #34343a;
     border-radius: 14px;
     overflow: hidden;
     transition: border-color .25s;
 }
 .dia:hover {
-    border-color: #e50914;
+    border-color: #ec0d1c;
 }
  
 /* Encabezado clickeable */
@@ -545,7 +542,7 @@ button {
     background: rgba(229, 9, 20, .18);
     border: 1px solid rgba(229, 9, 20, .35);
     border-radius: 10px;
-    color: #ff5c6a;
+    color: #ff3b4b;
     font-size: .8rem;
     font-weight: 700;
 }
@@ -570,7 +567,7 @@ button {
 /* Flecha: apunta al costado cerrada, hacia abajo abierta */
 .dia-flecha {
     margin-left: auto;
-    color: #8e8a9c;
+    color: #a9a3b8;
     font-size: 1rem;
     transition: transform .25s;
 }
@@ -584,17 +581,17 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     padding: 20px;
-    border-top: 1px solid #26262a;
+    border-top: 1px solid #34343a;
 }
 .ejercicio {
     padding: 14px 16px;
-    background: #101012;
+    background: #17171b;
     border-radius: 10px;
 }
 .ejercicio-tipo {
     display: block;
     margin-bottom: 6px;
-    color: #ff5c6a;
+    color: #ff3b4b;
     font-size: .75rem;
     font-weight: 700;
     letter-spacing: .5px;
@@ -602,7 +599,7 @@ button {
 }
 .ejercicio p {
     margin: 0;
-    color: #e8e6ee;
+    color: #d8d6e0;
     font-size: .88rem;
     line-height: 1.5;
 }
@@ -616,7 +613,7 @@ button {
     padding: 14px 20px;
 }
 .dia-descanso:hover {
-    border-color: #26262a;
+    border-color: #34343a;
 }
 .dia-descanso .dia-abrev {
     background: #26262a;
@@ -631,15 +628,15 @@ button {
     padding: 4px 12px;
     border: 1px solid #34343a;
     border-radius: 999px;
-    color: #8e8a9c;
+    color: #d8d6e0;
     font-size: .72rem;
     white-space: nowrap;
 }
 
 footer {
-    background-color: #020202;
+    background-color: #000000;
 
-    border-top: 1px solid #22252b;
+    border-top: 1px solid #34343a;
 }
 
 .footer_contenido {
@@ -660,7 +657,7 @@ footer {
 
     margin: 28px 0 0;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -683,7 +680,7 @@ footer {
     justify-content: center;
 
     color: #ffffff;
-    background-color: #19191d;
+    background-color: #17171b;
 
     border-radius: 12px;
 
@@ -695,8 +692,7 @@ footer {
 }
 
 .footer_redes a:hover {
-    color: #ff2633;
-    background-color: #242429;
+    color: #ec0d1c;
 }
 
 .footer_enlaces,
@@ -720,7 +716,7 @@ footer {
 
     margin-bottom: 18px;
 
-    color: #9fadc1;
+    color: #a9a3b8;
 
     font-size: 16px;
 
@@ -728,7 +724,7 @@ footer {
 }
 
 .footer_enlaces a:hover {
-    color: #ff2734;
+    color: #ec0d1c;
 }
 
 .footer_contacto p {
@@ -746,13 +742,13 @@ footer {
 .footer_contacto i {
     width: 25px;
 
-    color: #ff2633;
+    color: #ec0d1c;
 
     font-size: 22px;
 }
 
 .footer_inferior {
-    border-top: 1px solid #24272c;
+    border-top: 1px solid #34343a;
 }
 
 .footer_inferior_contenido {
@@ -765,7 +761,7 @@ footer {
 }
 
 .footer_inferior p {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 }
@@ -776,7 +772,7 @@ footer {
 }
 
 .footer_inferior a {
-    color: #707986;
+    color: #a9a3b8;
 
     font-size: 12px;
 
@@ -784,5 +780,5 @@ footer {
 }
 
 .footer_inferior a:hover {
-    color: #ff2633;
+    color: #ec0d1c;
 }
