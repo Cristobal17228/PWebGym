@@ -22,6 +22,7 @@ enlacesMenu.forEach(enlace => {
         menu.classList.remove("abierto");
 
         const icono = botonMenu.querySelector("i");
+
         icono.classList.remove("bi-x-lg");
         icono.classList.add("bi-list");
     });

@@ -34,7 +34,7 @@
                     Planes
                 </a>
                 <a href="../nutricion.html" class="nutricion">
-                    <i class="bi bi-apple"></i>
+                    <i class="bi bi-basket"></i>
                     Nutrición
                 </a>
                 <a href="../calculadora1.html">
@@ -46,9 +46,7 @@
                     Gimnasios Cercanos
                 </a>
             </nav>
-            <a href="../registrarse.html" class="boton_unete">
-                Únete Ahora
-            </a>
+            <div id="usuario-react" data-base="../"></div>
         </div>
     </header>
 
@@ -86,8 +84,13 @@
                     <span class="dato"><i class="bi bi-clock"></i> 4 sesiones/semana · 12 semanas</span>
                     <span class="dato"><i class="bi bi-tools"></i> Pesas libres + máquinas</span>
                 </div>
-                <button type="button" class="btn-rojo" onclick="alert('¡Empezaste el plan Definición Total! ¡A esculpir el físico!')">Empezar Plan <i class="bi bi-chevron-right"></i></button>
-            </div>
+<div
+    class="seguimiento-react"
+    data-tipo="entrenamiento"
+    data-nombre="Definición Total"
+    data-descripcion="Esculpí tu cuerpo, bajá el porcentaje graso"
+    data-enlace="definicionTotal.html">
+</div>            </div>
 
         </section>
 
@@ -488,6 +491,11 @@
             </div>
         </div>
     </footer>
+<div id="registro-react" data-base="../"></div>
 
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="../registroReact.jsx"></script>
 </body>
 </html>
