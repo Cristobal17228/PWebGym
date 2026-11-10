@@ -41,9 +41,7 @@
                 Gimnasios Cercanos
             </a>
         </nav>
-        <a href="registrarse.html" class="boton-unete">
-            Únete Ahora
-        </a>
+        <div id="usuario-react"></div>
     </div>
 </header>
 
@@ -72,10 +70,7 @@
                 Empieza tu entrenamiento online
                 <i class="bi bi-arrow-right"></i>
             </a>
-            <a href="registrarse.html" class="boton_demo">
-    <i class="bi bi-person-plus"></i>
-    Registrarse
-    </a>
+            <div id="registro-hero-react"></div>
         </div>
         <div class="estadisticas-hero">
             <div class="estadistica">
@@ -565,6 +560,28 @@
         </div>
     </div>
 </footer>
+
+<div id="registro-react"></div>
+
 <script src="inicio.js"></script>
+<!-- React -->
+<script
+    src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+
+<script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+
+<!-- Permite usar JSX directamente -->
+<script
+    src="https://unpkg.com/@babel/standalone/babel.min.js">
+</script>
+
+<!-- Nuestro componente React -->
+<script
+    type="text/babel"
+    src="registroReact.jsx">
+</script>
 </body>
 </html>

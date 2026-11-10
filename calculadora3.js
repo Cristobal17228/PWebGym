@@ -53,17 +53,11 @@ document.getElementById("resultado-proteina-g").textContent =
 document.getElementById("resultado-proteina-kcal").textContent =
     Math.round(caloriasProteina);
 
-/*document.getElementById("resultado-proteina-pct").textContent =
-    30;*/
-
 document.getElementById("resultado-carbos-g").textContent =
     Math.round(carbosGramos);
 
 document.getElementById("resultado-carbos-kcal").textContent =
     Math.round(caloriasCarbos);
-
-/*document.getElementById("resultado-carbos-pct").textContent =
-    45;*/
 
 document.getElementById("resultado-grasas-g").textContent =
     Math.round(grasasGramos);
@@ -71,15 +65,9 @@ document.getElementById("resultado-grasas-g").textContent =
 document.getElementById("resultado-grasas-kcal").textContent =
     Math.round(caloriasGrasas);
 
-/*document.getElementById("resultado-grasas-pct").textContent =
-    25;*/
-
 document.getElementById("progreso-proteina").value = 30;
 document.getElementById("progreso-carbos").value = 45;
 document.getElementById("progreso-grasas").value = 25;
-
-/*document.getElementById("resultado-texto-objetivo").textContent =
-    nombreObjetivo.toLowerCase();*/
 
 document.getElementById("desglose-sexo").textContent =
     sexo;
@@ -137,6 +125,7 @@ const dietasRecomendadas = {
             enlace: "dietas/mediterranea.html"
         }
     ],
+
     deficit: [
         {
             nombre: "Ayuno Intermitente",
@@ -152,14 +141,72 @@ const dietasRecomendadas = {
         }
     ]
 };
- 
-const listaDietas = dietasRecomendadas[objetivo === "superavit" ? "superavit" : "deficit"];
- 
-listaDietas.forEach(function (dieta, indice) {
+
+const listaDietas =
+    dietasRecomendadas[
+        objetivo === "superavit"
+            ? "superavit"
+            : "deficit"
+    ];
+
+listaDietas.forEach(function(dieta, indice) {
+
     const n = indice + 1;
- 
-    document.getElementById("dieta-" + n + "-nombre").textContent = dieta.nombre;
-    document.getElementById("dieta-" + n + "-descripcion").textContent = dieta.descripcion;
-    document.getElementById("dieta-" + n + "-categoria").textContent = dieta.categoria;
-    document.getElementById("dieta-" + n + "-enlace").href = dieta.enlace;
+
+    document.getElementById(
+        "dieta-" + n + "-nombre"
+    ).textContent = dieta.nombre;
+
+    document.getElementById(
+        "dieta-" + n + "-descripcion"
+    ).textContent = dieta.descripcion;
+
+    document.getElementById(
+        "dieta-" + n + "-categoria"
+    ).textContent = dieta.categoria;
+
+    document.getElementById(
+        "dieta-" + n + "-enlace"
+    ).href = dieta.enlace;
 });
+
+
+// ==========================
+// GUARDAR RESULTADO EN PERFIL
+// ==========================
+
+const usuarioActual = JSON.parse(
+    localStorage.getItem("usuarioActual")
+);
+
+if (usuarioActual) {
+
+    const resultadoCalculadora = {
+        objetivo: objetivo,
+        nombreObjetivo: nombreObjetivo,
+
+        peso: peso,
+        actividad: actividad,
+        actividadTexto: actividadTexto,
+
+        tmb: Math.round(tmb),
+        mantenimiento: Math.round(mantenimiento),
+
+        calorias: Math.round(caloriasTotales),
+
+        proteinas: Math.round(proteinaGramos),
+        carbohidratos: Math.round(carbosGramos),
+        grasas: Math.round(grasasGramos)
+    };
+
+    localStorage.setItem(
+        `calorias_${usuarioActual.email}`,
+        Math.round(caloriasTotales)
+    );
+
+    localStorage.setItem(
+        `resultadoCalculadora_${usuarioActual.email}`,
+        JSON.stringify(resultadoCalculadora)
+    );
+
+}
