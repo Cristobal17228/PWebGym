@@ -424,14 +424,25 @@ main {
     text-align: center;
 }
 
-.paso-calculadora fieldset > p:last-child a {
+.boton-recalcular {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
     color: #a9a3b8;
-    font-size: 9px;
+    border: 1px solid #34343a;
+    border-radius: 8px;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
     transition: 0.2s;
 }
 
-.paso-calculadora fieldset > p:last-child a:hover {
+.boton-recalcular:hover {
     color: #ffffff;
+    border-color: #73050A;
 }
 
 footer {
