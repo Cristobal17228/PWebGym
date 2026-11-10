@@ -38,9 +38,7 @@
                     Gimnasios Cercanos
                 </a>
             </nav>
-            <a href="registrarse.html" class="boton-unete">
-                Únete Ahora
-            </a>
+            <div id="usuario-react"></div>
         </div>
     </header>
 
@@ -83,12 +81,18 @@
             </div>
 
             <div class="distribucion-macros-resultado">
-                <h3>Distribución de macronutrientes para <output id="resultado-nombre-objetivo">definición</output></h3>
+                <h3>
+                    Distribución de macronutrientes para
+                    <output id="resultado-nombre-objetivo">definición</output>
+                </h3>
 
                 <div class="macro-resultado-item">
                     <p>
                         <b>Proteínas</b>
-                        <small><output id="resultado-proteina-g">0</output> g · <output id="resultado-proteina-kcal">0</output> kcal</small>
+                        <small>
+                            <output id="resultado-proteina-g">0</output> g ·
+                            <output id="resultado-proteina-kcal">0</output> kcal
+                        </small>
                     </p>
                     <progress id="progreso-proteina" max="100" value="30"></progress>
                 </div>
@@ -96,7 +100,10 @@
                 <div class="macro-resultado-item">
                     <p>
                         <b>Carbohidratos</b>
-                        <small><output id="resultado-carbos-g">0</output> g · <output id="resultado-carbos-kcal">0</output> kcal</small>
+                        <small>
+                            <output id="resultado-carbos-g">0</output> g ·
+                            <output id="resultado-carbos-kcal">0</output> kcal
+                        </small>
                     </p>
                     <progress id="progreso-carbos" max="100" value="45"></progress>
                 </div>
@@ -104,7 +111,10 @@
                 <div class="macro-resultado-item">
                     <p>
                         <b>Grasas</b>
-                        <small><output id="resultado-grasas-g">0</output> g · <output id="resultado-grasas-kcal">0</output> kcal</small>
+                        <small>
+                            <output id="resultado-grasas-g">0</output> g ·
+                            <output id="resultado-grasas-kcal">0</output> kcal
+                        </small>
                     </p>
                     <progress id="progreso-grasas" max="100" value="25"></progress>
                 </div>
@@ -112,7 +122,9 @@
 
             <div class="dietas-recomendadas-resultado">
                 <h3>Dietas recomendadas</h3>
-                <p>Te sugerimos estas opciones según tu objetivo y estilo de alimentación.</p>
+                <p>
+                    Te sugerimos estas opciones según tu objetivo y estilo de alimentación.
+                </p>
 
                 <div id="contenedor-dietas-recomendadas">
                     <div class="item-dieta-recomendada">
@@ -120,9 +132,13 @@
                             <b id="dieta-1-nombre">Dieta recomendada</b>
                             <span id="dieta-1-categoria">Objetivo</span>
                         </p>
-                        <small id="dieta-1-descripcion">Descripción de la dieta</small>
+                        <small id="dieta-1-descripcion">
+                            Descripción de la dieta
+                        </small>
                         <br>
-                        <a id="dieta-1-enlace" href="nutricion.html">Ver dieta</a>
+                        <a id="dieta-1-enlace" href="nutricion.html">
+                            Ver dieta
+                        </a>
                     </div>
 
                     <div class="item-dieta-recomendada">
@@ -130,9 +146,13 @@
                             <b id="dieta-2-nombre">Dieta alternativa</b>
                             <span id="dieta-2-categoria">Alternativa</span>
                         </p>
-                        <small id="dieta-2-descripcion">Descripción alternativa</small>
+                        <small id="dieta-2-descripcion">
+                            Descripción alternativa
+                        </small>
                         <br>
-                        <a id="dieta-2-enlace" href="nutricion.html">Ver dieta</a>
+                        <a id="dieta-2-enlace" href="nutricion.html">
+                            Ver dieta
+                        </a>
                     </div>
                 </div>
             </div>
@@ -176,7 +196,11 @@
             </div>
 
             <p>
-                <button type="button" class="boton-recalcular" onclick="window.location.href='calculadora2.html'">
+                <button
+                    type="button"
+                    class="boton-recalcular"
+                    onclick="window.location.href='calculadora2.html'"
+                >
                     Recalcular objetivo
                 </button>
             </p>
@@ -191,6 +215,7 @@
                     Tu gimnasio virtual de confianza.
                     Transforma tu cuerpo y mente desde cualquier lugar.
                 </p>
+
                 <div class="footer-redes">
                     <a href="https://facebook.com" target="_blank">
                         <i class="bi bi-facebook"></i>
@@ -247,6 +272,17 @@
         </div>
     </footer>
 
+    <div id="registro-react"></div>
+
     <script src="calculadora3.js"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script
+        type="text/babel"
+        src="registroReact.jsx">
+    </script>
 </body>
 </html>

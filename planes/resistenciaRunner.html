@@ -46,9 +46,13 @@
                     Gimnasios Cercanos
                 </a>
             </nav>
+<<<<<<< HEAD
             <a href="../registrarse.html" class="boton-unete">
                 Únete Ahora
             </a>
+=======
+           <div id="usuario-react" data-base="../"></div>
+>>>>>>> develop-react
         </div>
     </header>
 
@@ -86,7 +90,13 @@
                     <span class="dato"><i class="bi bi-clock"></i> 5 sesiones/semana · 8 semanas</span>
                     <span class="dato"><i class="bi bi-tools"></i> Calzado running · Sin equipamiento extra</span>
                 </div>
-                <button type="button" class="btn-rojo" onclick="alert('¡Empezaste el plan Resistencia Runner! ¡A sumar kilómetros!')">Empezar Plan <i class="bi bi-chevron-right"></i></button>
+                <div
+    class="seguimiento-react"
+    data-tipo="entrenamiento"
+    data-nombre="Resistencia Runner"
+    data-descripcion="Mejorá tu capacidad cardiovascular al máximo"
+    data-enlace="resistenciaRunner.html">
+</div>
             </div>
 
         </section>
@@ -510,6 +520,11 @@
             </div>
         </div>
     </footer>
+<div id="registro-react" data-base="../"></div>
 
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="../registroReact.jsx"></script>
 </body>
 </html>

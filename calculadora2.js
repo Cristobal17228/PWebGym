@@ -43,11 +43,52 @@ const formulario = document.getElementById("form-paso-2");
 formulario.addEventListener("submit", function(evento) {
     evento.preventDefault();
 
+    const usuarioActual = JSON.parse(
+        localStorage.getItem("usuarioActual")
+    );
+
+    if (!usuarioActual) {
+        alert(
+            "Para guardar tu objetivo y continuar primero tenés que registrarte o iniciar sesión."
+        );
+
+        window.location.href = "login.html";
+        return;
+    }
+
     const objetivo = document.querySelector(
         'input[name="objetivo"]:checked'
     ).value;
 
+    let caloriasObjetivo;
+
+    if (objetivo === "superavit") {
+        caloriasObjetivo = Math.round(superavit);
+    } else {
+        caloriasObjetivo = Math.round(deficit);
+    }
+
     localStorage.setItem("objetivo", objetivo);
+
+    localStorage.setItem(
+        `calorias_${usuarioActual.email}`,
+        caloriasObjetivo
+    );
+
+    localStorage.setItem(
+        `objetivo_${usuarioActual.email}`,
+        objetivo
+    );
+
+    localStorage.setItem(
+        `tmb_${usuarioActual.email}`,
+        Math.round(tmb)
+    );
+
+    localStorage.setItem(
+        `mantenimiento_${usuarioActual.email}`,
+        Math.round(mantenimiento)
+    );
 
     window.location.href = "calculadora3.html";
 });
