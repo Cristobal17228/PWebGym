@@ -37,7 +37,7 @@ function BotonUsuario() {
         return (
             <>
                 <a
-                    href={`${base}perfil.html`}
+                    href={`${base}perfil/perfil.html`}
                     className="boton-unete usuario-react-boton"
                 >
                     <i className="bi bi-person-circle"></i>
@@ -312,7 +312,7 @@ function Registro() {
         );
 
         window.location.href =
-            `${base}login.html`;
+            `${base}login/login.html`;
     }
 
     if (!abierto) {
@@ -459,7 +459,7 @@ function Registro() {
 
                                 ¿Ya estás registrado?{" "}
 
-                                <a href={`${base}login.html`}>
+                                <a href={`${base}login/login.html`}>
                                     Iniciar sesión
                                 </a>
 
